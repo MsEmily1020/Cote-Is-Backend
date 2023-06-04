@@ -6,6 +6,8 @@ import org.coteis.dto.AddArticleRequest;
 import org.coteis.repository.CoteisRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @Service
 public class CoteisService {
@@ -14,5 +16,9 @@ public class CoteisService {
 
     public Article save(AddArticleRequest request){
         return coteisRepository.save(request.toEntity());
+    }
+
+    public List<Article> findAll() {
+        return coteisRepository.findAll();
     }
 }
