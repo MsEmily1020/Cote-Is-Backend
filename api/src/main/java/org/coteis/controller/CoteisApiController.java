@@ -22,4 +22,5 @@ public class CoteisApiController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(savedArticle);
     }
+
 }
