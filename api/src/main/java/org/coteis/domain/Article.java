@@ -61,4 +61,28 @@ public class Article {
         this.codeExplain = codeExplain;
         this.concept = concept;
     }
+
+    public void update(String title,
+                       String author,
+                       String date,
+                       String testExplain,
+                       String answer,
+                       String inputExample,
+                       String outputExample,
+                       String speed,
+                       String codeExplain,
+                       String concept) {
+
+        this.title = title;
+        this.author = author;
+        this.date = date;
+        this.testExplain = testExplain;
+        this.answer = answer;
+        this.inputExample = inputExample;
+        this.outputExample = outputExample;
+        this.speed = speed;
+        this.codeExplain = codeExplain;
+        this.concept = concept;
+
+    }
 }
