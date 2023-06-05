@@ -6,6 +6,7 @@ import org.coteis.domain.Article;
 @Getter
 public class ArticleResponse {
 
+    private final Long articleNo;
     private final String title;
     private final String author;
     private final String date;
@@ -18,6 +19,7 @@ public class ArticleResponse {
     private final String concept;
 
     public ArticleResponse(Article article){
+        this.articleNo = article.getArticleNo();
         this.title = article.getTitle();
         this.author = article.getAuthor();
         this.date = article.getDate();
