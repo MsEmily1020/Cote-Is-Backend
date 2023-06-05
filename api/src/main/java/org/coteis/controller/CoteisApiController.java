@@ -4,13 +4,11 @@ import lombok.RequiredArgsConstructor;
 import org.coteis.domain.Article;
 import org.coteis.dto.AddArticleRequest;
 import org.coteis.dto.ArticleResponse;
+import org.coteis.dto.UpdateArticleRequest;
 import org.coteis.service.CoteisService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -37,4 +35,20 @@ public class CoteisApiController {
         return ResponseEntity.ok().body(articles);
     }
 
+    @PutMapping("/api/articles/{id}")
+    public ResponseEntity<Article> updateArticle(@PathVariable long id,
+                                                 @RequestBody UpdateArticleRequest request) {
+        Article updatedArticle = coteisService.update(id, request);
+
+        return ResponseEntity.ok()
+                .body(updatedArticle);
+    }
+
+    @DeleteMapping("/api/articles/{id}")
+    public ResponseEntity<Void> deleteArticle(@PathVariable long id) {
+        coteisService.delete(id);
+
+        return ResponseEntity.ok()
+                .build();
+    }
 }
