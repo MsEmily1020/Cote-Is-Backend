@@ -21,4 +21,6 @@ public class CoteisService {
     public List<Article> findAll() {
         return coteisRepository.findAll();
     }
+
+    public void delete(long id) { coteisRepository.deleteById(id); }
 }
