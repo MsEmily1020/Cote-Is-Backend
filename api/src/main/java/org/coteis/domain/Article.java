@@ -16,7 +16,7 @@ public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "article_no", updatable = false)
-    private Integer articleNo;
+    private Long articleNo;
 
     @Column(name = "title", nullable = false)   // 제목
     private String title;
