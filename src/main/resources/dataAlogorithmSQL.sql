@@ -1,0 +1,11 @@
+INSERT INTO algorithm (algorithmName) VALUE ('수학')
+INSERT INTO algorithm (algorithmName) VALUE ('구현')
+INSERT INTO algorithm (algorithmName) VALUE ('자료 구조')
+INSERT INTO algorithm (algorithmName) VALUE ('문자열')
+INSERT INTO algorithm (algorithmName) VALUE ('그리드 알고리즘')
+INSERT INTO algorithm (algorithmName) VALUE ('정렬')
+INSERT INTO algorithm (algorithmName) VALUE ('이분 탐색')
+INSERT INTO algorithm (algorithmName) VALUE ('사칙 연산')
+INSERT INTO algorithm (algorithmName) VALUE ('누적 합')
+INSERT INTO algorithm (algorithmName) VALUE ('재귀')
+
