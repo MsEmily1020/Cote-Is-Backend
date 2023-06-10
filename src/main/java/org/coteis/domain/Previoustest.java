@@ -16,14 +16,13 @@ public class Previoustest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "previoustest_no", updatable = false)
-    private int previoustestNo;
+    private Integer previoustestNo;
 
     @Column(name = "previoustest_name", nullable = false)
     private String previoustestName;
 
     @Builder
-    public Previoustest(int previoustestNo, String previoustestName) {
-        this.previoustestNo = previoustestNo;
+    public Previoustest(String previoustestName) {
         this.previoustestName = previoustestName;
     }
 }
