@@ -5,30 +5,30 @@ import lombok.RequiredArgsConstructor;
 import org.coteis.domain.Article;
 import org.coteis.dto.AddArticleRequest;
 import org.coteis.dto.UpdateArticleRequest;
-import org.coteis.repository.CoteisRepository;
+import org.coteis.repository.ArticleRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @RequiredArgsConstructor
 @Service
-public class CoteisService {
+public class ArticleService {
 
-    private final CoteisRepository coteisRepository;
+    private final ArticleRepository articleRepository;
 
     public Article save(AddArticleRequest request){
-        return coteisRepository.save(request.toEntity());
+        return articleRepository.save(request.toEntity());
     }
 
     public List<Article> findAll() {
-        return coteisRepository.findAll();
+        return articleRepository.findAll();
     }
 
-    public void delete(long id) { coteisRepository.deleteById(id); }
+    public void delete(long id) { articleRepository.deleteById(id); }
 
     @Transactional
     public Article update(long id, UpdateArticleRequest request) {
-        Article article = coteisRepository.findById(id)
+        Article article = articleRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("not found: " + id));
 
         article.update(request.getTitle(),
