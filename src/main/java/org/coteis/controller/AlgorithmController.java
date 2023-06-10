@@ -15,13 +15,13 @@ import java.util.List;
 public class AlgorithmController {
     private final AlgorithmService algorithmService;
 
-    @GetMapping("/api/algorithm")
+    @GetMapping("/api/algorithms")
     public ResponseEntity<List<AlgorithmResponse>> findAllArticles(){
-        List<AlgorithmResponse> articles = algorithmService.findAll()
+        List<AlgorithmResponse> algorithms = algorithmService.findAll()
                 .stream()
                 .map(AlgorithmResponse::new)
                 .toList();
 
-        return ResponseEntity.ok().body(articles);
+        return ResponseEntity.ok().body(algorithms);
     }
 }
