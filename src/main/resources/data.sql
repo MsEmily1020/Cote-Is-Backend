@@ -9,3 +9,7 @@ INSERT INTO algorithm (algorithm_name) VALUES ('사칙 연산')
 INSERT INTO algorithm (algorithm_name) VALUES ('누적 합')
 INSERT INTO algorithm (algorithm_name) VALUES ('재귀')
 
+INSERT INTO difficulty (difficulty_name) VALUES ('Easy')
+INSERT INTO difficulty (difficulty_name) VALUES ('Normal')
+INSERT INTO difficulty (difficulty_name) VALUES ('Hard')
+INSERT INTO difficulty (difficulty_name) VALUES ('Extreme')
