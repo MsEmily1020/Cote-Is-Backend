@@ -24,6 +24,10 @@ public class UserService {
         return userRepository.findAll();
     }
 
+    public void delete(long id) {
+        userRepository.deleteById(id);
+    }
+
     @Transactional
     public User update(long id, UpdateUserRequest request){
         User user = userRepository.findById(id)
@@ -32,7 +36,7 @@ public class UserService {
                 request.getUserName(),
                 request.getUserId(),
                 request.getUserPw(),
-                request.getUesrEmail()
+                request.getUserEmail()
         );
 
         return user;
