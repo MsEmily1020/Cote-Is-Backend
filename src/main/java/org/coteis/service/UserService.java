@@ -4,6 +4,7 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.coteis.domain.User;
 import org.coteis.dto.AddUserRequest;
+import org.coteis.dto.UpdateUserRequest;
 import org.coteis.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
@@ -23,4 +24,17 @@ public class UserService {
         return userRepository.findAll();
     }
 
+    @Transactional
+    public User update(long id, UpdateUserRequest request){
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("not found: " + id));
+        user.update(
+                request.getUserName(),
+                request.getUserId(),
+                request.getUserPw(),
+                request.getUesrEmail()
+        );
+
+        return user;
+    }
 }

@@ -3,6 +3,7 @@ package org.coteis.controller;
 import lombok.RequiredArgsConstructor;
 import org.coteis.domain.User;
 import org.coteis.dto.AddUserRequest;
+import org.coteis.dto.UpdateUserRequest;
 import org.coteis.dto.UserResponse;
 import org.coteis.service.UserService;
 import org.springframework.http.HttpStatus;
@@ -31,6 +32,14 @@ public class UserController {
                 .toList();
 
         return ResponseEntity.ok().body(users);
+    }
+
+    @PutMapping("/api/users/{id}")
+    public ResponseEntity<User> updateUser(@PathVariable long id,
+                                           @RequestBody UpdateUserRequest request){
+        User updatedUser = userService.update(id, request);
+
+        return ResponseEntity.ok().body(updatedUser);
     }
 
 }
