@@ -14,7 +14,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
-public class ArticleApiController {
+public class CoteisApiController {
 
     private final ArticleService articleService;
 
