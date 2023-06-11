@@ -21,7 +21,6 @@ public class Language {
     private String languageName;
 
     @Builder
-    public Language(String languageName) {
-        this.languageName = languageName;
-    }
+    public Language(String languageName) { this.languageName = languageName; }
+
 }

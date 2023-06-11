@@ -15,7 +15,7 @@ public class LanguageApiController {
 
     private final LanguageService languageService;
 
-    @GetMapping("api/languages")
+    @GetMapping("/api/languages")
     public ResponseEntity<List<LanguageResponse>> findAllLanguages(){
         List<LanguageResponse> responses = languageService.findALl()
                 .stream()

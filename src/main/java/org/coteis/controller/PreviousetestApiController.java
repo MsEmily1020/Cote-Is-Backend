@@ -15,7 +15,7 @@ public class PreviousetestApiController {
 
     private final PrevioustestService previoustestService;
 
-    @GetMapping("api/previoustests")
+    @GetMapping("/api/previoustests")
     public ResponseEntity<List<PrevioustestResponse>> findAllPrevious(){
         List<PrevioustestResponse> previoustests = previoustestService.findAll()
                 .stream()
