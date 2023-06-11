@@ -5,76 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/main/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/CoteisApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/controller/AlgorithmController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/controller/CoteisApiController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/controller/DifficultyController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/controller/LanguageApiController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/controller/PreviousetestApiController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/Algorithm$AlgorithmBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/Algorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/Article$ArticleBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/Article.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/Difficulty$DifficultyBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/Difficulty.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/Language$LanguageBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/Language.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/Previoustest$PrevioustestBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/Previoustest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/User$UserBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/domain/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/dto/AddArticleRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/dto/AddUserRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/dto/AlgorithmResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/dto/ArticleResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/dto/DifficultyResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/dto/LanguageResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/dto/PrevioustestResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/dto/UpdateArticleRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/dto/UserResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/repository/AlgorithmRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/repository/CoteisRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/repository/DifficultyRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/repository/LanguageRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/repository/PrevioustestRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/repository/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/service/AlgorithmService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/service/CoteisService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/service/DifficultyService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/service/LanguageService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/service/PrevioustestService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/main/org/coteis/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/test/JUnitTst.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/test/application.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Algorithm$AlgorithmBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Difficulty$DifficultyBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/User$UserBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/AddUserRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/UserResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/repository/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/LanguageApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/LanguageApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/PreviousetestApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/PreviousetestApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Difficulty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Difficulty.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/UpdateUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/CoteisApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/CoteisApiController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Language$LanguageBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Language$LanguageBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Language.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Previoustest$PrevioustestBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Previoustest$PrevioustestBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Previoustest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Previoustest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/LanguageResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/LanguageResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/PrevioustestResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/PrevioustestResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/LanguageApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/LanguageApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/PreviousetestApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/PreviousetestApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/dataPrevioustestSQL.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/AlgorithmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/CoteisApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/CoteisApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/LanguageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/LanguageResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/PrevioustestResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/PrevioustestResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/repository/CoteisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/repository/ArticleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/CoteisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

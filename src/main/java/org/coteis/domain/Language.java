@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Table(name = "languages")
 public class Language {
 
     @Id
@@ -21,4 +22,5 @@ public class Language {
 
     @Builder
     public Language(String languageName) { this.languageName = languageName; }
+
 }
