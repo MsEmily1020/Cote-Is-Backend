@@ -23,21 +23,6 @@ INSERT INTO previoustest (previoustest_name) VALUES ('네이버 코딩 테스트
 INSERT INTO previoustest (previoustest_name) VALUES ('COS pro 2급')
 INSERT INTO previoustest (previoustest_name) VALUES ('COS pro 1급')
 
-<<<<<<< HEAD
-INSERT INTO language (language_name) VALUES ('Java')
-INSERT INTO language (language_name) VALUES ('JavaScript')
-INSERT INTO language (language_name) VALUES ('Python')
-INSERT INTO language (language_name) VALUES ('C')
-INSERT INTO language (language_name) VALUES ('C++')
-INSERT INTO language (language_name) VALUES ('C#')
-INSERT INTO language (language_name) VALUES ('Go')
-INSERT INTO language (language_name) VALUES ('Kotlin')
-
-INSERT INTO `user` (user_name, user_id, user_pw, user_email) VALUES ('황혜경', 'hyek', 'hkpw12!!', 'hhk@mail.com')
-INSERT INTO `user` (user_name, user_id, user_pw, user_email) VALUES ('김혜승', 'hyes', 'hspw12!!', 'khs@mail.com')
-INSERT INTO `user` (user_name, user_id, user_pw, user_email) VALUES ('김하은', 'haeun', 'hepw12!!', 'khe@mail.com')
-INSERT INTO `user` (user_name, user_id, user_pw, user_email) VALUES ('김수연', 'suy', 'supw12!!', 'ksy@mail.com')
-=======
 INSERT INTO languages (language_name) VALUES ('Java')
 INSERT INTO languages (language_name) VALUES ('JavaScript')
 INSERT INTO languages (language_name) VALUES ('Python')
@@ -51,4 +36,3 @@ INSERT INTO users (user_name, user_id, user_pw, user_email) VALUES ('황혜경',
 INSERT INTO users (user_name, user_id, user_pw, user_email) VALUES ('김혜승', 'hyes', 'hspw12!!', 'khs@mail.com')
 INSERT INTO users (user_name, user_id, user_pw, user_email) VALUES ('김하은', 'haeun', 'hepw12!!', 'khe@mail.com')
 INSERT INTO users (user_name, user_id, user_pw, user_email) VALUES ('김수연', 'suy', 'supw12!!', 'ksy@mail.com')
->>>>>>> upstream/main

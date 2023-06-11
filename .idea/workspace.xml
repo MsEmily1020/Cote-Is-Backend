@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/UpdateUserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/CoteisApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/CoteisApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Language$LanguageBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Language$LanguageBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Language.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/dataPrevioustestSQL.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/AlgorithmController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/CoteisApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/CoteisApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/repository/CoteisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/repository/ArticleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/CoteisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/DifficultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/DifficultyController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

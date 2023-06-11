@@ -14,7 +14,7 @@ public class DifficultyController {
     private final DifficultyService difficultyService;
 
     @GetMapping("/api/difficulties")
-    public ResponseEntity<List<DifficultyResponse>> findAllArticles(){
+    public ResponseEntity<List<DifficultyResponse>> findAllDifficulties(){
         List<DifficultyResponse> difficulties = difficultyService.findAll()
                 .stream()
                 .map(DifficultyResponse::new)
