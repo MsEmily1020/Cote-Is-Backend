@@ -20,8 +20,5 @@ public class Language {
     private String languageName;
 
     @Builder
-    public Language(int languageNo, String languageName) {
-        this.languageNo = languageNo;
-        this.languageName = languageName;
-    }
+    public Language(String languageName) { this.languageName = languageName; }
 }

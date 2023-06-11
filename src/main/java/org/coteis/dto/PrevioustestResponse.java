@@ -5,7 +5,7 @@ import org.coteis.domain.Previoustest;
 
 @Getter
 public class PrevioustestResponse {
-    private final int previoustestNo;
+    private final Integer previoustestNo;
     private final String previoustestName;
 
     public PrevioustestResponse(Previoustest previoustest) {

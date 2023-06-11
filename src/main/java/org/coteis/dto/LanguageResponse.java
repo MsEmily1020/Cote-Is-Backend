@@ -5,7 +5,7 @@ import org.coteis.domain.Language;
 
 @Getter
 public class LanguageResponse {
-    private final int languageNo;
+    private final Integer languageNo;
     private final String languageName;
 
     public LanguageResponse(Language language) {

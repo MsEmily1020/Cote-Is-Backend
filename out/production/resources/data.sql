@@ -31,3 +31,8 @@ INSERT INTO language (language_name) VALUES ('C++')
 INSERT INTO language (language_name) VALUES ('C#')
 INSERT INTO language (language_name) VALUES ('Go')
 INSERT INTO language (language_name) VALUES ('Kotlin')
+
+INSERT INTO `user` (user_name, user_id, user_pw, user_email) VALUES ('황혜경', 'hyek', 'hkpw12!!', 'hhk@mail.com')
+INSERT INTO `user` (user_name, user_id, user_pw, user_email) VALUES ('김혜승', 'hyes', 'hspw12!!', 'khs@mail.com')
+INSERT INTO `user` (user_name, user_id, user_pw, user_email) VALUES ('김하은', 'haeun', 'hepw12!!', 'khe@mail.com')
+INSERT INTO `user` (user_name, user_id, user_pw, user_email) VALUES ('김수연', 'suy', 'supw12!!', 'ksy@mail.com')
