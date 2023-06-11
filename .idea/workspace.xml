@@ -5,9 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/DifficultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/DifficultyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/category/AlgorithmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/CoteisApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/article/CoteisApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/DifficultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/category/DifficultyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/LanguageApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/category/LanguageApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/PreviousetestApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/category/PreviousetestApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/category/Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/article/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/Difficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/category/Difficulty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/category/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/Previoustest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/category/Previoustest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/AddArticleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/AddArticleRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/AddUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/user/AddUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/AlgorithmResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/category/AlgorithmResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/ArticleResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/ArticleResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/DifficultyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/category/DifficultyResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/LanguageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/category/LanguageResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/PrevioustestResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/category/PrevioustestResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/UpdateArticleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/UpdateArticleRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/UpdateUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/user/UpdateUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/user/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/repository/AlgorithmRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/repository/category/AlgorithmRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/repository/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/repository/article/ArticleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/repository/DifficultyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/repository/category/DifficultyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/repository/LanguageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/repository/category/LanguageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/repository/PrevioustestRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/repository/category/PrevioustestRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/repository/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/AlgorithmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/category/AlgorithmService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/article/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/DifficultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/category/DifficultyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/LanguageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/category/LanguageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/PrevioustestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/category/PrevioustestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/user/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
