@@ -13,6 +13,7 @@ public class DifficultyService {
 
     private final DifficultyRepository difficultyRepository;
 
+    // read
     public List<Difficulty> findAll() {
         return difficultyRepository.findAll();
     }

@@ -16,18 +16,22 @@ public class UserService {
 
     private final UserRepository userRepository;
 
+    // create
     public User save(AddUserRequest request){
         return userRepository.save(request.toEntity());
     }
 
+    // read
     public List<User> findAll() {
         return userRepository.findAll();
     }
 
+    // delete
     public void delete(long id) {
         userRepository.deleteById(id);
     }
 
+    // update
     @Transactional
     public User update(long id, UpdateUserRequest request){
         User user = userRepository.findById(id)
