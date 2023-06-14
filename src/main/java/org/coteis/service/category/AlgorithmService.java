@@ -13,6 +13,7 @@ public class AlgorithmService {
 
     private final AlgorithmRepository algorithmRepository;
 
+    // read
     public List<Algorithm> findAll() {
         return algorithmRepository.findAll();
     }

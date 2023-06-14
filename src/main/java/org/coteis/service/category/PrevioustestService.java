@@ -12,6 +12,7 @@ import java.util.List;
 public class PrevioustestService {
     private final PrevioustestRepository previoustestRepository;
 
+    // read
     public List<Previoustest> findAll(){
         return previoustestRepository.findAll();
     }

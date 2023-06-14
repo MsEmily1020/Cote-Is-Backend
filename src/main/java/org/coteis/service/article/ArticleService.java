@@ -16,16 +16,20 @@ public class ArticleService {
 
     private final ArticleRepository articleRepository;
 
+    // create
     public Article save(AddArticleRequest request){
         return articleRepository.save(request.toEntity());
     }
 
+    // read
     public List<Article> findAll() {
         return articleRepository.findAll();
     }
 
+    // delete
     public void delete(long id) { articleRepository.deleteById(id); }
 
+    // update
     @Transactional
     public Article update(long id, UpdateArticleRequest request) {
         Article article = articleRepository.findById(id)

@@ -13,6 +13,7 @@ public class LanguageService {
 
     private final LanguageRepository languageRepository;
 
+    // read
     public List<Language> findALl(){
         return languageRepository.findAll();
     }
