@@ -14,7 +14,7 @@ public class UserDetailService implements UserDetailsService {
     private final UserRepository userRepository;
     @Override
     public User loadUserByUsername(String userId) {
-        return userRepository.findById(userId)
+        return userRepository.findByUserId(userId)
                 .orElseThrow(() -> new IllegalArgumentException(userId));
     }
 }
