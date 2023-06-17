@@ -18,9 +18,6 @@ public class AddUserRequest {
     private String userPw;
     private String userEmail;
 
-    private final UserRepository userRepository;
-    private final BCryptPasswordEncoder bCryptPasswordEncoder;
-
     public User toEntity(){
         return User.builder()
                 .userName(userName)
@@ -30,13 +27,5 @@ public class AddUserRequest {
                 .build();
 
     }
-
-    public Long save(AddUserRequest dto) {
-        return userRepository.save(User.builder()
-                .userId(dto.getUserId())
-                .userPw(bCryptPasswordEncoder.encode(dto.getUserPw()))
-                .build()).getUserNo();
-    }
-
 }
 
