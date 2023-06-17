@@ -5,47 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/AlgorithmController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/CoteisApiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/DifficultyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/LanguageApiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/PreviousetestApiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Algorithm$AlgorithmBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Algorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Article$ArticleBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Article.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Difficulty$DifficultyBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Difficulty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Language$LanguageBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Language.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Previoustest$PrevioustestBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/Previoustest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/AddArticleRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/AddUserRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/AlgorithmResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/ArticleResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/DifficultyResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/LanguageResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/PrevioustestResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/UpdateArticleRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/UpdateUserRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/UserResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/repository/AlgorithmRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/repository/ArticleRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/repository/DifficultyRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/repository/LanguageRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/repository/PrevioustestRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/service/AlgorithmService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/service/ArticleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/service/DifficultyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/service/LanguageService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/service/PrevioustestService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,13 +55,13 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/private/Cote_Is&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/private/Cote_Is"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
