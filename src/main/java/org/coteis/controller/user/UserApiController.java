@@ -19,7 +19,7 @@ public class UserApiController {
 
     @PostMapping("/user")
     public String signUp(AddUserRequest request) {
-        userService.save(request);
+        userService.signUpUser(request);
         return "login";
     }
 
