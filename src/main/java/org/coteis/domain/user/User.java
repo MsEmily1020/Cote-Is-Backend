@@ -25,7 +25,7 @@ public class User {
     @Column(name = "user_pw", nullable = false)
     private String userPw;
 
-    @Column(name = "user_email", nullable = false)
+    @Column(name = "user_email", nullable = false, unique = true)
     private String userEmail;
 
     @Builder
