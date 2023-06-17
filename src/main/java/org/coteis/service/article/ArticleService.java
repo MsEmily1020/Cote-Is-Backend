@@ -27,11 +27,11 @@ public class ArticleService {
     }
 
     // delete
-    public void delete(long id) { articleRepository.deleteById(id); }
+    public void delete(Long id) { articleRepository.deleteById(id); }
 
     // update
     @Transactional
-    public Article update(long id, UpdateArticleRequest request) {
+    public Article update(Long id, UpdateArticleRequest request) {
         Article article = articleRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("not found: " + id));
 

@@ -6,6 +6,7 @@ import org.coteis.domain.user.User;
 import org.coteis.dto.user.AddUserRequest;
 import org.coteis.dto.user.UpdateUserRequest;
 import org.coteis.repository.user.UserRepository;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.List;
 public class UserService {
 
     private final UserRepository userRepository;
+    private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     // create
     public User save(AddUserRequest request){
@@ -27,13 +29,13 @@ public class UserService {
     }
 
     // delete
-    public void delete(long id) {
+    public void delete(Long id) {
         userRepository.deleteById(id);
     }
 
     // update
     @Transactional
-    public User update(long id, UpdateUserRequest request){
+    public User update(Long id, UpdateUserRequest request){
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("not found: " + id));
         user.update(
@@ -44,5 +46,12 @@ public class UserService {
         );
 
         return user;
+    }
+
+    public Long signUpUser(AddUserRequest dto) {
+        return userRepository.save(User.builder()
+                .userId(dto.getUserId())
+                .userPw(bCryptPasswordEncoder.encode(dto.getUserPw()))
+                .build()).getUserNo();
     }
 }
