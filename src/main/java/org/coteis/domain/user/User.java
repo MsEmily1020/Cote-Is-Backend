@@ -57,15 +57,14 @@ public class User implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority("user"));
     }
+    @Override
+    public String getUsername() {
+        return userId;
+    }
 
     @Override
     public String getPassword() {
         return userPw;
-    }
-
-    @Override
-    public String getUsername() {
-        return userId;
     }
 
     @Override
