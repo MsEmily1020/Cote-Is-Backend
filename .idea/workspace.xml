@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/CoteisApiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/Article$ArticleBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/Article.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/dto/AddArticleRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/dto/ArticleResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/repository/CoteisRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/CoteisService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/user/UserApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/user/UserApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/user/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/user/AddUserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/user/AddUserRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/service/user/UserDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/service/user/UserDetailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/service/user/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/user/UserApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/user/UserApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/user/AddUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/user/AddUserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/user/UserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/user/UserDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,13 +66,13 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/private/Cote_Is"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/private/Cote_Is&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.CoteisApplication">
     <configuration name="CoteisApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.coteis.CoteisApplication" />
