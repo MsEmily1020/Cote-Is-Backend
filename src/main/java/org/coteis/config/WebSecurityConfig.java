@@ -1,6 +1,5 @@
 package org.coteis.config;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.coteis.service.user.UserDetailService;
 import org.springframework.context.annotation.Bean;
