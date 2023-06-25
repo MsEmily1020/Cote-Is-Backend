@@ -4,6 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.coteis.domain.article.Article;
+import org.coteis.domain.category.Algorithm;
+import org.coteis.domain.category.Difficulty;
+import org.coteis.domain.category.Language;
+import org.coteis.domain.category.Previoustest;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,6 +23,10 @@ public class AddArticleRequest {
     private String speed;
     private String codeExplain;
     private String concept;
+    private Algorithm algorithmNo;
+    private Difficulty difficultyNo;
+    private Language languageNo;
+    private Previoustest previoustestNo;
 
     public Article toEntity(){
         return Article.builder()
@@ -33,6 +41,10 @@ public class AddArticleRequest {
                 .speed(speed)
                 .testExplain(testExplain)
                 .concept(concept)
+                .algorithmNo(algorithmNo)
+                .difficultyNo(difficultyNo)
+                .languageNo(languageNo)
+                .previoustestNo(previoustestNo)
                 .build();
     }
 }

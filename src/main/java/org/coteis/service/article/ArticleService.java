@@ -44,7 +44,11 @@ public class ArticleService {
                 request.getOutputExample(),
                 request.getSpeed(),
                 request.getCodeExplain(),
-                request.getConcept()
+                request.getConcept(),
+                request.getAlgorithmNo(),
+                request.getDifficultyNo(),
+                request.getLanguageNo(),
+                request.getPrevioustestNo()
                 );
 
         return article;
