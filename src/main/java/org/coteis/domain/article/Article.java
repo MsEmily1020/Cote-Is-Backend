@@ -5,6 +5,11 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.coteis.domain.category.Algorithm;
+import org.coteis.domain.category.Difficulty;
+import org.coteis.domain.category.Language;
+import org.coteis.domain.category.Previoustest;
+
 
 @Entity
 @Getter
@@ -46,8 +51,25 @@ public class Article {
     @Column(name = "concept")   // 개념 정리
     private String concept;
 
+    @ManyToOne
+    @JoinColumn(name = "algorithm_no")
+    private Algorithm algorithmNo;
+
+    @ManyToOne
+    @JoinColumn(name = "difficulty_no")
+    private Difficulty difficultyNo;
+
+    @ManyToOne
+    @JoinColumn(name = "language_no")
+    private Language languageNo;
+
+    @ManyToOne
+    @JoinColumn(name = "previoustest_no")
+    private Previoustest previoustestNo;
+
     @Builder
-    public Article(String title, String author, String date, String testExplain, String answer, String inputExample, String outputExample, String speed, String codeExplain, String concept) {
+    public Article(String title, String author, String date, String testExplain, String answer, String inputExample, String outputExample, String speed, String codeExplain, String concept,
+                   Algorithm algorithmNo, Difficulty difficultyNo, Language languageNo, Previoustest previoustestNo) {
         this.title = title;
         this.author = author;
         this.date = date;
@@ -58,6 +80,10 @@ public class Article {
         this.speed = speed;
         this.codeExplain = codeExplain;
         this.concept = concept;
+        this.algorithmNo = algorithmNo;
+        this.difficultyNo = difficultyNo;
+        this.languageNo = languageNo;
+        this.previoustestNo = previoustestNo;
     }
 
     public void update(String title,
@@ -69,7 +95,11 @@ public class Article {
                        String outputExample,
                        String speed,
                        String codeExplain,
-                       String concept) {
+                       String concept,
+                       Algorithm algorithmNo,
+                       Difficulty difficultyNo,
+                       Language languageNo,
+                       Previoustest previoustestNo) {
 
         this.title = title;
         this.author = author;
@@ -81,6 +111,10 @@ public class Article {
         this.speed = speed;
         this.codeExplain = codeExplain;
         this.concept = concept;
-
+        this.algorithmNo = algorithmNo;
+        this.difficultyNo = difficultyNo;
+        this.languageNo = languageNo;
+        this.previoustestNo = previoustestNo;
     }
+
 }
