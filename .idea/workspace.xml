@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/user/UserApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/user/UserApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/controller/user/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article$ArticleBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article$ArticleBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/service/user/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Cote_Is-1.0-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Cote_Is-1.0-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Cote_Is-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Cote_Is-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,17 +33,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Cote_Is" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Cote_Is" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Cote_Is" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -68,6 +54,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2R0zyBxCT2GuxYLp4X56ut5Zc4x" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -75,7 +64,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/private/Cote_Is&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/repo/Cote_Is&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RunManager" selected="Application.CoteisApplication">
@@ -111,6 +104,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="Cote_Is [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -132,6 +126,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <recent_temporary>
