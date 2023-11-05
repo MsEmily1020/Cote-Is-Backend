@@ -16,12 +16,9 @@ import java.util.List;
 public class UserService {
 
     private final UserRepository userRepository;
-    private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     // create
-    public User save(AddUserRequest request){
-        return userRepository.save(request.toEntity());
-    }
+    public User save(AddUserRequest request){ return userRepository.save(request.toEntity()); }
 
     // read
     public List<User> findAll() {
@@ -46,12 +43,5 @@ public class UserService {
         );
 
         return user;
-    }
-
-    public Long signUpUser(AddUserRequest dto) {
-        return userRepository.save(User.builder()
-                .userId(dto.getUserId())
-                .userPw(bCryptPasswordEncoder.encode(dto.getUserPw()))
-                .build()).getUserNo();
     }
 }
