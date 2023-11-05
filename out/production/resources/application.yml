@@ -4,6 +4,10 @@ spring:
     url: jdbc:mysql://localhost:3306/coteis?serverTimezone=UTC
     username: root
     password: 1234
+    initialization-mode: always
+  sql:
+    init:
+      mode: always
   h2:
     console:
       enabled: true
