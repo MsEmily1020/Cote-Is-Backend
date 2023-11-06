@@ -1,9 +1,11 @@
 package org.coteis.controller.user;
 
 import lombok.RequiredArgsConstructor;
+import org.apache.coyote.Response;
 import org.coteis.domain.user.User;
 import org.coteis.dto.user.AddUserRequest;
 import org.coteis.dto.user.UpdateUserRequest;
+import org.coteis.dto.user.UserLoginRequest;
 import org.coteis.dto.user.UserResponse;
 import org.coteis.service.user.UserService;
 import org.springframework.http.HttpStatus;
@@ -32,6 +34,12 @@ public class UserController {
                 .toList();
 
         return ResponseEntity.ok().body(users);
+    }
+
+    @GetMapping("/login")
+    public ResponseEntity<User> login(@RequestBody UserLoginRequest request) {
+        User user = userService.findLoginUser(request);
+        return ResponseEntity.ok().body(user);
     }
 
     @PutMapping("/api/users/{id}")

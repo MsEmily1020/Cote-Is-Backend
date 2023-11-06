@@ -9,7 +9,6 @@ public class UserResponse {
     private final String userName;
     private final String userId;
     private final String userPw;
-
     private final String userEmail;
 
     public UserResponse(User user){
