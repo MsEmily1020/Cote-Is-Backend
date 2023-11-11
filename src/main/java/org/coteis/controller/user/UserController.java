@@ -1,7 +1,6 @@
 package org.coteis.controller.user;
 
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.coteis.domain.user.User;
 import org.coteis.dto.user.AddUserRequest;
 import org.coteis.dto.user.UpdateUserRequest;
