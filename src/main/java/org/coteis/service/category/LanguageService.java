@@ -1,6 +1,7 @@
 package org.coteis.service.category;
 
 import lombok.RequiredArgsConstructor;
+import org.coteis.domain.category.Algorithm;
 import org.coteis.domain.category.Language;
 import org.coteis.repository.category.LanguageRepository;
 import org.springframework.stereotype.Service;
@@ -16,5 +17,10 @@ public class LanguageService {
     // read
     public List<Language> findALl(){
         return languageRepository.findAll();
+    }
+
+    public Language findById(Integer id) {
+        return languageRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("not found: " + id));
     }
 }
