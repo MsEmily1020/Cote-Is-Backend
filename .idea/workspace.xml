@@ -91,7 +91,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Cote_Is [build]">
+  <component name="RunManager" selected="Application.CoteisApplication">
     <configuration name="CoteisApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.coteis.CoteisApplication" />
       <module name="Cote_Is.main" />
@@ -158,9 +158,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CoteisApplication" />
         <item itemvalue="Gradle.Cote_Is [build]" />
         <item itemvalue="Gradle.Cote_Is [clean]" />
-        <item itemvalue="Application.CoteisApplication" />
       </list>
     </recent_temporary>
   </component>
