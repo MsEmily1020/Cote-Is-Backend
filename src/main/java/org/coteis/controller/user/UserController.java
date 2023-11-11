@@ -1,7 +1,6 @@
 package org.coteis.controller.user;
 
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.coteis.domain.user.User;
 import org.coteis.dto.user.AddUserRequest;
 import org.coteis.dto.user.UpdateUserRequest;
@@ -26,8 +25,14 @@ public class UserController {
                 .body(savedUser);
     }
 
+    @PostMapping("/login")
+    public ResponseEntity<User> login(@RequestBody UserLoginRequest request) {
+        User user = userService.findLoginUser(request);
+        return ResponseEntity.ok().body(user);
+    }
+
     @GetMapping("/api/users")
-    public ResponseEntity<List<UserResponse>> findAllUsers(){
+    public ResponseEntity<List<UserResponse>> findAllUsers() {
         List<UserResponse> users = userService.findAll()
                 .stream()
                 .map(UserResponse::new)
@@ -36,11 +41,14 @@ public class UserController {
         return ResponseEntity.ok().body(users);
     }
 
-    @GetMapping("/login")
-    public ResponseEntity<User> login(@RequestBody UserLoginRequest request) {
-        User user = userService.findLoginUser(request);
-        return ResponseEntity.ok().body(user);
+    @GetMapping("/api/users/{id}")
+    public ResponseEntity<UserResponse> findUser(@PathVariable Long id) {
+        User user = userService.findById(id);
+
+        return ResponseEntity.ok()
+                .body(new UserResponse(user));
     }
+
 
     @PutMapping("/api/users/{id}")
     public ResponseEntity<User> updateUser(@PathVariable Long id,

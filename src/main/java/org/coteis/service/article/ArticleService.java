@@ -3,6 +3,7 @@ package org.coteis.service.article;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.coteis.domain.article.Article;
+import org.coteis.domain.user.User;
 import org.coteis.dto.article.AddArticleRequest;
 import org.coteis.dto.article.UpdateArticleRequest;
 import org.coteis.repository.article.ArticleRepository;
@@ -24,6 +25,11 @@ public class ArticleService {
     // read
     public List<Article> findAll() {
         return articleRepository.findAll();
+    }
+
+    public Article findById(Long id) {
+        return articleRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("not found: " + id));
     }
 
     // delete

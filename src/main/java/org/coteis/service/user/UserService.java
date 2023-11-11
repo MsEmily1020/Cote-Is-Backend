@@ -6,7 +6,6 @@ import org.coteis.domain.user.User;
 import org.coteis.dto.user.AddUserRequest;
 import org.coteis.dto.user.UpdateUserRequest;
 import org.coteis.dto.user.UserLoginRequest;
-import org.coteis.dto.user.UserResponse;
 import org.coteis.repository.user.UserRepository;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +25,11 @@ public class UserService {
 
     public User findLoginUser(UserLoginRequest request) {
         return userRepository.findByUserIdAndUserPw(request.getUserId(), request.getUserPw());
+    }
+
+    public User findById(long id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("not found: " + id));
     }
 
     // delete

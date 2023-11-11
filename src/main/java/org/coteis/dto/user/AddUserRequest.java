@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.coteis.domain.user.User;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,13 +16,11 @@ public class AddUserRequest {
     private String userPw;
     private String userEmail;
 
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
-
-    public User toEntity(){
+    public User toEntity() {
         return User.builder()
                 .userName(userName)
                 .userId(userId)
-                .userPw(bCryptPasswordEncoder.encode(userPw))
+                .userPw(userPw)
                 .userEmail(userEmail)
                 .build();
     }
