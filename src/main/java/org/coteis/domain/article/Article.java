@@ -5,17 +5,17 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.coteis.domain.BaseTimeEntity;
 import org.coteis.domain.category.Algorithm;
 import org.coteis.domain.category.Difficulty;
 import org.coteis.domain.category.Language;
 import org.coteis.domain.category.Previoustest;
 import org.coteis.domain.user.User;
 
-
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Article {
+public class Article extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,9 +24,6 @@ public class Article {
 
     @Column(name = "title", nullable = false)   // 제목
     private String title;
-
-    @Column(name = "date", nullable = false)  // 게시 날짜
-    private String date;
 
     @Column(name = "test_explain", nullable = false)    // 문제 설명
     private String testExplain;
@@ -70,10 +67,9 @@ public class Article {
     private Previoustest previoustestNo;
 
     @Builder
-    public Article(String title, String date, String testExplain, String answer, String inputExample, String outputExample, String speed, String codeExplain, String concept,
+    public Article(String title, String testExplain, String answer, String inputExample, String outputExample, String speed, String codeExplain, String concept,
                    User userNo, Algorithm algorithmNo, Difficulty difficultyNo, Language languageNo, Previoustest previoustestNo) {
         this.title = title;
-        this.date = date;
         this.testExplain = testExplain;
         this.answer = answer;
         this.inputExample = inputExample;
@@ -89,7 +85,6 @@ public class Article {
     }
 
     public void update(String title,
-                       String date,
                        String testExplain,
                        String answer,
                        String inputExample,
@@ -103,7 +98,6 @@ public class Article {
                        Previoustest previoustestNo) {
 
         this.title = title;
-        this.date = date;
         this.testExplain = testExplain;
         this.answer = answer;
         this.inputExample = inputExample;
