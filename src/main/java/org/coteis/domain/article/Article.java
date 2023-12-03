@@ -9,6 +9,7 @@ import org.coteis.domain.category.Algorithm;
 import org.coteis.domain.category.Difficulty;
 import org.coteis.domain.category.Language;
 import org.coteis.domain.category.Previoustest;
+import org.coteis.domain.user.User;
 
 
 @Entity
@@ -23,9 +24,6 @@ public class Article {
 
     @Column(name = "title", nullable = false)   // 제목
     private String title;
-
-    @Column(name = "author", nullable = false)  // 작성자
-    private String author;
 
     @Column(name = "date", nullable = false)  // 게시 날짜
     private String date;
@@ -52,6 +50,10 @@ public class Article {
     private String concept;
 
     @ManyToOne
+    @JoinColumn(name = "user_no")
+    private User userNo;
+
+    @ManyToOne
     @JoinColumn(name = "algorithm_no")
     private Algorithm algorithmNo;
 
@@ -68,10 +70,9 @@ public class Article {
     private Previoustest previoustestNo;
 
     @Builder
-    public Article(String title, String author, String date, String testExplain, String answer, String inputExample, String outputExample, String speed, String codeExplain, String concept,
-                   Algorithm algorithmNo, Difficulty difficultyNo, Language languageNo, Previoustest previoustestNo) {
+    public Article(String title, String date, String testExplain, String answer, String inputExample, String outputExample, String speed, String codeExplain, String concept,
+                   User userNo, Algorithm algorithmNo, Difficulty difficultyNo, Language languageNo, Previoustest previoustestNo) {
         this.title = title;
-        this.author = author;
         this.date = date;
         this.testExplain = testExplain;
         this.answer = answer;
@@ -80,6 +81,7 @@ public class Article {
         this.speed = speed;
         this.codeExplain = codeExplain;
         this.concept = concept;
+        this.userNo = userNo;
         this.algorithmNo = algorithmNo;
         this.difficultyNo = difficultyNo;
         this.languageNo = languageNo;
@@ -87,7 +89,6 @@ public class Article {
     }
 
     public void update(String title,
-                       String author,
                        String date,
                        String testExplain,
                        String answer,
@@ -102,7 +103,6 @@ public class Article {
                        Previoustest previoustestNo) {
 
         this.title = title;
-        this.author = author;
         this.date = date;
         this.testExplain = testExplain;
         this.answer = answer;
@@ -116,5 +116,4 @@ public class Article {
         this.languageNo = languageNo;
         this.previoustestNo = previoustestNo;
     }
-
 }

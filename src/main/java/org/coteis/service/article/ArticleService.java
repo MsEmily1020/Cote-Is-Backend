@@ -41,8 +41,8 @@ public class ArticleService {
         Article article = articleRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("not found: " + id));
 
-        article.update(request.getTitle(),
-                request.getAuthor(),
+        article.update(
+                request.getTitle(),
                 request.getDate(),
                 request.getTestExplain(),
                 request.getAnswer(),

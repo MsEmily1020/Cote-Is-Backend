@@ -13,7 +13,6 @@ import org.coteis.domain.category.Previoustest;
 @Getter
 public class UpdateArticleRequest {
     private String title;
-    private String author;
     private String date;
     private String testExplain;
     private String answer;
