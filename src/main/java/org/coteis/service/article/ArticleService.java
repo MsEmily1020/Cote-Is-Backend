@@ -10,6 +10,7 @@ import org.coteis.repository.article.ArticleRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @RequiredArgsConstructor
 @Service
@@ -30,6 +31,10 @@ public class ArticleService {
     public Article findById(Long id) {
         return articleRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("not found: " + id));
+    }
+
+    public List<Article> findAllByUserNo(User userNo) {
+        return articleRepository.findAllByUserNo(userNo);
     }
 
     // delete
