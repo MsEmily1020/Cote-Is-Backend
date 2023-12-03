@@ -5,38 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/article/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/article/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/category/AlgorithmController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/category/AlgorithmController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/category/DifficultyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/category/DifficultyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/category/LanguageApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/category/LanguageApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/category/PreviousetestApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/category/PreviousetestApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/user/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/user/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/user/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/user/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/dto/user/AddUserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/dto/user/AddUserRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/repository/user/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/repository/user/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/article/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/article/ArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/category/AlgorithmService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/category/AlgorithmService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/category/DifficultyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/category/DifficultyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/category/LanguageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/category/LanguageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/category/PrevioustestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/category/PrevioustestService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/service/user/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/Cote_Is-1.0-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Cote_Is-1.0-plain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/Cote_Is-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Cote_Is-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/user/UserLoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/user/UserLoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/repository/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/repository/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article$ArticleBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article$ArticleBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/AddArticleRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/AddArticleRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/ArticleResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/ArticleResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/UpdateArticleRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/UpdateArticleRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/service/article/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/service/article/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/article/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/article/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/AddArticleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/AddArticleRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/ArticleResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/ArticleResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/UpdateArticleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/UpdateArticleRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/article/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/article/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,18 +71,18 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/private/Cote-Is-Backend&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/private/Cote_Is_Backend",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.CoteisApplication">
     <configuration name="CoteisApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.coteis.CoteisApplication" />
