@@ -8,14 +8,14 @@ import org.coteis.domain.category.Language;
 import org.coteis.domain.category.Previoustest;
 import org.coteis.domain.user.User;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Getter
 public class ArticleResponse {
 
     private final Long articleNo;
     private final String title;
-    private final String date;
+    private final LocalDateTime createdDate;
     private final String testExplain;
     private final String answer;
     private final String inputExample;
@@ -32,7 +32,7 @@ public class ArticleResponse {
     public ArticleResponse(Article article){
         this.articleNo = article.getArticleNo();
         this.title = article.getTitle();
-        this.date = article.getDate();
+        this.createdDate = article.getCreatedDate();
         this.testExplain = article.getTestExplain();
         this.answer = article.getAnswer();
         this.inputExample = article.getInputExample();

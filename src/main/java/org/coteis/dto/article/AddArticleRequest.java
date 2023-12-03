@@ -15,7 +15,6 @@ import org.coteis.domain.user.User;
 @Getter
 public class AddArticleRequest {
     private String title;
-    private String date;
     private String testExplain;
     private String answer;
     private String inputExample;
@@ -32,7 +31,6 @@ public class AddArticleRequest {
     public Article toEntity(){
         return Article.builder()
                 .title(title)
-                .date(date)
                 .testExplain(testExplain)
                 .answer(answer)
                 .inputExample(inputExample)

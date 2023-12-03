@@ -43,7 +43,6 @@ public class ArticleService {
 
         article.update(
                 request.getTitle(),
-                request.getDate(),
                 request.getTestExplain(),
                 request.getAnswer(),
                 request.getInputExample(),
