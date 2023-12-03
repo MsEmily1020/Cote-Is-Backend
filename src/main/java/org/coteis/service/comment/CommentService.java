@@ -20,6 +20,10 @@ public class CommentService {
 
     public List<Comment> findAll() { return commentRepository.findAll(); }
 
+    public List<Comment> findAllByArticleNo(Article articleNo) {
+        return commentRepository.findAllByArticleNo(articleNo);
+    }
+
     public void delete(Long id) { commentRepository.deleteById(id); }
 
     @Transactional

@@ -1,6 +1,7 @@
 package org.coteis.controller.comment;
 
 import lombok.RequiredArgsConstructor;
+import org.coteis.domain.article.Article;
 import org.coteis.domain.comment.Comment;
 import org.coteis.dto.comment.AddCommentRequest;
 import org.coteis.dto.comment.CommentResponse;
@@ -27,6 +28,16 @@ public class CommentController {
     @GetMapping("/api/comments")
     public ResponseEntity<List<CommentResponse>> findAllComments() {
         List<CommentResponse> comments = commentService.findAll()
+                .stream()
+                .map(CommentResponse::new)
+                .toList();
+
+        return ResponseEntity.ok().body(comments);
+    }
+
+    @GetMapping("/api/comments/{articleNo}")
+    public ResponseEntity<List<CommentResponse>> findAllByArticleNo(@PathVariable Article articleNo) {
+        List<CommentResponse> comments = commentService.findAllByArticleNo(articleNo)
                 .stream()
                 .map(CommentResponse::new)
                 .toList();
