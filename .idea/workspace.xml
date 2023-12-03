@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/comment/CommentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/comment/UpdateCommentRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
