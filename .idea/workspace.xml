@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/comment/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/comment/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/repository/comment/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/repository/comment/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/comment/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/comment/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/BaseTimeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/BaseTimeEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

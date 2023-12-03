@@ -42,3 +42,9 @@ INSERT INTO article (title, created_date, test_explain, answer, input_example, o
 INSERT INTO article (title, created_date, test_explain, answer, input_example, output_example, speed, code_explain, concept, user_no, algorithm_no, difficulty_no, language_no, previoustest_no) VALUES ('제목3', '2014-04-01 10:59:21', '테스트 설명3', '정답3', 'input3', 'output3', '24ms', '코드 설명3', '컨셉3', 3, 1, 3, 1, 1);
 INSERT INTO article (title, created_date, test_explain, answer, input_example, output_example, speed, code_explain, concept, user_no, algorithm_no, difficulty_no, language_no, previoustest_no) VALUES ('제목4', '2016-06-16 06:19:43', '테스트 설명4', '정답4', 'input4', 'output4', '26ms', '코드 설명4', '컨셉4', 4, 1, 2, 4, 1);
 INSERT INTO article (title, created_date, test_explain, answer, input_example, output_example, speed, code_explain, concept, user_no, algorithm_no, difficulty_no, language_no, previoustest_no) VALUES ('제목5', '2023-09-28 15:01:15', '테스트 설명5', '정답5', 'input5', 'output5', '28ms', '코드 설명5', '컨셉5', 1, 1, 3, 1, 2);
+
+INSERT INTO comment (content, created_date, user_no, article_no) VALUES ('내용1', '2023-11-28 05:01:30', 1, 1);
+INSERT INTO comment (content, created_date, user_no, article_no) VALUES ('내용2', '2023-11-30 19:30:10', 1, 1);
+INSERT INTO comment (content, created_date, user_no, article_no) VALUES ('내용3', '2023-05-18 07:03:12', 1, 1);
+INSERT INTO comment (content, created_date, user_no, article_no) VALUES ('내용4', '2023-12-01 09:05:15', 1, 1);
+INSERT INTO comment (content, created_date, user_no, article_no) VALUES ('내용5', '2023-03-11 12:10:32', 1, 1);
