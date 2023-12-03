@@ -2,6 +2,7 @@ package org.coteis.controller.article;
 
 import lombok.RequiredArgsConstructor;
 import org.coteis.domain.article.Article;
+import org.coteis.domain.user.User;
 import org.coteis.dto.article.AddArticleRequest;
 import org.coteis.dto.article.ArticleResponse;
 import org.coteis.dto.article.UpdateArticleRequest;
@@ -41,6 +42,16 @@ public class ArticleController {
 
         return ResponseEntity.ok()
                 .body(new ArticleResponse(article));
+    }
+
+    @GetMapping("/users/{userNo}/articles")
+    public ResponseEntity<List<ArticleResponse>> findAllByUserNoArticles(@PathVariable User userNo) {
+        List<ArticleResponse> articles = articleService.findAllByUserNo(userNo)
+                .stream()
+                .map(ArticleResponse::new)
+                .toList();
+
+        return ResponseEntity.ok().body(articles);
     }
 
     @PutMapping("/api/articles/{id}")

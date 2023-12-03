@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/BaseTimeEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article$ArticleBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article$ArticleBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/article/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/AddArticleRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/AddArticleRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/ArticleResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/ArticleResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/service/article/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/service/article/ArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/CoteisApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/CoteisApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/article/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/article/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/AddArticleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/AddArticleRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/ArticleResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/ArticleResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/controller/article/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/controller/article/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/repository/article/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/repository/article/ArticleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/service/article/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/service/article/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
