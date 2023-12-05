@@ -25,25 +25,25 @@ public class Article extends BaseTimeEntity {
     @Column(name = "title", nullable = false)   // 제목
     private String title;
 
-    @Column(name = "test_explain", nullable = false)    // 문제 설명
+    @Column(name = "test_explain", nullable = false, columnDefinition = "LONGTEXT")    // 문제 설명
     private String testExplain;
 
-    @Column(name = "answer", nullable = false)  // 코드 해답
+    @Column(name = "answer", nullable = false, columnDefinition = "LONGTEXT")  // 코드 해답
     private String answer;
 
-    @Column(name = "input_example") // 입력 예
+    @Column(name = "input_example", columnDefinition = "LONGTEXT") // 입력 예
     private String inputExample;
 
-    @Column(name = "output_example")    // 출력 예
+    @Column(name = "output_example", columnDefinition = "LONGTEXT")    // 출력 예
     private String outputExample;
 
     @Column(name = "speed") // 최적화,속도
     private String speed;
 
-    @Column(name = "code_explain")  // 코드 설명
+    @Column(name = "code_explain", columnDefinition = "LONGTEXT")  // 코드 설명
     private String codeExplain;
 
-    @Column(name = "concept")   // 개념 정리
+    @Column(name = "concept", columnDefinition = "LONGTEXT")   // 개념 정리
     private String concept;
 
     @ManyToOne
