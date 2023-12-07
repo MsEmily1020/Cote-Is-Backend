@@ -1,0 +1,8 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 98
+
+{"userNo":1,"userName":"황혜경","userId":"hyek","userPw":"hkpw12!!","userEmail":"hhk@mail.com"}
+----

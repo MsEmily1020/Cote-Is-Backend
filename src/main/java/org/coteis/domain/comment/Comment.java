@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 import org.coteis.domain.BaseTimeEntity;
 import org.coteis.domain.article.Article;
 import org.coteis.domain.user.User;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @Getter
@@ -21,10 +23,12 @@ public class Comment extends BaseTimeEntity {
     @Column(name = "content", nullable = false)
     private String content;
 
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @ManyToOne
     @JoinColumn(name = "user_no")
     private User userNo;
 
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @ManyToOne
     @JoinColumn(name = "article_no")
     private Article articleNo;
