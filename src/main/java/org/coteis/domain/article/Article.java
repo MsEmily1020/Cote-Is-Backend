@@ -11,6 +11,8 @@ import org.coteis.domain.category.Difficulty;
 import org.coteis.domain.category.Language;
 import org.coteis.domain.category.Previoustest;
 import org.coteis.domain.user.User;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @Getter
@@ -46,22 +48,28 @@ public class Article extends BaseTimeEntity {
     @Column(name = "concept", columnDefinition = "LONGTEXT")   // 개념 정리
     private String concept;
 
+
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @ManyToOne
     @JoinColumn(name = "user_no")
     private User userNo;
 
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @ManyToOne
     @JoinColumn(name = "algorithm_no")
     private Algorithm algorithmNo;
 
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @ManyToOne
     @JoinColumn(name = "difficulty_no")
     private Difficulty difficultyNo;
 
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @ManyToOne
     @JoinColumn(name = "language_no")
     private Language languageNo;
 
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @ManyToOne
     @JoinColumn(name = "previoustest_no")
     private Previoustest previoustestNo;
