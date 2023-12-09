@@ -1,4 +1,4 @@
-.+/api/users/{id}+
+`Get` /api/users/{id}+
 |===
 |Parameter|Description
 

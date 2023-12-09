@@ -1,4 +1,10 @@
 [source,json,options="nowrap"]
 ----
-{"userNo":1,"userName":"황혜경","userId":"hyek","userPw":"hkpw12!!","userEmail":"hhk@mail.com"}
+{
+  "userNo" : 2,
+  "userName" : "김혜승",
+  "userId" : "hyes",
+  "userPw" : "hspw12!!",
+  "userEmail" : "khs@mail.com"
+}
 ----

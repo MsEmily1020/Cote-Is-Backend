@@ -1,0 +1,9 @@
+[source,json,options="nowrap"]
+----
+{
+  "userName" : "김혜승",
+  "userId" : "hyeseung",
+  "userPw" : "hyeseung!!",
+  "userEmail" : "peace10200khs@gmail.com"
+}
+----

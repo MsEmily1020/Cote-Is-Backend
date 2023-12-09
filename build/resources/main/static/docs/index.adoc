@@ -1,0 +1,49 @@
+= Cote'Is Rest API 명세서
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectnums:
+:sectanchors:
+
+== 유저 목록 조회
+유저 목록을 조회합니다. +
+ +
+
+=== 요청 형식
+include::{snippets}/user-get/http-request.adoc[]
+include::{snippets}/user-get/path-parameters.adoc[]
+
+=== 응답 형식
+include::{snippets}/user-get/http-response.adoc[]
+include::{snippets}/user-get/response-fields.adoc[]
+
+=== Response Body
+include::{snippets}/user-get/response-body.adoc[]
+
+=== Try with curl
+include::{snippets}/user-get/curl-request.adoc[]
+
+++++
+<style>
+
+@font-face {
+  font-family: 'Awesome Font';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto; /* or block, swap, fallback, optional */
+  src: local('Awesome Font'),
+       url('/fonts/awesome-l.woff2') format('woff2'), /* will be preloaded */
+       url('/fonts/awesome-l.woff') format('woff'),
+       url('/fonts/awesome-l.ttf') format('truetype'),
+       url('/fonts/awesome-l.eot') format('embedded-opentype');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+* {
+ font-family: NanumSquareWeb, sans-serif;
+}
+
+</style>
+++++
