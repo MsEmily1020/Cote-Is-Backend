@@ -1,0 +1,10 @@
+[source,json,options="nowrap"]
+----
+{
+  "userNo" : 2,
+  "userName" : "김혜승",
+  "userId" : "hyeseung1",
+  "userPw" : "hyeseung1!!",
+  "userEmail" : "s2224@e-mirim.hs.kr"
+}
+----

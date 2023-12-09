@@ -1,0 +1,20 @@
+|===
+|Path|Type|Description
+
+|userName
+|String
+|유저 이름
+
+|userId
+|String
+|유저 아이디
+
+|userPw
+|String
+|유저 패스워드
+
+|userEmail
+|String
+|유저 이메일
+
+|===

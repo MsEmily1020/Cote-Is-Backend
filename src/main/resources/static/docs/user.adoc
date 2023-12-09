@@ -14,9 +14,9 @@
 === 요청 형식
 include::{snippets}/user-post/http-request.adoc[]
 
-=== Request Bopdy
+=== Request Body
 include::{snippets}/user-post/request-body.adoc[]
-include::{snippets}/user-post/response-fields.adoc[]
+include::{snippets}/user-post/request-fields.adoc[]
 
 === 응답 형식
 include::{snippets}/user-post/http-response.adoc[]
@@ -63,6 +63,28 @@ include::{snippets}/user-get/response-body.adoc[]
 
 === Try with curl
 include::{snippets}/user-get/curl-request.adoc[]
+
+== *특정 사용자 정보 업데이트 (User Put API)*
+특정 사용자의 정보를 업데이트합니다. +
+ +
+
+=== 요청 형식
+include::{snippets}/user-put/http-request.adoc[]
+include::{snippets}/user-put/path-parameters.adoc[]
+
+=== Request Body
+include::{snippets}/user-put/request-body.adoc[]
+include::{snippets}/user-put/request-fields.adoc[]
+
+=== 응답 형식
+include::{snippets}/user-put/http-response.adoc[]
+include::{snippets}/user-put/response-fields.adoc[]
+
+=== Response Body
+include::{snippets}/user-put/response-body.adoc[]
+
+=== Try with curl
+include::{snippets}/user-put/curl-request.adoc[]
 
 == *특정 사용자 삭제 (User Delete API)*
 특정 사용자를 삭제합니다. +

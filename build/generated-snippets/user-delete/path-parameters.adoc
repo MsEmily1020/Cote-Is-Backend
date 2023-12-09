@@ -1,4 +1,4 @@
-.+/api/users/{id}+
+`Delete` /api/users/{id}+
 |===
 |Parameter|Description
 

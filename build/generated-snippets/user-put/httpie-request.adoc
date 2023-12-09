@@ -1,0 +1,10 @@
+[source,bash]
+----
+$ echo '{
+  "userName" : "김혜승",
+  "userId" : "hyeseung1",
+  "userPw" : "hyeseung1!!",
+  "userEmail" : "s2224@e-mirim.hs.kr"
+}' | http PUT 'http://localhost:8080/api/users/2' \
+    'Content-Type:application/json;charset=UTF-8'
+----

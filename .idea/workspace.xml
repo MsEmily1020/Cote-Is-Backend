@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/user/UserControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/user/UserControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/user.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/user.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,29 +92,7 @@
       <recent name="org.coteis.controller.article" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest.deleteUser">
-    <configuration name="Cote_Is_Backend [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserControllerTest.updateUser">
     <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
@@ -177,6 +156,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserControllerTest.updateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cote_Is.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.coteis.controller.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.coteis.controller.user" />
+      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.user.UserControllerTest" />
+      <option name="METHOD_NAME" value="updateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoteisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Cote_Is.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.coteis.CoteisApplication" />
@@ -186,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllerTest.updateUser" />
         <item itemvalue="JUnit.UserControllerTest.deleteUser" />
         <item itemvalue="JUnit.UserControllerTest" />
         <item itemvalue="JUnit.UserControllerTest.findAllUsers" />
         <item itemvalue="JUnit.UserControllerTest.addUser" />
-        <item itemvalue="Gradle.Cote_Is_Backend [build]" />
       </list>
     </recent_temporary>
   </component>

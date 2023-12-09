@@ -2,6 +2,7 @@ package org.coteis.controller.user;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.coteis.dto.user.AddUserRequest;
+import org.coteis.dto.user.UpdateUserRequest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +11,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-
-import javax.print.attribute.standard.Media;
 
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.*;
@@ -36,11 +35,7 @@ class UserControllerTest {
     @Test
     @DisplayName("addUser() : 유저 사용자 등록")
     void addUser() throws Exception {
-        AddUserRequest request = new AddUserRequest();
-        request.setUserName("김혜승");
-        request.setUserId("hyeseung");
-        request.setUserPw("hyeseung!!");
-        request.setUserEmail("peace10200khs@gmail.com");
+        AddUserRequest request = new AddUserRequest("김혜승", "hyeseung", "hyeseung!!", "peace10200khs@gmail.com");
 
         mockMvc.perform(
                         post("/api/users")
@@ -111,6 +106,45 @@ class UserControllerTest {
                                 pathParameters( // path 파라미터 정보 입력
                                         parameterWithName("id").description("유저 번호 pk")
                                 ),
+                                responseFields( // response 필드 정보 입력
+                                        fieldWithPath("userNo").description("유저 번호 pk"),
+                                        fieldWithPath("userName").description("유저 이름"),
+                                        fieldWithPath("userId").description("유저 아이디"),
+                                        fieldWithPath("userPw").description("유저 패스워드"),
+                                        fieldWithPath("userEmail").description("유저 이메일")
+                                )
+                        )
+                )
+        ;
+    }
+
+    @Test
+    @DisplayName("updateUser() : 특정 사용자 정보 업데이트")
+    void updateUser() throws Exception {
+        UpdateUserRequest request = new UpdateUserRequest("김혜승", "hyeseung1", "hyeseung1!!", "s2224@e-mirim.hs.kr");
+
+        mockMvc.perform(
+                    put("/api/users/{id}", 2L)
+                                .contentType(MediaType.APPLICATION_JSON)
+                                .content(objectMapper.writeValueAsString(request))
+                )
+                .andExpect(status().isOk())
+                .andDo(print())
+                .andDo( // rest docs 문서 작성 시작
+                        document("user-put", // 문서 조각 디렉토리 명
+                                preprocessRequest(prettyPrint()),
+                                preprocessResponse(prettyPrint()),
+                                pathParameters( // path 파라미터 정보 입력
+                                        parameterWithName("id").description("유저 번호 pk")
+                                ),
+
+                                requestFields(
+                                        fieldWithPath("userName").description("유저 이름"),
+                                        fieldWithPath("userId").description("유저 아이디"),
+                                        fieldWithPath("userPw").description("유저 패스워드"),
+                                        fieldWithPath("userEmail").description("유저 이메일")
+                                ),
+
                                 responseFields( // response 필드 정보 입력
                                         fieldWithPath("userNo").description("유저 번호 pk"),
                                         fieldWithPath("userName").description("유저 이름"),
