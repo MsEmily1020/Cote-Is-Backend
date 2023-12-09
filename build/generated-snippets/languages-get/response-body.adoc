@@ -1,0 +1,28 @@
+[source,json,options="nowrap"]
+----
+[ {
+  "languageNo" : 1,
+  "languageName" : "Java"
+}, {
+  "languageNo" : 2,
+  "languageName" : "JavaScript"
+}, {
+  "languageNo" : 3,
+  "languageName" : "Python"
+}, {
+  "languageNo" : 4,
+  "languageName" : "C"
+}, {
+  "languageNo" : 5,
+  "languageName" : "C++"
+}, {
+  "languageNo" : 6,
+  "languageName" : "C#"
+}, {
+  "languageNo" : 7,
+  "languageName" : "Go"
+}, {
+  "languageNo" : 8,
+  "languageName" : "Kotlin"
+} ]
+----
