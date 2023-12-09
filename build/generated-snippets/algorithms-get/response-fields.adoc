@@ -1,0 +1,12 @@
+|===
+|Path|Type|Description
+
+|algorithmNo
+|Number
+|카테고리 알고리즘 번호 pk
+
+|algorithmName
+|String
+|카테고리 알고리즘 이름
+
+|===

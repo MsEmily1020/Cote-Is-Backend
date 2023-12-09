@@ -16,7 +16,7 @@ public class AlgorithmController {
     private final AlgorithmService algorithmService;
 
     @GetMapping("/api/algorithms")
-    public ResponseEntity<List<AlgorithmResponse>> findAllArticles(){
+    public ResponseEntity<List<AlgorithmResponse>> findAllAlgorithms(){
         List<AlgorithmResponse> algorithms = algorithmService.findAll()
                 .stream()
                 .map(AlgorithmResponse::new)

@@ -1,0 +1,38 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 627
+
+[ {
+  "algorithmNo" : 1,
+  "algorithmName" : "수학"
+}, {
+  "algorithmNo" : 2,
+  "algorithmName" : "구현"
+}, {
+  "algorithmNo" : 3,
+  "algorithmName" : "자료 구조"
+}, {
+  "algorithmNo" : 4,
+  "algorithmName" : "문자열"
+}, {
+  "algorithmNo" : 5,
+  "algorithmName" : "그리드 알고리즘"
+}, {
+  "algorithmNo" : 6,
+  "algorithmName" : "정렬"
+}, {
+  "algorithmNo" : 7,
+  "algorithmName" : "이분 탐색"
+}, {
+  "algorithmNo" : 8,
+  "algorithmName" : "사칙 연산"
+}, {
+  "algorithmNo" : 9,
+  "algorithmName" : "누적 합"
+}, {
+  "algorithmNo" : 10,
+  "algorithmName" : "재귀"
+} ]
+----
