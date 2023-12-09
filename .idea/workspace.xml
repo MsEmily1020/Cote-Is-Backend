@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/comment/Comment$CommentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/comment/Comment$CommentBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/comment/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/domain/comment/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/user/UserControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/user/UserControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/user.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
