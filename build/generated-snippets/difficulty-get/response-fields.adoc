@@ -1,0 +1,12 @@
+|===
+|Path|Type|Description
+
+|difficultyNo
+|Number
+|카테고리 난이도 번호 pk
+
+|difficultyName
+|String
+|카테고리 난이도 이름
+
+|===

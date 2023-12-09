@@ -1,0 +1,7 @@
+[source,json,options="nowrap"]
+----
+{
+  "difficultyNo" : 1,
+  "difficultyName" : "Easy"
+}
+----
