@@ -16,6 +16,8 @@ import static org.springframework.restdocs.operation.preprocess.Preprocessors.*;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.prettyPrint;
 import static org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath;
 import static org.springframework.restdocs.payload.PayloadDocumentation.responseFields;
+import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
+import static org.springframework.restdocs.request.RequestDocumentation.pathParameters;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -48,6 +50,26 @@ class DifficultyControllerTest {
     }
 
     @Test
-    void findDifficulty() {
+    @DisplayName("findDifficulty() : 카테고리 - 특정 난이도 조회")
+    void findDifficulty() throws Exception {
+        mockMvc.perform(
+                        get("/api/difficulties/{id}", 1L)
+                                .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andExpect(status().isOk())
+                .andDo( // rest docs 문서 작성 시작
+                        document("difficulty-get", // 문서 조각 디렉토리 명
+                                preprocessRequest(prettyPrint()),
+                                preprocessResponse(prettyPrint()),
+                                pathParameters( // path 파라미터 정보 입력
+                                        parameterWithName("id").description("카테고리 난이도 번호 pk")
+                                ),
+                                responseFields( // response 필드 정보 입력
+                                        fieldWithPath("difficultyNo").description("카테고리 난이도 번호 pk"),
+                                        fieldWithPath("difficultyName").description("카테고리 난이도 이름")
+                                )
+                        )
+                )
+        ;
     }
 }
