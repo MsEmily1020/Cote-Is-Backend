@@ -16,6 +16,8 @@ import static org.springframework.restdocs.operation.preprocess.Preprocessors.*;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.prettyPrint;
 import static org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath;
 import static org.springframework.restdocs.payload.PayloadDocumentation.responseFields;
+import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
+import static org.springframework.restdocs.request.RequestDocumentation.pathParameters;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -48,6 +50,26 @@ class PreviousetestApiControllerTest {
     }
 
     @Test
-    void findPrevioustest() {
+    @DisplayName("findPrevioustest() : 카테고리 - 특정 기출 문제 조회")
+    void findPrevioustest() throws Exception {
+        mockMvc.perform(
+                        get("/api/previoustests/{id}", 1L)
+                                .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andExpect(status().isOk())
+                .andDo( // rest docs 문서 작성 시작
+                        document("previoustest-get", // 문서 조각 디렉토리 명
+                                preprocessRequest(prettyPrint()),
+                                preprocessResponse(prettyPrint()),
+                                pathParameters( // path 파라미터 정보 입력
+                                        parameterWithName("id").description("카테고리 기출 문제 번호 pk")
+                                ),
+                                responseFields( // response 필드 정보 입력
+                                        fieldWithPath("previoustestNo").description("카테고리 기출 문제 번호 pk"),
+                                        fieldWithPath("previoustestName").description("카테고리 기출 문제 이름")
+                                )
+                        )
+                )
+        ;
     }
 }
