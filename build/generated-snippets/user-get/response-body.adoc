@@ -1,10 +1,10 @@
 [source,json,options="nowrap"]
 ----
 {
-  "userNo": 2,
-  "userName": "김혜승",
-  "userId": "hyes",
-  "userPw": "hspw12!!",
-  "userEmail": "khs@mail.com"
+  "userNo" : 2,
+  "userName" : "김혜승",
+  "userId" : "hyes",
+  "userPw" : "hspw12!!",
+  "userEmail" : "khs@mail.com"
 }
 ----

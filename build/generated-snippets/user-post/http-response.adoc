@@ -2,13 +2,13 @@
 ----
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 115
+Content-Length: 147
 
 {
-    "userNo": 5,
-    "userName": "김혜승",
-    "userId": "hyeseung",
-    "userPw": "hyeseung!!",
-    "userEmail": "peace10200khs@gmail.com"
+  "userNo" : 5,
+  "userName" : "김혜승",
+  "userId" : "hyeseung",
+  "userPw" : "hyeseung!!",
+  "userEmail" : "peace10200khs@gmail.com"
 }
 ----

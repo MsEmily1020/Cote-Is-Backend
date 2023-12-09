@@ -2,13 +2,13 @@
 ----
 POST /api/users HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-Content-Length: 104
+Content-Length: 130
 Host: localhost:8080
 
 {
-    "userName": "김혜승",
-    "userId": "hyeseung",
-    "userPw": "hyeseung!!",
-    "userEmail": "peace10200khs@gmail.com"
+  "userName" : "김혜승",
+  "userId" : "hyeseung",
+  "userPw" : "hyeseung!!",
+  "userEmail" : "peace10200khs@gmail.com"
 }
 ----

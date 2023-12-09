@@ -2,13 +2,13 @@
 ----
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 107
+Content-Length: 130
 
 {
-    "userNo": 2,
-    "userName": "김혜승",
-    "userId": "hyes",
-    "userPw": "hspw12!!",
-    "userEmail": "khs@mail.com"
+  "userNo" : 2,
+  "userName" : "김혜승",
+  "userId" : "hyes",
+  "userPw" : "hspw12!!",
+  "userEmail" : "khs@mail.com"
 }
 ----

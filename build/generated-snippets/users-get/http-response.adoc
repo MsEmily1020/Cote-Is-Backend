@@ -1,0 +1,38 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 679
+
+[ {
+  "userNo" : 1,
+  "userName" : "황혜경",
+  "userId" : "hyek",
+  "userPw" : "hkpw12!!",
+  "userEmail" : "hhk@mail.com"
+}, {
+  "userNo" : 2,
+  "userName" : "김혜승",
+  "userId" : "hyes",
+  "userPw" : "hspw12!!",
+  "userEmail" : "khs@mail.com"
+}, {
+  "userNo" : 3,
+  "userName" : "김하은",
+  "userId" : "haeun",
+  "userPw" : "hepw12!!",
+  "userEmail" : "khe@mail.com"
+}, {
+  "userNo" : 4,
+  "userName" : "김수연",
+  "userId" : "suy",
+  "userPw" : "supw12!!",
+  "userEmail" : "ksy@mail.com"
+}, {
+  "userNo" : 5,
+  "userName" : "김혜승",
+  "userId" : "hyeseung",
+  "userPw" : "hyeseung!!",
+  "userEmail" : "peace10200khs@gmail.com"
+} ]
+----

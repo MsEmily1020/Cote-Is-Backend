@@ -2,5 +2,10 @@
 ----
 $ curl 'http://localhost:8080/api/users' -i -X POST \
     -H 'Content-Type: application/json;charset=UTF-8' \
-    -d '{"userName":"김혜승","userId":"hyeseung","userPw":"hyeseung!!","userEmail":"peace10200khs@gmail.com"}'
+    -d '{
+  "userName" : "김혜승",
+  "userId" : "hyeseung",
+  "userPw" : "hyeseung!!",
+  "userEmail" : "peace10200khs@gmail.com"
+}'
 ----

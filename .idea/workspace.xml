@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/request-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/request-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/index.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/user/UserControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/user/UserControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/user.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/user.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +51,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Empty" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -87,7 +102,7 @@
       <recent name="org.coteis.controller.article" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest.addUser">
+  <component name="RunManager" selected="JUnit.UserControllerTest">
     <configuration name="CoteisApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.coteis.CoteisApplication" />
       <module name="Cote_Is.main" />
@@ -154,7 +169,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.findUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerTest.findAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
         <pattern>
@@ -164,7 +179,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.coteis.controller.user" />
       <option name="MAIN_CLASS_NAME" value="org.coteis.controller.user.UserControllerTest" />
-      <option name="METHOD_NAME" value="findUser" />
+      <option name="METHOD_NAME" value="findAllUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.UserControllerTest.findAllUsers" />
         <item itemvalue="JUnit.UserControllerTest.addUser" />
         <item itemvalue="Gradle.Cote_Is_Backend [build]" />
         <item itemvalue="Application.CoteisApplication" />
-        <item itemvalue="JUnit.UserControllerTest" />
-        <item itemvalue="JUnit.UserControllerTest.findUser" />
       </list>
     </recent_temporary>
   </component>
