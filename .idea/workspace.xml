@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/docs/difficulty/difficulty.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/category/DifficultyControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/user.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/category/AlgorithmControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/category/AlgorithmControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/category/AlgorithmControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/category/AlgorithmControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/algorithm/algorithm.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/algorithm/algorithm.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/algorithm/algorithm.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/algorithm/algorithm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,7 @@
       <recent name="org.coteis.controller.article" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AlgorithmControllerTest.findAlgorithm">
+  <component name="RunManager" selected="JUnit.DifficultyControllerTest.findAllDifficulties">
     <configuration name="AlgorithmControllerTest.findAlgorithm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
@@ -127,17 +127,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DifficultyControllerTest.findAllDifficulties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.coteis.controller.user.*" />
+          <option name="PATTERN" value="org.coteis.controller.category.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.coteis.controller.user" />
-      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.user.UserControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="org.coteis.controller.category" />
+      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.category.DifficultyControllerTest" />
+      <option name="METHOD_NAME" value="findAllDifficulties" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -183,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DifficultyControllerTest.findAllDifficulties" />
         <item itemvalue="JUnit.AlgorithmControllerTest.findAlgorithm" />
         <item itemvalue="JUnit.AlgorithmControllerTest.findAllAlgorithms" />
         <item itemvalue="JUnit.UserControllerTest.updateUser" />
         <item itemvalue="JUnit.UserControllerTest.deleteUser" />
-        <item itemvalue="JUnit.UserControllerTest" />
       </list>
     </recent_temporary>
   </component>
