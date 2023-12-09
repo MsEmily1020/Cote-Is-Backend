@@ -1,0 +1,5 @@
+[source,bash]
+----
+$ echo '{"userName":"김혜승","userId":"hyeseung","userPw":"hyeseung!!","userEmail":"peace10200khs@gmail.com"}' | http POST 'http://localhost:8080/api/users' \
+    'Content-Type:application/json;charset=UTF-8'
+----

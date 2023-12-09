@@ -10,11 +10,11 @@
 [User ApI]
 = User API
 
-== 유저 사용자 등록 (User Register API)
+== 유저 사용자 등록 (User Post API)
 유저 사용자를 등록합니다. +
  +
 
-== 유저 목록 조회 (User API)
+== 유저 목록 조회 (User Get API)
 유저 목록을 조회합니다. +
  +
 
