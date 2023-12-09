@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/user.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/user.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/user/UserControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/user/UserControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/user.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/user.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/user.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/category/AlgorithmControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/category/AlgorithmControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/category/AlgorithmControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/category/AlgorithmControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +40,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Empty" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -87,12 +85,48 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\private\Cote_Is_Backend\src\main\resources\static\docs\user" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.coteis.controller.category" />
       <recent name="org.coteis.controller.user" />
       <recent name="org.coteis.controller.article" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest.updateUser">
+  <component name="RunManager" selected="JUnit.AlgorithmControllerTest.findAlgorithm">
+    <configuration name="AlgorithmControllerTest.findAlgorithm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cote_Is.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.coteis.controller.category.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.coteis.controller.category" />
+      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.category.AlgorithmControllerTest" />
+      <option name="METHOD_NAME" value="findAlgorithm" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlgorithmControllerTest.findAllAlgorithms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cote_Is.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.coteis.controller.category.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.coteis.controller.category" />
+      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.category.AlgorithmControllerTest" />
+      <option name="METHOD_NAME" value="findAllAlgorithms" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
@@ -108,22 +142,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cote_Is.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.coteis.controller.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.coteis.controller.user" />
-      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.user.UserControllerTest" />
-      <option name="METHOD_NAME" value="addUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserControllerTest.deleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
@@ -135,22 +153,6 @@
       <option name="PACKAGE_NAME" value="org.coteis.controller.user" />
       <option name="MAIN_CLASS_NAME" value="org.coteis.controller.user.UserControllerTest" />
       <option name="METHOD_NAME" value="deleteUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.findAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cote_Is.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.coteis.controller.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.coteis.controller.user" />
-      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.user.UserControllerTest" />
-      <option name="METHOD_NAME" value="findAllUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AlgorithmControllerTest.findAlgorithm" />
+        <item itemvalue="JUnit.AlgorithmControllerTest.findAllAlgorithms" />
         <item itemvalue="JUnit.UserControllerTest.updateUser" />
         <item itemvalue="JUnit.UserControllerTest.deleteUser" />
         <item itemvalue="JUnit.UserControllerTest" />
-        <item itemvalue="JUnit.UserControllerTest.findAllUsers" />
-        <item itemvalue="JUnit.UserControllerTest.addUser" />
       </list>
     </recent_temporary>
   </component>
