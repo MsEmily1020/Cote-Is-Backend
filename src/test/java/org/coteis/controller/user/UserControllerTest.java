@@ -11,9 +11,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
+import javax.print.attribute.standard.Media;
+
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
-import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.get;
-import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.post;
+import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.*;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.*;
 import static org.springframework.restdocs.payload.PayloadDocumentation.*;
 import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
@@ -117,6 +118,27 @@ class UserControllerTest {
                                         fieldWithPath("userPw").description("유저 패스워드"),
                                         fieldWithPath("userEmail").description("유저 이메일")
                                 )
+                        )
+                )
+        ;
+    }
+
+    @Test
+    @DisplayName("deleteUser() : 특정 사용자 삭제")
+    void deleteUser() throws Exception {
+        mockMvc.perform(
+                        delete("/api/users/{id}", 2L)
+                                .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andExpect(status().isOk())
+                .andDo(
+                        document("user-delete",
+                                preprocessRequest(prettyPrint()),
+                                preprocessResponse(prettyPrint()),
+                                pathParameters( // path 파라미터 정보 입력
+                                        parameterWithName("id").description("유저 번호 pk")
+                                )
+
                         )
                 )
         ;

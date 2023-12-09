@@ -578,6 +578,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_try_with_curl_3">3.4. Try with curl</a></li>
 </ul>
 </li>
+<li><a href="#_특정_사용자_삭제_user_delete_api">4. <strong>특정 사용자 삭제 (User Delete API)</strong></a>
+<ul class="sectlevel2">
+<li><a href="#_요청_형식_4">4.1. 요청 형식</a></li>
+<li><a href="#_try_with_curl_4">4.2. Try with curl</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -1017,6 +1023,53 @@ Content-Length: 130
     -H 'Content-Type: application/json;charset=UTF-8'</code></pre>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_특정_사용자_삭제_user_delete_api"><a class="anchor" href="#_특정_사용자_삭제_user_delete_api"></a>4. <strong>특정 사용자 삭제 (User Delete API)</strong></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>특정 사용자를 삭제합니다.<br>
+<br></p>
+</div>
+<div class="sect2">
+<h3 id="_요청_형식_4"><a class="anchor" href="#_요청_형식_4"></a>4.1. 요청 형식</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">DELETE /api/users/2 HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+Host: localhost:8080</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. /api/users/{id}</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">유저 번호 pk</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_try_with_curl_4"><a class="anchor" href="#_try_with_curl_4"></a>4.2. Try with curl</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/api/users/2' -i -X DELETE \
+    -H 'Content-Type: application/json;charset=UTF-8'</code></pre>
+</div>
+</div>
 <style>
 
 @font-face {
@@ -1043,7 +1096,7 @@ Content-Length: 130
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-12-09 20:00:14 +0900
+Last updated 2023-12-09 20:06:45 +0900
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>

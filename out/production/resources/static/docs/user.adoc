@@ -28,6 +28,23 @@ include::{snippets}/user-post/response-body.adoc[]
 === Try with curl
 include::{snippets}/user-post/curl-request.adoc[]
 
+== *유저 목록 조회 (Users Get API)*
+유저 목록을 조회합니다. +
+ +
+
+=== 요청 형식
+include::{snippets}/users-get/http-request.adoc[]
+
+=== 응답 형식
+include::{snippets}/users-get/http-response.adoc[]
+include::{snippets}/users-get/response-fields.adoc[]
+
+=== Response Body
+include::{snippets}/users-get/response-body.adoc[]
+
+=== Try with curl
+include::{snippets}/users-get/curl-request.adoc[]
+
 
 == *특정 사용자 조회 (User Get API)*
 특정 사용자를 조회합니다. +
