@@ -24,3 +24,22 @@ include::{snippets}/languages-get/response-body.adoc[]
 === Try with curl
 include::{snippets}/languages-get/curl-request.adoc[]
 
+
+== *특정 언어 조회 (Language Get API)*
+특정 언어를 조회합니다. +
++
+
+=== 요청 형식
+include::{snippets}/language-get/http-request.adoc[]
+include::{snippets}/language-get/path-parameters.adoc[]
+
+=== 응답 형식
+include::{snippets}/language-get/http-response.adoc[]
+include::{snippets}/language-get/response-fields.adoc[]
+
+=== Response Body
+include::{snippets}/language-get/response-body.adoc[]
+
+=== Try with curl
+include::{snippets}/language-get/curl-request.adoc[]
+

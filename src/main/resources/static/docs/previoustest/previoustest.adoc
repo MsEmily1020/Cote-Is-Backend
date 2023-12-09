@@ -1,0 +1,25 @@
+= PreviousTest API
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectnums:
+:sectanchors:
+
+== *기출 문제 목록 조회 (PreviousTests Get API)*
+기출 문제 목록을 조회합니다. +
+ +
+
+=== 요청 형식
+include::{snippets}/previoustests-get/http-request.adoc[]
+
+=== 응답 형식
+include::{snippets}/previoustests-get/http-response.adoc[]
+include::{snippets}/previoustests-get/response-fields.adoc[]
+
+=== Response Body
+include::{snippets}/previoustests-get/response-body.adoc[]
+
+=== Try with curl
+include::{snippets}/previoustests-get/curl-request.adoc[]

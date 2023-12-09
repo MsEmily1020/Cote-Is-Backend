@@ -1,0 +1,12 @@
+|===
+|Path|Type|Description
+
+|previoustestNo
+|Number
+|카테고리 기출 문제 번호 pk
+
+|previoustestName
+|String
+|카테고리 기출 문제 이름
+
+|===
