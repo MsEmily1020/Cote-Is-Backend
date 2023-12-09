@@ -26,19 +26,19 @@ include::{snippets}/difficulties-get/curl-request.adoc[]
 
 == *특정 난이도 조회 (Difficulty Get API)*
 특정 난이도를 조회합니다. +
-+
+ +
 
 === 요청 형식
-include::{snippets}/difficult-get/http-request.adoc[]
-include::{snippets}/algorithm-get/path-parameters.adoc[]
+include::{snippets}/difficulty-get/http-request.adoc[]
+include::{snippets}/difficulty-get/path-parameters.adoc[]
 
 === 응답 형식
-include::{snippets}/algorithm-get/http-response.adoc[]
-include::{snippets}/algorithm-get/response-fields.adoc[]
+include::{snippets}/difficulty-get/http-response.adoc[]
+include::{snippets}/difficulty-get/response-fields.adoc[]
 
 === Response Body
-include::{snippets}/algorithm-get/response-body.adoc[]
+include::{snippets}/difficulty-get/response-body.adoc[]
 
 === Try with curl
-include::{snippets}/algorithm-get/curl-request.adoc[]
+include::{snippets}/difficulty-get/curl-request.adoc[]
 
