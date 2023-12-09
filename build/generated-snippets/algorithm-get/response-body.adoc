@@ -1,0 +1,7 @@
+[source,json,options="nowrap"]
+----
+{
+  "algorithmNo" : 1,
+  "algorithmName" : "수학"
+}
+----
