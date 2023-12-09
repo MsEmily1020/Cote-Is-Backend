@@ -1,0 +1,28 @@
+[source,json,options="nowrap"]
+----
+[ {
+  "previoustestNo" : 1,
+  "previoustestName" : "카카오 신입 공채"
+}, {
+  "previoustestNo" : 2,
+  "previoustestName" : "카카오 인턴십"
+}, {
+  "previoustestNo" : 3,
+  "previoustestName" : "카카오 코드 페스티벌"
+}, {
+  "previoustestNo" : 4,
+  "previoustestName" : "삼성 신입 공채"
+}, {
+  "previoustestNo" : 5,
+  "previoustestName" : "서울대학교 SCSC 프로그래밍 경시대회"
+}, {
+  "previoustestNo" : 6,
+  "previoustestName" : "네이버 코딩 테스트 기출"
+}, {
+  "previoustestNo" : 7,
+  "previoustestName" : "COS pro 2급"
+}, {
+  "previoustestNo" : 8,
+  "previoustestName" : "COS pro 1급"
+} ]
+----
