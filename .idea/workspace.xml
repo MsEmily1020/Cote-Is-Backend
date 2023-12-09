@@ -5,16 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/docs/asciidoc/index.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/docs/index.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/article/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/article/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/comment/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/comment/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/article/Article$ArticleBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/article/Article$ArticleBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/article/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/article/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/comment/Comment$CommentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/comment/Comment$CommentBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/comment/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/comment/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/org/coteis/controller/user/UserControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/org/coteis/controller/user/UserControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/docs/asciidoc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Cote_Is-1.0-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Cote_Is-1.0-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Cote_Is-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Cote_Is-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/org.coteis.controller.user.UserControllerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/org.coteis.controller.user.UserControllerTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/org.coteis.controller.user.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/org.coteis.controller.user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-org.coteis.controller.user.UserControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-org.coteis.controller.user.UserControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/asciidoc/index.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +101,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/private/Cote_Is_Backend",
+    "last_opened_file_path": "C:/private/Cote_Is_Backend/src/main/resources/static/docs",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -84,6 +110,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\private\Cote_Is_Backend\src\main\resources\static\docs" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -92,7 +121,7 @@
       <recent name="org.coteis.controller.article" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CoteisApplication">
+  <component name="RunManager" selected="Gradle.Cote_Is_Backend [build]">
     <configuration name="CoteisApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.coteis.CoteisApplication" />
       <module name="Cote_Is.main" />
@@ -183,9 +212,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Cote_Is_Backend [build]" />
         <item itemvalue="Application.CoteisApplication" />
         <item itemvalue="JUnit.UserControllerTest" />
-        <item itemvalue="Gradle.Cote_Is_Backend [build]" />
         <item itemvalue="JUnit.UserControllerTest.findUser" />
         <item itemvalue="JUnit.ArticleControllerTest" />
       </list>
