@@ -1,0 +1,30 @@
+[source,bash]
+----
+$ echo '{
+  "title" : "title",
+  "testExplain" : "testExplain",
+  "answer" : "answser",
+  "inputExample" : "inputExample",
+  "outputExample" : "outputExample",
+  "speed" : "speed",
+  "codeExplain" : "codeExplain",
+  "concept" : "concept",
+  "algorithmNo" : {
+    "algorithmNo" : null,
+    "algorithmName" : "algorithmName"
+  },
+  "difficultyNo" : {
+    "difficultyNo" : null,
+    "difficultyName" : "difficultyName"
+  },
+  "languageNo" : {
+    "languageNo" : null,
+    "languageName" : "langaugeName"
+  },
+  "previoustestNo" : {
+    "previoustestNo" : null,
+    "previoustestName" : "previoustestName"
+  }
+}' | http PUT 'http://localhost:8080/api/articles/1' \
+    'Content-Type:application/json;charset=UTF-8'
+----

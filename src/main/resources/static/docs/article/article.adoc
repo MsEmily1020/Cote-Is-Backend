@@ -63,3 +63,25 @@ include::{snippets}/article-get/response-body.adoc[]
 
 === Try with curl
 include::{snippets}/article-get/curl-request.adoc[]
+
+== *특정 글 정보 업데이트 (Article Put API)*
+특정 글의 정보를 업데이트합니다. +
+ +
+
+=== 요청 형식
+include::{snippets}/article-put/http-request.adoc[]
+include::{snippets}/article-put/path-parameters.adoc[]
+
+=== Request Body
+include::{snippets}/article-put/request-body.adoc[]
+include::{snippets}/article-put/request-fields.adoc[]
+
+=== 응답 형식
+include::{snippets}/article-put/http-response.adoc[]
+include::{snippets}/article-put/response-fields.adoc[]
+
+=== Response Body
+include::{snippets}/article-put/response-body.adoc[]
+
+=== Try with curl
+include::{snippets}/article-put/curl-request.adoc[]
