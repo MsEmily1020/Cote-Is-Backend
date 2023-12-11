@@ -1,0 +1,16 @@
+|===
+|Path|Type|Description
+
+|content
+|String
+|댓글 내용
+
+|userNo
+|Object
+|유저 번호 pk
+
+|articleNo
+|Object
+|글 번호 pk
+
+|===

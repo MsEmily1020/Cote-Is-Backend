@@ -1,0 +1,56 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 1270
+
+{
+  "createdDate" : "2023-12-11T13:44:17.36609",
+  "modifiedDate" : "2023-12-11T13:44:17.36609",
+  "commentId" : 6,
+  "content" : "comment",
+  "userNo" : {
+    "userNo" : 6,
+    "userName" : "userName",
+    "userId" : "userId1",
+    "userPw" : "userPw",
+    "userEmail" : "uE"
+  },
+  "articleNo" : {
+    "createdDate" : "2023-12-11T13:44:17.4007394",
+    "modifiedDate" : "2023-12-11T13:44:17.4007394",
+    "articleNo" : 6,
+    "title" : "title",
+    "testExplain" : "testExplain",
+    "answer" : "answer",
+    "inputExample" : "inputExample",
+    "outputExample" : "outputExample",
+    "speed" : "speed",
+    "codeExplain" : "codeExplain",
+    "concept" : "concept",
+    "userNo" : {
+      "userNo" : 5,
+      "userName" : "userName",
+      "userId" : "userId",
+      "userPw" : "userPw",
+      "userEmail" : "userEmail"
+    },
+    "algorithmNo" : {
+      "algorithmNo" : 11,
+      "algorithmName" : "algorithmName"
+    },
+    "difficultyNo" : {
+      "difficultyNo" : 5,
+      "difficultyName" : "difficultyName"
+    },
+    "languageNo" : {
+      "languageNo" : 9,
+      "languageName" : "langaugeName"
+    },
+    "previoustestNo" : {
+      "previoustestNo" : 9,
+      "previoustestName" : "previoustestName"
+    }
+  }
+}
+----

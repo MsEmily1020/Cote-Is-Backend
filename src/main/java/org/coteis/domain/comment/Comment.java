@@ -24,12 +24,12 @@ public class Comment extends BaseTimeEntity {
     private String content;
 
     @OnDelete(action = OnDeleteAction.CASCADE)
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_no")
     private User userNo;
 
     @OnDelete(action = OnDeleteAction.CASCADE)
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "article_no")
     private Article articleNo;
 
