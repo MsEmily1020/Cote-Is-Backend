@@ -286,6 +286,22 @@ class CommentControllerTest {
     }
 
     @Test
-    void deleteComment() {
+    @DisplayName("deleteCommnet() : 특정 댓글 삭제")
+    void deleteComment() throws Exception {
+        mockMvc.perform(
+                    delete("/api/comments/{id}", 1L)
+                            .contentType(MediaType.APPLICATION_JSON)
+            )
+            .andExpect(status().isOk())
+            .andDo(
+                    document("comment-delete",
+                            preprocessRequest(prettyPrint()),
+                            preprocessResponse(prettyPrint()),
+                            pathParameters( // path 파라미터 정보 입력
+                                    parameterWithName("id").description("댓글 번호 pk")
+                            )
+                    )
+            )
+    ;
     }
 }

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/comment/comment.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/comment/comment.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/comment/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/comment/comment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/comment/CommentControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/comment/CommentControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/comment/comment.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/comment/comment.adoc" afterDir="false" />
@@ -95,23 +96,7 @@
       <recent name="org.coteis.controller.user" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CommentControllerTest.updateComment">
-    <configuration name="ArticleControllerTest.deleteArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cote_Is.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.coteis.controller.article.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.coteis.controller.article" />
-      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.article.ArticleControllerTest" />
-      <option name="METHOD_NAME" value="deleteArticle" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CommentControllerTest.deleteComment">
     <configuration name="CommentControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
@@ -138,6 +123,22 @@
       <option name="PACKAGE_NAME" value="org.coteis.controller.comment" />
       <option name="MAIN_CLASS_NAME" value="org.coteis.controller.comment.CommentControllerTest" />
       <option name="METHOD_NAME" value="addComment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentControllerTest.deleteComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cote_Is.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.coteis.controller.comment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.coteis.controller.comment" />
+      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.comment.CommentControllerTest" />
+      <option name="METHOD_NAME" value="deleteComment" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentControllerTest.deleteComment" />
         <item itemvalue="JUnit.CommentControllerTest.updateComment" />
         <item itemvalue="JUnit.CommentControllerTest.findAllComments" />
         <item itemvalue="JUnit.CommentControllerTest" />
         <item itemvalue="JUnit.CommentControllerTest.addComment" />
-        <item itemvalue="JUnit.ArticleControllerTest.deleteArticle" />
       </list>
     </recent_temporary>
   </component>

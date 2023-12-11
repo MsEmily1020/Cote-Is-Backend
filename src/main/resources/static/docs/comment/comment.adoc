@@ -66,3 +66,15 @@ include::{snippets}/commnet-put/response-body.adoc[]
 
 === Try with curl
 include::{snippets}/commnet-put/curl-request.adoc[]
+
+== *특정 댓글 삭제 (Comment Delete API)*
+특정 댓글을 삭제합니다. +
+ +
+
+=== 요청 형식
+include::{snippets}/comment-delete/http-request.adoc[]
+include::{snippets}/comment-delete/path-parameters.adoc[]
+
+=== Try with curl
+include::{snippets}/comment-delete/curl-request.adoc[]
+
