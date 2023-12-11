@@ -6,15 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/http-response.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/request-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/request-fields.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/response-body.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/comment/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/comment/comment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/comment/CommentControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/comment/CommentControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/BaseTimeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/comment/CommentResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/comment/CommentResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/comment/comment.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/comment/comment.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/comment/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/comment/comment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/comment/CommentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/comment/CommentControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +95,7 @@
       <recent name="org.coteis.controller.user" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CommentControllerTest.findAllComments">
+  <component name="RunManager" selected="JUnit.CommentControllerTest.updateComment">
     <configuration name="ArticleControllerTest.deleteArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
@@ -113,22 +107,6 @@
       <option name="PACKAGE_NAME" value="org.coteis.controller.article" />
       <option name="MAIN_CLASS_NAME" value="org.coteis.controller.article.ArticleControllerTest" />
       <option name="METHOD_NAME" value="deleteArticle" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArticleControllerTest.updateArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cote_Is.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.coteis.controller.article.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.coteis.controller.article" />
-      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.article.ArticleControllerTest" />
-      <option name="METHOD_NAME" value="updateArticle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,6 +159,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommentControllerTest.updateComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cote_Is.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.coteis.controller.comment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.coteis.controller.comment" />
+      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.comment.CommentControllerTest" />
+      <option name="METHOD_NAME" value="updateComment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoteisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Cote_Is.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.coteis.CoteisApplication" />
@@ -190,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentControllerTest.updateComment" />
         <item itemvalue="JUnit.CommentControllerTest.findAllComments" />
         <item itemvalue="JUnit.CommentControllerTest" />
         <item itemvalue="JUnit.CommentControllerTest.addComment" />
         <item itemvalue="JUnit.ArticleControllerTest.deleteArticle" />
-        <item itemvalue="JUnit.ArticleControllerTest.updateArticle" />
       </list>
     </recent_temporary>
   </component>

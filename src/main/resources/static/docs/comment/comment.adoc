@@ -44,3 +44,25 @@ include::{snippets}/comments-get/response-body.adoc[]
 
 === Try with curl
 include::{snippets}/comments-get/curl-request.adoc[]
+
+== *특정 댓글 정보 업데이트 (Comment Put API)*
+특정 댓글의 정보를 업데이트합니다. +
+ +
+
+=== 요청 형식
+include::{snippets}/commnet-put/http-request.adoc[]
+include::{snippets}/commnet-put/path-parameters.adoc[]
+
+=== Request Body
+include::{snippets}/commnet-put/request-body.adoc[]
+include::{snippets}/commnet-put/request-fields.adoc[]
+
+=== 응답 형식
+include::{snippets}/commnet-put/http-response.adoc[]
+include::{snippets}/commnet-put/response-fields.adoc[]
+
+=== Response Body
+include::{snippets}/commnet-put/response-body.adoc[]
+
+=== Try with curl
+include::{snippets}/commnet-put/curl-request.adoc[]

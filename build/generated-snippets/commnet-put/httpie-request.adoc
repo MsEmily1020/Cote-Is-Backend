@@ -1,0 +1,7 @@
+[source,bash]
+----
+$ echo '{
+  "content" : "comment123"
+}' | http PUT 'http://localhost:8080/api/comments/1' \
+    'Content-Type:application/json;charset=UTF-8'
+----

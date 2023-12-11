@@ -1,0 +1,52 @@
+[source,json,options="nowrap"]
+----
+{
+  "createdDate" : "2023-11-28T14:01:30",
+  "modifiedDate" : "2023-12-11T13:50:17.3925093",
+  "commentId" : 1,
+  "content" : "comment123",
+  "userNo" : {
+    "userNo" : 1,
+    "userName" : "황혜경",
+    "userId" : "hyek",
+    "userPw" : "hkpw12!!",
+    "userEmail" : "hhk@mail.com"
+  },
+  "articleNo" : {
+    "createdDate" : "2023-09-07T12:49:43",
+    "modifiedDate" : null,
+    "articleNo" : 1,
+    "title" : "피자 나눠 먹기 (3)",
+    "testExplain" : "머쓱이네 피자가게는 피자를 두 조각에서 열 조각까지 원하는 조각 수로 잘라줍니다. 피자 조각 수 slice와 피자를 먹는 사람의 수 n이 매개변수로 주어질 때, n명의 사람이 최소 한 조각 이상 피자를 먹으려면 최소 몇 판의 피자를 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.\n (단, 2 ≤ slice ≤ 10, 1 ≤ n ≤ 100)",
+    "answer" : "class Solution {\n    public int solution(int slice, int n) {\n        int answer = 0;\n\n        if (slice >= 2 && slice <= 10 && n >= 1 && n <= 100) {\n            if (n % slice > 0) {\n                answer = n / slice + 1;\n            }\n            else {\n                answer = n / slice;\n            }\n        }\n        return answer;\n    }\n}",
+    "inputExample" : "slice : 7, n : 10",
+    "outputExample" : "return : 2",
+    "speed" : "메모리: 73.1 MB, 시간: 0.01 ms",
+    "codeExplain" : "사람수 (n) % 피자조각 (slice)의 나머지가 0보다 크면 피자를 한 판 더 시켜야 모두 한 조각 이상 먹을 수 있습니다.\n 따라서 사람수 (n) / 피자조각 (slice)의 몫에서 +1(피자 한 판)을 더한 값을 answer에 대입합니다.\n 그 외에는 나머지가 0이기 때문에 모두 한 조각 이상 먹을 수 있습니다.\n 따라서 사람수 (n) / 피자조각 (slice)의 몫을 answer에 대입해줍니다.",
+    "concept" : "10명이 7조각으로 자른 피자를 한 조각 이상씩 먹으려면 최소 2판을 시켜야 합니다.",
+    "userNo" : {
+      "userNo" : 1,
+      "userName" : "황혜경",
+      "userId" : "hyek",
+      "userPw" : "hkpw12!!",
+      "userEmail" : "hhk@mail.com"
+    },
+    "algorithmNo" : {
+      "algorithmNo" : 1,
+      "algorithmName" : "수학"
+    },
+    "difficultyNo" : {
+      "difficultyNo" : 1,
+      "difficultyName" : "Easy"
+    },
+    "languageNo" : {
+      "languageNo" : 1,
+      "languageName" : "Java"
+    },
+    "previoustestNo" : {
+      "previoustestNo" : 1,
+      "previoustestName" : "카카오 신입 공채"
+    }
+  }
+}
+----
