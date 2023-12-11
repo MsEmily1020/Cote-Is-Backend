@@ -20,6 +20,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
+import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.get;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.post;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.*;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.prettyPrint;
@@ -67,33 +68,34 @@ class CommentControllerTest {
                                         fieldWithPath("userNo.userId").description("유저 아이디").ignored(),
                                         fieldWithPath("userNo.userPw").description("유저 패스워드").ignored(),
                                         fieldWithPath("userNo.userEmail").description("유저 이메일").ignored(),
-                                        fieldWithPath("articleNo.articleNo").description("글 번호 pk"),
-                                        fieldWithPath("articleNo.title").description("글 제목"),
-                                        fieldWithPath("articleNo.createdDate").description("생성 일자"),
-                                        fieldWithPath("articleNo.modifiedDate").description("수정 일자"),
-                                        fieldWithPath("articleNo.testExplain").description("문제 설명"),
-                                        fieldWithPath("articleNo.answer").description("코드 정답"),
-                                        fieldWithPath("articleNo.inputExample").description("입력 예시"),
-                                        fieldWithPath("articleNo.outputExample").description("출력 예시"),
-                                        fieldWithPath("articleNo.speed").description("최적화, 속도"),
-                                        fieldWithPath("articleNo.codeExplain").description("코드 설명"),
-                                        fieldWithPath("articleNo.concept").description("개념 정리"),
-                                        fieldWithPath("articleNo.userNo").description("유저 번호 pk"),
+                                        fieldWithPath("articleNo").description("글 번호 pk"),
+                                        fieldWithPath("articleNo.articleNo").description("글 번호 pk").ignored(),
+                                        fieldWithPath("articleNo.title").description("글 제목").ignored(),
+                                        fieldWithPath("articleNo.createdDate").description("생성 일자").ignored(),
+                                        fieldWithPath("articleNo.modifiedDate").description("수정 일자").ignored(),
+                                        fieldWithPath("articleNo.testExplain").description("문제 설명").ignored(),
+                                        fieldWithPath("articleNo.answer").description("코드 정답").ignored(),
+                                        fieldWithPath("articleNo.inputExample").description("입력 예시").ignored(),
+                                        fieldWithPath("articleNo.outputExample").description("출력 예시").ignored(),
+                                        fieldWithPath("articleNo.speed").description("최적화, 속도").ignored(),
+                                        fieldWithPath("articleNo.codeExplain").description("코드 설명").ignored(),
+                                        fieldWithPath("articleNo.concept").description("개념 정리").ignored(),
+                                        fieldWithPath("articleNo.userNo").description("유저 번호 pk").ignored(),
                                         fieldWithPath("articleNo.userNo.userNo").description("유저 번호 pk").ignored(),
                                         fieldWithPath("articleNo.userNo.userName").description("유저 이름").ignored(),
                                         fieldWithPath("articleNo.userNo.userId").description("유저 아이디").ignored(),
                                         fieldWithPath("articleNo.userNo.userPw").description("유저 패스워드").ignored(),
                                         fieldWithPath("articleNo.userNo.userEmail").description("유저 이메일").ignored(),
-                                        fieldWithPath("articleNo.algorithmNo").description("카테고리 알고리즘 번호 pk"),
+                                        fieldWithPath("articleNo.algorithmNo").description("카테고리 알고리즘 번호 pk").ignored(),
                                         fieldWithPath("articleNo.algorithmNo.algorithmNo").description("카테고리 알고리즘 번호 pk").ignored(),
                                         fieldWithPath("articleNo.algorithmNo.algorithmName").description("카테고리 알고리즘 이름").ignored(),
-                                        fieldWithPath("articleNo.difficultyNo").description("카테고리 난이도 번호 pk"),
+                                        fieldWithPath("articleNo.difficultyNo").description("카테고리 난이도 번호 pk").ignored(),
                                         fieldWithPath("articleNo.difficultyNo.difficultyNo").description("카테고리 난이도 번호 pk").ignored(),
                                         fieldWithPath("articleNo.difficultyNo.difficultyName").description("카테고리 난이도 이름").ignored(),
-                                        fieldWithPath("articleNo.languageNo").description("카테고리 언어 번호 pk"),
+                                        fieldWithPath("articleNo.languageNo").description("카테고리 언어 번호 pk").ignored(),
                                         fieldWithPath("articleNo.languageNo.languageNo").description("카테고리 언어 번호 pk").ignored(),
                                         fieldWithPath("articleNo.languageNo.languageName").description("카테고리 언어 이름").ignored(),
-                                        fieldWithPath("articleNo.previoustestNo").description("카테고리 기출 문제 번호 pk"),
+                                        fieldWithPath("articleNo.previoustestNo").description("카테고리 기출 문제 번호 pk").ignored(),
                                         fieldWithPath("articleNo.previoustestNo.previoustestNo").description("카테고리 기출 문제 번호 pk").ignored(),
                                         fieldWithPath("articleNo.previoustestNo.previoustestName").description("카테고리 기출 문제 이름").ignored()
                                 ),
@@ -109,33 +111,34 @@ class CommentControllerTest {
                                         fieldWithPath("userNo.userId").description("유저 아이디").ignored(),
                                         fieldWithPath("userNo.userPw").description("유저 패스워드").ignored(),
                                         fieldWithPath("userNo.userEmail").description("유저 이메일").ignored(),
-                                        fieldWithPath("articleNo.articleNo").description("글 번호 pk"),
-                                        fieldWithPath("articleNo.title").description("글 제목"),
-                                        fieldWithPath("articleNo.createdDate").description("생성 일자"),
-                                        fieldWithPath("articleNo.modifiedDate").description("수정 일자"),
-                                        fieldWithPath("articleNo.testExplain").description("문제 설명"),
-                                        fieldWithPath("articleNo.answer").description("코드 정답"),
-                                        fieldWithPath("articleNo.inputExample").description("입력 예시"),
-                                        fieldWithPath("articleNo.outputExample").description("출력 예시"),
-                                        fieldWithPath("articleNo.speed").description("최적화, 속도"),
-                                        fieldWithPath("articleNo.codeExplain").description("코드 설명"),
-                                        fieldWithPath("articleNo.concept").description("개념 정리"),
-                                        fieldWithPath("articleNo.userNo").description("유저 번호 pk"),
+                                        fieldWithPath("articleNo").description("글 번호 pk"),
+                                        fieldWithPath("articleNo.articleNo").description("글 번호 pk").ignored(),
+                                        fieldWithPath("articleNo.title").description("글 제목").ignored(),
+                                        fieldWithPath("articleNo.createdDate").description("생성 일자").ignored(),
+                                        fieldWithPath("articleNo.modifiedDate").description("수정 일자").ignored(),
+                                        fieldWithPath("articleNo.testExplain").description("문제 설명").ignored(),
+                                        fieldWithPath("articleNo.answer").description("코드 정답").ignored(),
+                                        fieldWithPath("articleNo.inputExample").description("입력 예시").ignored(),
+                                        fieldWithPath("articleNo.outputExample").description("출력 예시").ignored(),
+                                        fieldWithPath("articleNo.speed").description("최적화, 속도").ignored(),
+                                        fieldWithPath("articleNo.codeExplain").description("코드 설명").ignored(),
+                                        fieldWithPath("articleNo.concept").description("개념 정리").ignored(),
+                                        fieldWithPath("articleNo.userNo").description("유저 번호 pk").ignored(),
                                         fieldWithPath("articleNo.userNo.userNo").description("유저 번호 pk").ignored(),
                                         fieldWithPath("articleNo.userNo.userName").description("유저 이름").ignored(),
                                         fieldWithPath("articleNo.userNo.userId").description("유저 아이디").ignored(),
                                         fieldWithPath("articleNo.userNo.userPw").description("유저 패스워드").ignored(),
                                         fieldWithPath("articleNo.userNo.userEmail").description("유저 이메일").ignored(),
-                                        fieldWithPath("articleNo.algorithmNo").description("카테고리 알고리즘 번호 pk"),
+                                        fieldWithPath("articleNo.algorithmNo").description("카테고리 알고리즘 번호 pk").ignored(),
                                         fieldWithPath("articleNo.algorithmNo.algorithmNo").description("카테고리 알고리즘 번호 pk").ignored(),
                                         fieldWithPath("articleNo.algorithmNo.algorithmName").description("카테고리 알고리즘 이름").ignored(),
-                                        fieldWithPath("articleNo.difficultyNo").description("카테고리 난이도 번호 pk"),
+                                        fieldWithPath("articleNo.difficultyNo").description("카테고리 난이도 번호 pk").ignored(),
                                         fieldWithPath("articleNo.difficultyNo.difficultyNo").description("카테고리 난이도 번호 pk").ignored(),
                                         fieldWithPath("articleNo.difficultyNo.difficultyName").description("카테고리 난이도 이름").ignored(),
-                                        fieldWithPath("articleNo.languageNo").description("카테고리 언어 번호 pk"),
+                                        fieldWithPath("articleNo.languageNo").description("카테고리 언어 번호 pk").ignored(),
                                         fieldWithPath("articleNo.languageNo.languageNo").description("카테고리 언어 번호 pk").ignored(),
                                         fieldWithPath("articleNo.languageNo.languageName").description("카테고리 언어 이름").ignored(),
-                                        fieldWithPath("articleNo.previoustestNo").description("카테고리 기출 문제 번호 pk"),
+                                        fieldWithPath("articleNo.previoustestNo").description("카테고리 기출 문제 번호 pk").ignored(),
                                         fieldWithPath("articleNo.previoustestNo.previoustestNo").description("카테고리 기출 문제 번호 pk").ignored(),
                                         fieldWithPath("articleNo.previoustestNo.previoustestName").description("카테고리 기출 문제 이름").ignored()
                                 )
@@ -145,7 +148,63 @@ class CommentControllerTest {
     }
 
     @Test
-    void findAllComments() {
+    @DisplayName("findAllComments() : 댓글 목록 조회")
+    void findAllComments() throws Exception {
+        mockMvc.perform(
+                        get("/api/comments")
+                                .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andExpect(status().isOk())
+                .andDo(
+                        document("comments-get",
+                                preprocessRequest(prettyPrint()),
+                                preprocessResponse(prettyPrint()),
+                                responseFields(
+                                        fieldWithPath("[].commentId").description("댓글 번호 pk"),
+                                        fieldWithPath("[].content").description("댓글 내용"),
+                                        fieldWithPath("[].createdDate").description("생성 일자"),
+                                        fieldWithPath("[].modifiedDate").description("수정 일자"),
+                                        fieldWithPath("[].userNo").description("유저 번호 pk"),
+                                        fieldWithPath("[].userNo.userNo").description("유저 번호 pk").ignored(),
+                                        fieldWithPath("[].userNo.userName").description("유저 이름").ignored(),
+                                        fieldWithPath("[].userNo.userId").description("유저 아이디").ignored(),
+                                        fieldWithPath("[].userNo.userPw").description("유저 패스워드").ignored(),
+                                        fieldWithPath("[].userNo.userEmail").description("유저 이메일").ignored(),
+                                        fieldWithPath("[].articleNo").description("글 번호 pk"),
+                                        fieldWithPath("[].articleNo.articleNo").description("글 번호 pk").ignored(),
+                                        fieldWithPath("[].articleNo.title").description("글 제목").ignored(),
+                                        fieldWithPath("[].articleNo.createdDate").description("생성 일자").ignored(),
+                                        fieldWithPath("[].articleNo.modifiedDate").description("수정 일자").ignored(),
+                                        fieldWithPath("[].articleNo.testExplain").description("문제 설명").ignored(),
+                                        fieldWithPath("[].articleNo.answer").description("코드 정답").ignored(),
+                                        fieldWithPath("[].articleNo.inputExample").description("입력 예시").ignored(),
+                                        fieldWithPath("[].articleNo.outputExample").description("출력 예시").ignored(),
+                                        fieldWithPath("[].articleNo.speed").description("최적화, 속도").ignored(),
+                                        fieldWithPath("[].articleNo.codeExplain").description("코드 설명").ignored(),
+                                        fieldWithPath("[].articleNo.concept").description("개념 정리").ignored(),
+                                        fieldWithPath("[].articleNo.userNo").description("유저 번호 pk").ignored(),
+                                        fieldWithPath("[].articleNo.userNo.userNo").description("유저 번호 pk").ignored(),
+                                        fieldWithPath("[].articleNo.userNo.userName").description("유저 이름").ignored(),
+                                        fieldWithPath("[].articleNo.userNo.userId").description("유저 아이디").ignored(),
+                                        fieldWithPath("[].articleNo.userNo.userPw").description("유저 패스워드").ignored(),
+                                        fieldWithPath("[].articleNo.userNo.userEmail").description("유저 이메일").ignored(),
+                                        fieldWithPath("[].articleNo.algorithmNo").description("카테고리 알고리즘 번호 pk").ignored(),
+                                        fieldWithPath("[].articleNo.algorithmNo.algorithmNo").description("카테고리 알고리즘 번호 pk").ignored(),
+                                        fieldWithPath("[].articleNo.algorithmNo.algorithmName").description("카테고리 알고리즘 이름").ignored(),
+                                        fieldWithPath("[].articleNo.difficultyNo").description("카테고리 난이도 번호 pk").ignored(),
+                                        fieldWithPath("[].articleNo.difficultyNo.difficultyNo").description("카테고리 난이도 번호 pk").ignored(),
+                                        fieldWithPath("[].articleNo.difficultyNo.difficultyName").description("카테고리 난이도 이름").ignored(),
+                                        fieldWithPath("[].articleNo.languageNo").description("카테고리 언어 번호 pk").ignored(),
+                                        fieldWithPath("[].articleNo.languageNo.languageNo").description("카테고리 언어 번호 pk").ignored(),
+                                        fieldWithPath("[].articleNo.languageNo.languageName").description("카테고리 언어 이름").ignored(),
+                                        fieldWithPath("[].articleNo.previoustestNo").description("카테고리 기출 문제 번호 pk").ignored(),
+                                        fieldWithPath("[].articleNo.previoustestNo.previoustestNo").description("카테고리 기출 문제 번호 pk").ignored(),
+                                        fieldWithPath("[].articleNo.previoustestNo.previoustestName").description("카테고리 기출 문제 이름").ignored()
+                                                .optional()
+                                )
+                        )
+                )
+        ;
     }
 
     @Test

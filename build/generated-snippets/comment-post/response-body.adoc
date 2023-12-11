@@ -1,8 +1,8 @@
 [source,json,options="nowrap"]
 ----
 {
-  "createdDate" : "2023-12-11T13:25:25.7943521",
-  "modifiedDate" : "2023-12-11T13:25:25.7943521",
+  "createdDate" : "2023-12-11T13:44:17.36609",
+  "modifiedDate" : "2023-12-11T13:44:17.36609",
   "commentId" : 6,
   "content" : "comment",
   "userNo" : {
@@ -13,8 +13,8 @@
     "userEmail" : "uE"
   },
   "articleNo" : {
-    "createdDate" : "2023-12-11T13:25:25.8392013",
-    "modifiedDate" : "2023-12-11T13:25:25.8392013",
+    "createdDate" : "2023-12-11T13:44:17.4007394",
+    "modifiedDate" : "2023-12-11T13:44:17.4007394",
     "articleNo" : 6,
     "title" : "title",
     "testExplain" : "testExplain",
