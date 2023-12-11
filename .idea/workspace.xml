@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/docs/article/article.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/article/ArticleControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/previoustest/previoustest.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/previoustest/previoustest.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/previoustest/previoustest.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/previoustest/previoustest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/article/ArticleControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/article/ArticleControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/article/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/article/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/article/article.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/article/article.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/article/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/article/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/article/ArticleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/article/ArticleControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +96,23 @@
       <recent name="org.coteis.controller.user" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArticleControllerTest.findAllArticles">
+  <component name="RunManager" selected="JUnit.ArticleControllerTest.addArticle">
+    <configuration name="ArticleControllerTest.addArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cote_Is.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.coteis.controller.article.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.coteis.controller.article" />
+      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.article.ArticleControllerTest" />
+      <option name="METHOD_NAME" value="addArticle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArticleControllerTest.findAllArticles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
@@ -107,22 +124,6 @@
       <option name="PACKAGE_NAME" value="org.coteis.controller.article" />
       <option name="MAIN_CLASS_NAME" value="org.coteis.controller.article.ArticleControllerTest" />
       <option name="METHOD_NAME" value="findAllArticles" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LanguageApiControllerTest.findAllLanguages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cote_Is.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.coteis.controller.category.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.coteis.controller.category" />
-      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.category.LanguageApiControllerTest" />
-      <option name="METHOD_NAME" value="findAllLanguages" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArticleControllerTest.addArticle" />
         <item itemvalue="JUnit.ArticleControllerTest.findAllArticles" />
         <item itemvalue="JUnit.PreviousetestApiControllerTest.findPrevioustest" />
         <item itemvalue="JUnit.PreviousetestApiControllerTest.findAllPrevious" />
         <item itemvalue="JUnit.LanguageApiControllerTest.findLanguage" />
-        <item itemvalue="JUnit.LanguageApiControllerTest.findAllLanguages" />
       </list>
     </recent_temporary>
   </component>

@@ -1,0 +1,38 @@
+[source,bash]
+----
+$ curl 'http://localhost:8080/api/articles' -i -X POST \
+    -H 'Content-Type: application/json;charset=UTF-8' \
+    -d '{
+  "title" : "title",
+  "testExplain" : "testExplain",
+  "answer" : "answser",
+  "inputExample" : "inputExample",
+  "outputExample" : "outputExample",
+  "speed" : "speed",
+  "codeExplain" : "codeExplain",
+  "concept" : "concept",
+  "userNo" : {
+    "userNo" : null,
+    "userName" : "userName",
+    "userId" : "userId",
+    "userPw" : "userPw",
+    "userEmail" : "userEmail"
+  },
+  "algorithmNo" : {
+    "algorithmNo" : null,
+    "algorithmName" : "algorithmName"
+  },
+  "difficultyNo" : {
+    "difficultyNo" : null,
+    "difficultyName" : "difficultyName"
+  },
+  "languageNo" : {
+    "languageNo" : null,
+    "languageName" : "langaugeName"
+  },
+  "previoustestNo" : {
+    "previoustestNo" : null,
+    "previoustestName" : "previoustestName"
+  }
+}'
+----
