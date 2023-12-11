@@ -1,0 +1,29 @@
+= Comment API
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectnums:
+:sectanchors:
+
+== *댓글 등록 (Comment Post API)*
+댓글을 등록합니다. +
+ +
+
+=== 요청 형식
+include::{snippets}/comment-post/http-request.adoc[]
+
+=== Request Body
+include::{snippets}/comment-post/request-body.adoc[]
+include::{snippets}/comment-post/request-fields.adoc[]
+
+=== 응답 형식
+include::{snippets}/comment-post/http-response.adoc[]
+include::{snippets}/comment-post/response-fields.adoc[]
+
+=== Response Body
+include::{snippets}/comment-post/response-body.adoc[]
+
+=== Try with curl
+include::{snippets}/comment-post/curl-request.adoc[]

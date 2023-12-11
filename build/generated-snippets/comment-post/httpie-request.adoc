@@ -1,0 +1,50 @@
+[source,bash]
+----
+$ echo '{
+  "content" : "comment",
+  "userNo" : {
+    "userNo" : null,
+    "userName" : "userName",
+    "userId" : "userId1",
+    "userPw" : "userPw",
+    "userEmail" : "uE"
+  },
+  "articleNo" : {
+    "createdDate" : null,
+    "modifiedDate" : null,
+    "articleNo" : null,
+    "title" : "title",
+    "testExplain" : "testExplain",
+    "answer" : "answer",
+    "inputExample" : "inputExample",
+    "outputExample" : "outputExample",
+    "speed" : "speed",
+    "codeExplain" : "codeExplain",
+    "concept" : "concept",
+    "userNo" : {
+      "userNo" : null,
+      "userName" : "userName",
+      "userId" : "userId",
+      "userPw" : "userPw",
+      "userEmail" : "userEmail"
+    },
+    "algorithmNo" : {
+      "algorithmNo" : null,
+      "algorithmName" : "algorithmName"
+    },
+    "difficultyNo" : {
+      "difficultyNo" : null,
+      "difficultyName" : "difficultyName"
+    },
+    "languageNo" : {
+      "languageNo" : null,
+      "languageName" : "langaugeName"
+    },
+    "previoustestNo" : {
+      "previoustestNo" : null,
+      "previoustestName" : "previoustestName"
+    }
+  }
+}' | http POST 'http://localhost:8080/api/comments' \
+    'Content-Type:application/json;charset=UTF-8'
+----
