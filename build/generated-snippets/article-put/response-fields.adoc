@@ -1,0 +1,68 @@
+|===
+|Path|Type|Description
+
+|articleNo
+|Number
+|글 번호 pk
+
+|title
+|String
+|글 제목
+
+|createdDate
+|String
+|생성 일자
+
+|modifiedDate
+|String
+|수정 일자
+
+|testExplain
+|String
+|문제 설명
+
+|answer
+|String
+|코드 정답
+
+|inputExample
+|String
+|입력 예시
+
+|outputExample
+|String
+|출력 예시
+
+|speed
+|String
+|최적화, 속도
+
+|codeExplain
+|String
+|코드 설명
+
+|concept
+|String
+|개념 정리
+
+|userNo
+|Object
+|유저 번호 pk
+
+|algorithmNo
+|Object
+|카테고리 알고리즘 번호 pk
+
+|difficultyNo
+|Object
+|카테고리 난이도 번호 pk
+
+|languageNo
+|Object
+|카테고리 언어 번호 pk
+
+|previoustestNo
+|Object
+|카테고리 기출 문제 번호 pk
+
+|===

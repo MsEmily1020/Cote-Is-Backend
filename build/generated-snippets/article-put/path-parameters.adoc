@@ -1,0 +1,8 @@
+`Put` /api/articles/{id}+
+|===
+|Parameter|Description
+
+|id
+|글 번호 pk
+
+|===

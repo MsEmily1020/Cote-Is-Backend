@@ -23,3 +23,22 @@ include::{snippets}/previoustests-get/response-body.adoc[]
 
 === Try with curl
 include::{snippets}/previoustests-get/curl-request.adoc[]
+
+== *특정 기출 문제 조회 (PreviousTest Get API)*
+특정 기출 문제를 조회합니다. +
+ +
+
+=== 요청 형식
+include::{snippets}/previoustest-get/http-request.adoc[]
+include::{snippets}/previoustest-get/path-parameters.adoc[]
+
+=== 응답 형식
+include::{snippets}/previoustest-get/http-response.adoc[]
+include::{snippets}/previoustest-get/response-fields.adoc[]
+
+=== Response Body
+include::{snippets}/previoustest-get/response-body.adoc[]
+
+=== Try with curl
+include::{snippets}/previoustest-get/curl-request.adoc[]
+

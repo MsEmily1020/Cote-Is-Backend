@@ -1,0 +1,43 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 884
+
+{
+  "createdDate" : "2023-09-07T12:49:43",
+  "modifiedDate" : "2023-12-11T10:59:34.8541521",
+  "articleNo" : 1,
+  "title" : "title",
+  "testExplain" : "testExplain",
+  "answer" : "answser",
+  "inputExample" : "inputExample",
+  "outputExample" : "outputExample",
+  "speed" : "speed",
+  "codeExplain" : "codeExplain",
+  "concept" : "concept",
+  "userNo" : {
+    "userNo" : 1,
+    "userName" : "황혜경",
+    "userId" : "hyek",
+    "userPw" : "hkpw12!!",
+    "userEmail" : "hhk@mail.com"
+  },
+  "algorithmNo" : {
+    "algorithmNo" : 11,
+    "algorithmName" : "algorithmName"
+  },
+  "difficultyNo" : {
+    "difficultyNo" : 5,
+    "difficultyName" : "difficultyName"
+  },
+  "languageNo" : {
+    "languageNo" : 9,
+    "languageName" : "langaugeName"
+  },
+  "previoustestNo" : {
+    "previoustestNo" : 9,
+    "previoustestName" : "previoustestName"
+  }
+}
+----
