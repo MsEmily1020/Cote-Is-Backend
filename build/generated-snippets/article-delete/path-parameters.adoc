@@ -1,4 +1,4 @@
-`Put` /api/articles/{id}+
+`Delete` /api/articles/{id}+
 |===
 |Parameter|Description
 

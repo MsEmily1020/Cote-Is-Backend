@@ -6,12 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/request-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/request-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/response-fields.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/article/article.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/article/article.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/article/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/article/article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/article/ArticleControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/article/ArticleControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/UpdateArticleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/UpdateArticleRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/algorithm/algorithm.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/algorithm/algorithm.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/article/article.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/article/article.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/article/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/article/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/difficulty/difficulty.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/difficulty/difficulty.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/difficulty/difficulty.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/difficulty/difficulty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/language/language.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/language/language.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/language/language.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/language/language.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/previoustest/previoustest.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/previoustest/previoustest.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/previoustest/previoustest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/previoustest/previoustest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/article/ArticleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/article/ArticleControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +107,7 @@
       <recent name="org.coteis.controller.user" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArticleControllerTest.updateArticle">
+  <component name="RunManager" selected="JUnit.ArticleControllerTest.deleteArticle">
     <configuration name="ArticleControllerTest.addArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
@@ -110,6 +119,22 @@
       <option name="PACKAGE_NAME" value="org.coteis.controller.article" />
       <option name="MAIN_CLASS_NAME" value="org.coteis.controller.article.ArticleControllerTest" />
       <option name="METHOD_NAME" value="addArticle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArticleControllerTest.deleteArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cote_Is.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.coteis.controller.article.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.coteis.controller.article" />
+      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.article.ArticleControllerTest" />
+      <option name="METHOD_NAME" value="deleteArticle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,22 +188,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PreviousetestApiControllerTest.findPrevioustest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cote_Is.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.coteis.controller.category.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.coteis.controller.category" />
-      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.category.PreviousetestApiControllerTest" />
-      <option name="METHOD_NAME" value="findPrevioustest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CoteisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Cote_Is.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.coteis.CoteisApplication" />
@@ -188,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArticleControllerTest.deleteArticle" />
         <item itemvalue="JUnit.ArticleControllerTest.updateArticle" />
         <item itemvalue="JUnit.ArticleControllerTest.findArticle" />
         <item itemvalue="JUnit.ArticleControllerTest.addArticle" />
         <item itemvalue="JUnit.ArticleControllerTest.findAllArticles" />
-        <item itemvalue="JUnit.PreviousetestApiControllerTest.findPrevioustest" />
       </list>
     </recent_temporary>
   </component>

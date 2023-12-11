@@ -331,6 +331,23 @@ class ArticleControllerTest {
     }
 
     @Test
-    void deleteArticle() {
+    @DisplayName("deleteArticle() : 특정 글 삭제하기")
+    void deleteArticle() throws Exception {
+        mockMvc.perform(
+                        delete("/api/articles/{id}", 1L)
+                                .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andExpect(status().isOk())
+                .andDo(
+                        document("article-delete",
+                                preprocessRequest(prettyPrint()),
+                                preprocessResponse(prettyPrint()),
+                                pathParameters( // path 파라미터 정보 입력
+                                        parameterWithName("id").description("글 번호 pk")
+                                )
+
+                        )
+                )
+        ;
     }
 }
