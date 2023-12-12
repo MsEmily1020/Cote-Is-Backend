@@ -1,5 +1,6 @@
 package org.coteis.domain.article;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -10,9 +11,10 @@ import org.coteis.domain.category.Algorithm;
 import org.coteis.domain.category.Difficulty;
 import org.coteis.domain.category.Language;
 import org.coteis.domain.category.Previoustest;
+import org.coteis.domain.comment.Comment;
 import org.coteis.domain.user.User;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
+
+import java.util.List;
 
 @Entity
 @Getter
@@ -48,31 +50,29 @@ public class Article extends BaseTimeEntity {
     @Column(name = "concept", columnDefinition = "LONGTEXT")   // 개념 정리
     private String concept;
 
-
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(name = "user_no")
     private User userNo;
 
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(name = "algorithm_no")
     private Algorithm algorithmNo;
 
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(name = "difficulty_no")
     private Difficulty difficultyNo;
 
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(name = "language_no")
     private Language languageNo;
 
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(name = "previoustest_no")
     private Previoustest previoustestNo;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "articleNo", cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST}, orphanRemoval = true)
+    private List<Comment> commentList;
 
     @Builder
     public Article(String title, String testExplain, String answer, String inputExample, String outputExample, String speed, String codeExplain, String concept,
