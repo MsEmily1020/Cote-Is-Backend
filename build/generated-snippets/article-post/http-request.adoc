@@ -2,13 +2,13 @@
 ----
 POST /api/articles HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-Content-Length: 781
+Content-Length: 734
 Host: localhost:8080
 
 {
   "title" : "title",
   "testExplain" : "testExplain",
-  "answer" : "answser",
+  "answer" : "answer",
   "inputExample" : "inputExample",
   "outputExample" : "outputExample",
   "speed" : "speed",
@@ -23,19 +23,19 @@ Host: localhost:8080
   },
   "algorithmNo" : {
     "algorithmNo" : null,
-    "algorithmName" : "algorithmName"
+    "algorithmName" : "al"
   },
   "difficultyNo" : {
     "difficultyNo" : null,
-    "difficultyName" : "difficultyName"
+    "difficultyName" : "di"
   },
   "languageNo" : {
     "languageNo" : null,
-    "languageName" : "langaugeName"
+    "languageName" : "la"
   },
   "previoustestNo" : {
     "previoustestNo" : null,
-    "previoustestName" : "previoustestName"
+    "previoustestName" : "pre"
   }
 }
 ----

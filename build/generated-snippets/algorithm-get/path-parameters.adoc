@@ -1,8 +1,8 @@
-`Get` /api/algorithms/{id}+
+.+/api/algorithms/{id}+
 |===
 |Parameter|Description
 
-|id
+|`+id+`
 |카테고리 알고리즘 번호 pk
 
 |===

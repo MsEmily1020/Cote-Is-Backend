@@ -1,8 +1,8 @@
-`Put` /api/users/{id}+
+.+/api/users/{id}+
 |===
 |Parameter|Description
 
-|id
+|`+id+`
 |유저 번호 pk
 
 |===

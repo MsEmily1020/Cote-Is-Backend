@@ -5,7 +5,7 @@ $ curl 'http://localhost:8080/api/articles' -i -X POST \
     -d '{
   "title" : "title",
   "testExplain" : "testExplain",
-  "answer" : "answser",
+  "answer" : "answer",
   "inputExample" : "inputExample",
   "outputExample" : "outputExample",
   "speed" : "speed",
@@ -20,19 +20,19 @@ $ curl 'http://localhost:8080/api/articles' -i -X POST \
   },
   "algorithmNo" : {
     "algorithmNo" : null,
-    "algorithmName" : "algorithmName"
+    "algorithmName" : "al"
   },
   "difficultyNo" : {
     "difficultyNo" : null,
-    "difficultyName" : "difficultyName"
+    "difficultyName" : "di"
   },
   "languageNo" : {
     "languageNo" : null,
-    "languageName" : "langaugeName"
+    "languageName" : "la"
   },
   "previoustestNo" : {
     "previoustestNo" : null,
-    "previoustestName" : "previoustestName"
+    "previoustestName" : "pre"
   }
 }'
 ----

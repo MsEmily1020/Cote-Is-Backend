@@ -50,22 +50,22 @@ include::{snippets}/comments-get/curl-request.adoc[]
  +
 
 === 요청 형식
-include::{snippets}/commnet-put/http-request.adoc[]
-include::{snippets}/commnet-put/path-parameters.adoc[]
+include::{snippets}/comment-put/http-request.adoc[]
+include::{snippets}/comment-put/path-parameters.adoc[]
 
 === Request Body
-include::{snippets}/commnet-put/request-body.adoc[]
-include::{snippets}/commnet-put/request-fields.adoc[]
+include::{snippets}/comment-put/request-body.adoc[]
+include::{snippets}/comment-put/request-fields.adoc[]
 
 === 응답 형식
-include::{snippets}/commnet-put/http-response.adoc[]
-include::{snippets}/commnet-put/response-fields.adoc[]
+include::{snippets}/comment-put/http-response.adoc[]
+include::{snippets}/comment-put/response-fields.adoc[]
 
 === Response Body
-include::{snippets}/commnet-put/response-body.adoc[]
+include::{snippets}/comment-put/response-body.adoc[]
 
 === Try with curl
-include::{snippets}/commnet-put/curl-request.adoc[]
+include::{snippets}/comment-put/curl-request.adoc[]
 
 == *특정 댓글 삭제 (Comment Delete API)*
 특정 댓글을 삭제합니다. +

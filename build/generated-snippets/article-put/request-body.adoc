@@ -3,7 +3,7 @@
 {
   "title" : "title",
   "testExplain" : "testExplain",
-  "answer" : "answser",
+  "answer" : "answer",
   "inputExample" : "inputExample",
   "outputExample" : "outputExample",
   "speed" : "speed",
@@ -11,19 +11,19 @@
   "concept" : "concept",
   "algorithmNo" : {
     "algorithmNo" : null,
-    "algorithmName" : "algorithmName"
+    "algorithmName" : "al"
   },
   "difficultyNo" : {
     "difficultyNo" : null,
-    "difficultyName" : "difficultyName"
+    "difficultyName" : "di"
   },
   "languageNo" : {
     "languageNo" : null,
-    "languageName" : "langaugeName"
+    "languageName" : "la"
   },
   "previoustestNo" : {
     "previoustestNo" : null,
-    "previoustestName" : "previoustestName"
+    "previoustestName" : "pre"
   }
 }
 ----

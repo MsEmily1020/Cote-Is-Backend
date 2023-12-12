@@ -1,39 +1,39 @@
 [source,json,options="nowrap"]
 ----
 {
-  "createdDate" : "2023-09-07T12:49:43",
-  "modifiedDate" : "2023-12-11T10:59:34.8541521",
-  "articleNo" : 1,
+  "createdDate" : "2023-12-12T17:44:21.452501",
+  "modifiedDate" : "2023-12-12T17:44:22.1398305",
+  "articleNo" : 6,
   "title" : "title",
   "testExplain" : "testExplain",
-  "answer" : "answser",
+  "answer" : "answer",
   "inputExample" : "inputExample",
   "outputExample" : "outputExample",
   "speed" : "speed",
   "codeExplain" : "codeExplain",
   "concept" : "concept",
   "userNo" : {
-    "userNo" : 1,
-    "userName" : "황혜경",
-    "userId" : "hyek",
-    "userPw" : "hkpw12!!",
-    "userEmail" : "hhk@mail.com"
+    "userNo" : 5,
+    "userName" : "userName",
+    "userId" : "userId",
+    "userPw" : "userPw",
+    "userEmail" : "userEmail"
   },
   "algorithmNo" : {
-    "algorithmNo" : 11,
-    "algorithmName" : "algorithmName"
+    "algorithmNo" : 12,
+    "algorithmName" : "al"
   },
   "difficultyNo" : {
-    "difficultyNo" : 5,
-    "difficultyName" : "difficultyName"
+    "difficultyNo" : 6,
+    "difficultyName" : "di"
   },
   "languageNo" : {
-    "languageNo" : 9,
-    "languageName" : "langaugeName"
+    "languageNo" : 10,
+    "languageName" : "la"
   },
   "previoustestNo" : {
-    "previoustestNo" : 9,
-    "previoustestName" : "previoustestName"
+    "previoustestNo" : 10,
+    "previoustestName" : "pre"
   }
 }
 ----

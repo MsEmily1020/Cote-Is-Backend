@@ -3,8 +3,7 @@ package org.coteis.controller.user;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.coteis.dto.user.AddUserRequest;
 import org.coteis.dto.user.UpdateUserRequest;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -24,16 +23,18 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureRestDocs
 @AutoConfigureMockMvc
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class UserControllerTest {
 
     @Autowired
     MockMvc mockMvc;
 
     @Autowired
-    private ObjectMapper objectMapper;
+    ObjectMapper objectMapper;
 
     @Test
-    @DisplayName("addUser() : 유저 사용자 등록")
+    @Order(1)
+    @DisplayName("1. addUser() : 유저 사용자 등록")
     void addUser() throws Exception {
         AddUserRequest request = new AddUserRequest("김혜승", "hyeseung", "hyeseung!!", "peace10200khs@gmail.com");
 
@@ -68,7 +69,8 @@ class UserControllerTest {
     }
 
     @Test
-    @DisplayName("findAllUsers() : 유저 목록 조회")
+    @Order(2)
+    @DisplayName("2. findAllUsers() : 유저 목록 조회")
     void findAllUsers() throws Exception {
         mockMvc.perform(
                         get("/api/users")
@@ -92,10 +94,11 @@ class UserControllerTest {
     }
 
     @Test
-    @DisplayName("findUser() : 특정 사용자 조회")
+    @Order(3)
+    @DisplayName("3. findUser() : 특정 사용자 조회")
     void findUser() throws Exception {
         mockMvc.perform(
-                        get("/api/users/{id}", 2L)
+                        get("/api/users/{id}", 5L)
                                 .contentType(MediaType.APPLICATION_JSON)
                 )
                 .andExpect(status().isOk())
@@ -119,12 +122,13 @@ class UserControllerTest {
     }
 
     @Test
-    @DisplayName("updateUser() : 특정 사용자 정보 업데이트")
+    @Order(4)
+    @DisplayName("4. updateUser() : 특정 사용자 정보 업데이트")
     void updateUser() throws Exception {
         UpdateUserRequest request = new UpdateUserRequest("김혜승", "hyeseung1", "hyeseung1!!", "s2224@e-mirim.hs.kr");
 
         mockMvc.perform(
-                    put("/api/users/{id}", 2L)
+                    put("/api/users/{id}", 5L)
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .content(objectMapper.writeValueAsString(request))
                 )
@@ -158,10 +162,11 @@ class UserControllerTest {
     }
 
     @Test
-    @DisplayName("deleteUser() : 특정 사용자 삭제")
+    @Order(5)
+    @DisplayName("5. deleteUser() : 특정 사용자 삭제")
     void deleteUser() throws Exception {
         mockMvc.perform(
-                        delete("/api/users/{id}", 2L)
+                        delete("/api/users/{id}", 5L)
                                 .contentType(MediaType.APPLICATION_JSON)
                 )
                 .andExpect(status().isOk())

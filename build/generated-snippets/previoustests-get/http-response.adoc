@@ -2,7 +2,7 @@
 ----
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 663
+Content-Length: 786
 
 [ {
   "previoustestNo" : 1,
@@ -28,5 +28,11 @@ Content-Length: 663
 }, {
   "previoustestNo" : 8,
   "previoustestName" : "COS pro 1급"
+}, {
+  "previoustestNo" : 9,
+  "previoustestName" : "pre"
+}, {
+  "previoustestNo" : 10,
+  "previoustestName" : "pre"
 } ]
 ----

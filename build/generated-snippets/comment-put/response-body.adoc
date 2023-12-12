@@ -1,0 +1,52 @@
+[source,json,options="nowrap"]
+----
+{
+  "createdDate" : "2023-12-12T17:44:22.701585",
+  "modifiedDate" : "2023-12-12T17:44:22.890715",
+  "commentId" : 7,
+  "content" : "comment123",
+  "userNo" : {
+    "userNo" : 7,
+    "userName" : "userName1",
+    "userId" : "userId1",
+    "userPw" : "userPw1",
+    "userEmail" : "userEmail1"
+  },
+  "articleNo" : {
+    "createdDate" : "2023-12-12T17:44:22.706112",
+    "modifiedDate" : "2023-12-12T17:44:22.706112",
+    "articleNo" : 7,
+    "title" : "title2",
+    "testExplain" : "testExplain2",
+    "answer" : "answer2",
+    "inputExample" : "inputExample2",
+    "outputExample" : "outputExample2",
+    "speed" : "speed2",
+    "codeExplain" : "codeExplain2",
+    "concept" : "concept2",
+    "userNo" : {
+      "userNo" : 6,
+      "userName" : "userName2",
+      "userId" : "userId2",
+      "userPw" : "userPw2",
+      "userEmail" : "userEmail2"
+    },
+    "algorithmNo" : {
+      "algorithmNo" : 13,
+      "algorithmName" : "algorithmName2"
+    },
+    "difficultyNo" : {
+      "difficultyNo" : 7,
+      "difficultyName" : "difficultyName2"
+    },
+    "languageNo" : {
+      "languageNo" : 11,
+      "languageName" : "languageName2"
+    },
+    "previoustestNo" : {
+      "previoustestNo" : 11,
+      "previoustestName" : "previoustestName2"
+    }
+  }
+}
+----

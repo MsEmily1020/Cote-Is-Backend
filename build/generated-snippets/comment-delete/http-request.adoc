@@ -1,6 +1,6 @@
 [source,http,options="nowrap"]
 ----
-DELETE /api/comments/1 HTTP/1.1
+DELETE /api/comments/7 HTTP/1.1
 Content-Type: application/json;charset=UTF-8
 Host: localhost:8080
 

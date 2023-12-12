@@ -1,8 +1,8 @@
-`Get` /api/difficulties/{id}+
+.+/api/difficulties/{id}+
 |===
 |Parameter|Description
 
-|id
+|`+id+`
 |카테고리 난이도 번호 pk
 
 |===

@@ -30,5 +30,11 @@
 }, {
   "algorithmNo" : 10,
   "algorithmName" : "재귀"
+}, {
+  "algorithmNo" : 11,
+  "algorithmName" : "al"
+}, {
+  "algorithmNo" : 12,
+  "algorithmName" : "al"
 } ]
 ----
