@@ -1,51 +1,51 @@
 [source,json,options="nowrap"]
 ----
 {
-  "createdDate" : "2023-12-11T13:44:17.36609",
-  "modifiedDate" : "2023-12-11T13:44:17.36609",
-  "commentId" : 6,
+  "createdDate" : "2023-12-12T17:44:22.7015849",
+  "modifiedDate" : "2023-12-12T17:44:22.7015849",
+  "commentId" : 7,
   "content" : "comment",
   "userNo" : {
-    "userNo" : 6,
-    "userName" : "userName",
+    "userNo" : 7,
+    "userName" : "userName1",
     "userId" : "userId1",
-    "userPw" : "userPw",
-    "userEmail" : "uE"
+    "userPw" : "userPw1",
+    "userEmail" : "userEmail1"
   },
   "articleNo" : {
-    "createdDate" : "2023-12-11T13:44:17.4007394",
-    "modifiedDate" : "2023-12-11T13:44:17.4007394",
-    "articleNo" : 6,
-    "title" : "title",
-    "testExplain" : "testExplain",
-    "answer" : "answer",
-    "inputExample" : "inputExample",
-    "outputExample" : "outputExample",
-    "speed" : "speed",
-    "codeExplain" : "codeExplain",
-    "concept" : "concept",
+    "createdDate" : "2023-12-12T17:44:22.706112",
+    "modifiedDate" : "2023-12-12T17:44:22.706112",
+    "articleNo" : 7,
+    "title" : "title2",
+    "testExplain" : "testExplain2",
+    "answer" : "answer2",
+    "inputExample" : "inputExample2",
+    "outputExample" : "outputExample2",
+    "speed" : "speed2",
+    "codeExplain" : "codeExplain2",
+    "concept" : "concept2",
     "userNo" : {
-      "userNo" : 5,
-      "userName" : "userName",
-      "userId" : "userId",
-      "userPw" : "userPw",
-      "userEmail" : "userEmail"
+      "userNo" : 6,
+      "userName" : "userName2",
+      "userId" : "userId2",
+      "userPw" : "userPw2",
+      "userEmail" : "userEmail2"
     },
     "algorithmNo" : {
-      "algorithmNo" : 11,
-      "algorithmName" : "algorithmName"
+      "algorithmNo" : 13,
+      "algorithmName" : "algorithmName2"
     },
     "difficultyNo" : {
-      "difficultyNo" : 5,
-      "difficultyName" : "difficultyName"
+      "difficultyNo" : 7,
+      "difficultyName" : "difficultyName2"
     },
     "languageNo" : {
-      "languageNo" : 9,
-      "languageName" : "langaugeName"
+      "languageNo" : 11,
+      "languageName" : "languageName2"
     },
     "previoustestNo" : {
-      "previoustestNo" : 9,
-      "previoustestName" : "previoustestName"
+      "previoustestNo" : 11,
+      "previoustestName" : "previoustestName2"
     }
   }
 }

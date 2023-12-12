@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.627s</div>
+<div class="counter">0.233s</div>
 <p>duration</p>
 </div>
 </td>
@@ -73,13 +73,39 @@
 <thead>
 <tr>
 <th>Test</th>
+<th>Method name</th>
 <th>Duration</th>
 <th>Result</th>
 </tr>
 </thead>
 <tr>
+<td class="success">1. addUser() : 유저 사용자 등록</td>
+<td class="success">addUser()</td>
+<td class="success">0.049s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">5. deleteUser() : 특정 사용자 삭제</td>
+<td class="success">deleteUser()</td>
+<td class="success">0.044s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">2. findAllUsers() : 유저 목록 조회</td>
+<td class="success">findAllUsers()</td>
+<td class="success">0.041s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">3. findUser() : 특정 사용자 조회</td>
 <td class="success">findUser()</td>
-<td class="success">0.627s</td>
+<td class="success">0.042s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">4. updateUser() : 특정 사용자 정보 업데이트</td>
+<td class="success">updateUser()</td>
+<td class="success">0.057s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,226 +113,61 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>12:02:40.857 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [UserControllerTest]: using SpringBootContextLoader
-12:02:40.867 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.coteis.controller.user.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-12:02:40.869 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.coteis.controller.user.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-12:02:40.968 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [UserControllerTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-12:02:41.107 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\private\Cote_Is_Backend\build\classes\java\main\org\coteis\CoteisApplication.class]
-12:02:41.109 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.coteis.CoteisApplication for test class org.coteis.controller.user.UserControllerTest
-12:02:41.276 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [UserControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-12:02:41.278 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [UserControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+<pre>2023-12-12T17:44:23.007+09:00  INFO 29620 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.coteis.controller.user.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-12T17:44:23.025+09:00  INFO 29620 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.coteis.CoteisApplication for test class org.coteis.controller.user.UserControllerTest
+Hibernate: 
+    insert 
+    into
+        users
+        (user_email, user_id, user_name, user_pw) 
+    values
+        (?, ?, ?, ?)
 
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.0.2)
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/users
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;104&quot;]
+             Body = {&quot;userName&quot;:&quot;김혜승&quot;,&quot;userId&quot;:&quot;hyeseung&quot;,&quot;userPw&quot;:&quot;hyeseung!!&quot;,&quot;userEmail&quot;:&quot;peace10200khs@gmail.com&quot;}
+    Session Attrs = {}
 
-2023-12-09T12:02:41.842+09:00  INFO 7584 --- [    Test worker] o.c.controller.user.UserControllerTest   : Starting UserControllerTest using Java 17.0.7 with PID 7584 (started by khs10 in C:\private\Cote_Is_Backend)
-2023-12-09T12:02:41.844+09:00  INFO 7584 --- [    Test worker] o.c.controller.user.UserControllerTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-12-09T12:02:42.996+09:00  INFO 7584 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-09T12:02:43.133+09:00  INFO 7584 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 7 JPA repository interfaces.
-2023-12-09T12:02:43.975+09:00  INFO 7584 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-09T12:02:44.117+09:00  INFO 7584 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-12-09T12:02:44.485+09:00  WARN 7584 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-12-09T12:02:44.705+09:00  INFO 7584 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-09T12:02:45.215+09:00  INFO 7584 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4315fe1b
-2023-12-09T12:02:45.221+09:00  INFO 7584 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-09T12:02:45.337+09:00  INFO 7584 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+Handler:
+             Type = org.coteis.controller.user.UserController
+           Method = org.coteis.controller.user.UserController#addUser(AddUserRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;userNo&quot;:8,&quot;userName&quot;:&quot;김혜승&quot;,&quot;userId&quot;:&quot;hyeseung&quot;,&quot;userPw&quot;:&quot;hyeseung!!&quot;,&quot;userEmail&quot;:&quot;peace10200khs@gmail.com&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
 Hibernate: 
-    
-    alter table article 
-       drop 
-       foreign key FK3nyngp2y8mehcmqqipxt3fokc
-Hibernate: 
-    
-    alter table article 
-       drop 
-       foreign key FK28cpkyl3qpkvnlquu11g7xo9w
-Hibernate: 
-    
-    alter table article 
-       drop 
-       foreign key FKso1hghb9dkfj29gbsj662pms5
-Hibernate: 
-    
-    alter table article 
-       drop 
-       foreign key FK9gevyajcxym1e60fltc0ik16l
-Hibernate: 
-    
-    alter table article 
-       drop 
-       foreign key FK3ue2guwr48ugl87q469jlfso9
-Hibernate: 
-    
-    alter table comment 
-       drop 
-       foreign key FKncm2hv7dwbg4h8u28km0m06q2
-Hibernate: 
-    
-    alter table comment 
-       drop 
-       foreign key FKgr1babb5v1qsl3opwv4t5935p
-Hibernate: 
-    
-    drop table if exists algorithm
-Hibernate: 
-    
-    drop table if exists article
-Hibernate: 
-    
-    drop table if exists comment
-Hibernate: 
-    
-    drop table if exists difficulty
-Hibernate: 
-    
-    drop table if exists languages
-Hibernate: 
-    
-    drop table if exists previoustest
-Hibernate: 
-    
-    drop table if exists users
-Hibernate: 
-    
-    create table algorithm (
-       algorithm_no integer not null auto_increment,
-        algorithm_name varchar(255) not null,
-        primary key (algorithm_no)
-    ) engine=InnoDB
-Hibernate: 
-    
-    create table article (
-       article_no bigint not null auto_increment,
-        created_date datetime(6),
-        modified_date datetime(6),
-        answer LONGTEXT not null,
-        code_explain LONGTEXT,
-        concept LONGTEXT,
-        input_example LONGTEXT,
-        output_example LONGTEXT,
-        speed varchar(255),
-        test_explain LONGTEXT not null,
-        title varchar(255) not null,
-        algorithm_no integer,
-        difficulty_no integer,
-        language_no integer,
-        previoustest_no integer,
-        user_no bigint,
-        primary key (article_no)
-    ) engine=InnoDB
-Hibernate: 
-    
-    create table comment (
-       comment_id bigint not null auto_increment,
-        created_date datetime(6),
-        modified_date datetime(6),
-        content varchar(255) not null,
-        article_no bigint,
-        user_no bigint,
-        primary key (comment_id)
-    ) engine=InnoDB
-Hibernate: 
-    
-    create table difficulty (
-       difficulty_no integer not null auto_increment,
-        difficulty_name varchar(255) not null,
-        primary key (difficulty_no)
-    ) engine=InnoDB
-Hibernate: 
-    
-    create table languages (
-       language_no integer not null auto_increment,
-        language_name varchar(255) not null,
-        primary key (language_no)
-    ) engine=InnoDB
-Hibernate: 
-    
-    create table previoustest (
-       previoustest_no integer not null auto_increment,
-        previoustest_name varchar(255) not null,
-        primary key (previoustest_no)
-    ) engine=InnoDB
-Hibernate: 
-    
-    create table users (
-       user_no bigint not null auto_increment,
-        user_email varchar(255) not null,
-        user_id varchar(255) not null,
-        user_name varchar(255) not null,
-        user_pw varchar(255) not null,
-        primary key (user_no)
-    ) engine=InnoDB
-Hibernate: 
-    
-    alter table users 
-       add constraint UK_33uo7vet9c79ydfuwg1w848f unique (user_email)
-Hibernate: 
-    
-    alter table users 
-       add constraint UK_6efs5vmce86ymf5q7lmvn2uuf unique (user_id)
-Hibernate: 
-    
-    alter table article 
-       add constraint FK3nyngp2y8mehcmqqipxt3fokc 
-       foreign key (algorithm_no) 
-       references algorithm (algorithm_no) 
-       on delete cascade
-Hibernate: 
-    
-    alter table article 
-       add constraint FK28cpkyl3qpkvnlquu11g7xo9w 
-       foreign key (difficulty_no) 
-       references difficulty (difficulty_no) 
-       on delete cascade
-Hibernate: 
-    
-    alter table article 
-       add constraint FKso1hghb9dkfj29gbsj662pms5 
-       foreign key (language_no) 
-       references languages (language_no) 
-       on delete cascade
-Hibernate: 
-    
-    alter table article 
-       add constraint FK9gevyajcxym1e60fltc0ik16l 
-       foreign key (previoustest_no) 
-       references previoustest (previoustest_no) 
-       on delete cascade
-Hibernate: 
-    
-    alter table article 
-       add constraint FK3ue2guwr48ugl87q469jlfso9 
-       foreign key (user_no) 
-       references users (user_no) 
-       on delete cascade
-Hibernate: 
-    
-    alter table comment 
-       add constraint FKncm2hv7dwbg4h8u28km0m06q2 
-       foreign key (article_no) 
-       references article (article_no) 
-       on delete cascade
-Hibernate: 
-    
-    alter table comment 
-       add constraint FKgr1babb5v1qsl3opwv4t5935p 
-       foreign key (user_no) 
-       references users (user_no) 
-       on delete cascade
-2023-12-09T12:02:47.665+09:00  INFO 7584 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-09T12:02:47.681+09:00  INFO 7584 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-09T12:02:48.814+09:00  WARN 7584 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-09T12:02:49.339+09:00  WARN 7584 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2023-12-09T12:02:49.406+09:00  INFO 7584 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/coteis?serverTimezone=UTC'
-2023-12-09T12:02:49.815+09:00  INFO 7584 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-12-09T12:02:49.815+09:00  INFO 7584 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-12-09T12:02:49.818+09:00  INFO 7584 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2023-12-09T12:02:49.859+09:00  INFO 7584 --- [    Test worker] o.c.controller.user.UserControllerTest   : Started UserControllerTest in 8.493 seconds (process running for 10.641)
+    select
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        users u1_0
 Hibernate: 
     select
         u1_0.user_no,
@@ -318,6 +179,172 @@ Hibernate:
         users u1_0 
     where
         u1_0.user_no=?
+Hibernate: 
+    select
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        users u1_0 
+    where
+        u1_0.user_no=?
+Hibernate: 
+    update
+        users 
+    set
+        user_email=?,
+        user_id=?,
+        user_name=?,
+        user_pw=? 
+    where
+        user_no=?
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/users/5
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;102&quot;]
+             Body = {&quot;userName&quot;:&quot;김혜승&quot;,&quot;userId&quot;:&quot;hyeseung1&quot;,&quot;userPw&quot;:&quot;hyeseung1!!&quot;,&quot;userEmail&quot;:&quot;s2224@e-mirim.hs.kr&quot;}
+    Session Attrs = {}
+
+Handler:
+             Type = org.coteis.controller.user.UserController
+           Method = org.coteis.controller.user.UserController#updateUser(Long, UpdateUserRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;userNo&quot;:5,&quot;userName&quot;:&quot;김혜승&quot;,&quot;userId&quot;:&quot;hyeseung1&quot;,&quot;userPw&quot;:&quot;hyeseung1!!&quot;,&quot;userEmail&quot;:&quot;s2224@e-mirim.hs.kr&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        users u1_0 
+    where
+        u1_0.user_no=?
+Hibernate: 
+    select
+        a1_0.user_no,
+        a1_0.article_no,
+        a2_0.algorithm_no,
+        a2_0.algorithm_name,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        d1_0.difficulty_no,
+        d1_0.difficulty_name,
+        a1_0.input_example,
+        l1_0.language_no,
+        l1_0.language_name,
+        a1_0.modified_date,
+        a1_0.output_example,
+        p1_0.previoustest_no,
+        p1_0.previoustest_name,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title 
+    from
+        article a1_0 
+    left join
+        algorithm a2_0 
+            on a2_0.algorithm_no=a1_0.algorithm_no 
+    left join
+        difficulty d1_0 
+            on d1_0.difficulty_no=a1_0.difficulty_no 
+    left join
+        languages l1_0 
+            on l1_0.language_no=a1_0.language_no 
+    left join
+        previoustest p1_0 
+            on p1_0.previoustest_no=a1_0.previoustest_no 
+    where
+        a1_0.user_no=?
+Hibernate: 
+    select
+        c1_0.user_no,
+        c1_0.comment_id,
+        a1_0.article_no,
+        a2_0.algorithm_no,
+        a2_0.algorithm_name,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        d1_0.difficulty_no,
+        d1_0.difficulty_name,
+        a1_0.input_example,
+        l1_0.language_no,
+        l1_0.language_name,
+        a1_0.modified_date,
+        a1_0.output_example,
+        p1_0.previoustest_no,
+        p1_0.previoustest_name,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title,
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw,
+        c1_0.content,
+        c1_0.created_date,
+        c1_0.modified_date 
+    from
+        comment c1_0 
+    left join
+        article a1_0 
+            on a1_0.article_no=c1_0.article_no 
+    left join
+        algorithm a2_0 
+            on a2_0.algorithm_no=a1_0.algorithm_no 
+    left join
+        difficulty d1_0 
+            on d1_0.difficulty_no=a1_0.difficulty_no 
+    left join
+        languages l1_0 
+            on l1_0.language_no=a1_0.language_no 
+    left join
+        previoustest p1_0 
+            on p1_0.previoustest_no=a1_0.previoustest_no 
+    left join
+        users u1_0 
+            on u1_0.user_no=a1_0.user_no 
+    where
+        c1_0.user_no=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        user_no=?
 </pre>
 </span>
 </div>
@@ -329,7 +356,7 @@ Hibernate:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 2023. 12. 9. 오후 12:02:50</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 2023. 12. 12. 오후 5:44:23</p>
 </div>
 </div>
 </body>

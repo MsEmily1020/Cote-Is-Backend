@@ -16,6 +16,7 @@ public class ArticleResponse {
     private final Long articleNo;
     private final String title;
     private final LocalDateTime createdDate;
+    private final LocalDateTime modifiedDate;
     private final String testExplain;
     private final String answer;
     private final String inputExample;
@@ -33,6 +34,7 @@ public class ArticleResponse {
         this.articleNo = article.getArticleNo();
         this.title = article.getTitle();
         this.createdDate = article.getCreatedDate();
+        this.modifiedDate = article.getModifiedDate();
         this.testExplain = article.getTestExplain();
         this.answer = article.getAnswer();
         this.inputExample = article.getInputExample();

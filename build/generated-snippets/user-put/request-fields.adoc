@@ -1,20 +1,20 @@
 |===
 |Path|Type|Description
 
-|userName
-|String
+|`+userName+`
+|`+String+`
 |유저 이름
 
-|userId
-|String
+|`+userId+`
+|`+String+`
 |유저 아이디
 
-|userPw
-|String
+|`+userPw+`
+|`+String+`
 |유저 패스워드
 
-|userEmail
-|String
+|`+userEmail+`
+|`+String+`
 |유저 이메일
 
 |===

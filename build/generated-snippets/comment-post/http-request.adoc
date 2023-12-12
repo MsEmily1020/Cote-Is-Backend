@@ -2,52 +2,52 @@
 ----
 POST /api/comments HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-Content-Length: 1123
+Content-Length: 1149
 Host: localhost:8080
 
 {
   "content" : "comment",
   "userNo" : {
     "userNo" : null,
-    "userName" : "userName",
+    "userName" : "userName1",
     "userId" : "userId1",
-    "userPw" : "userPw",
-    "userEmail" : "uE"
+    "userPw" : "userPw1",
+    "userEmail" : "userEmail1"
   },
   "articleNo" : {
     "createdDate" : null,
     "modifiedDate" : null,
     "articleNo" : null,
-    "title" : "title",
-    "testExplain" : "testExplain",
-    "answer" : "answer",
-    "inputExample" : "inputExample",
-    "outputExample" : "outputExample",
-    "speed" : "speed",
-    "codeExplain" : "codeExplain",
-    "concept" : "concept",
+    "title" : "title2",
+    "testExplain" : "testExplain2",
+    "answer" : "answer2",
+    "inputExample" : "inputExample2",
+    "outputExample" : "outputExample2",
+    "speed" : "speed2",
+    "codeExplain" : "codeExplain2",
+    "concept" : "concept2",
     "userNo" : {
       "userNo" : null,
-      "userName" : "userName",
-      "userId" : "userId",
-      "userPw" : "userPw",
-      "userEmail" : "userEmail"
+      "userName" : "userName2",
+      "userId" : "userId2",
+      "userPw" : "userPw2",
+      "userEmail" : "userEmail2"
     },
     "algorithmNo" : {
       "algorithmNo" : null,
-      "algorithmName" : "algorithmName"
+      "algorithmName" : "algorithmName2"
     },
     "difficultyNo" : {
       "difficultyNo" : null,
-      "difficultyName" : "difficultyName"
+      "difficultyName" : "difficultyName2"
     },
     "languageNo" : {
       "languageNo" : null,
-      "languageName" : "langaugeName"
+      "languageName" : "languageName2"
     },
     "previoustestNo" : {
       "previoustestNo" : null,
-      "previoustestName" : "previoustestName"
+      "previoustestName" : "previoustestName2"
     }
   }
 }

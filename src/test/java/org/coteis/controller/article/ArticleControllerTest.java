@@ -1,6 +1,7 @@
 package org.coteis.controller.article;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.coteis.controller.user.UserController;
 import org.coteis.domain.category.Algorithm;
 import org.coteis.domain.category.Difficulty;
 import org.coteis.domain.category.Language;
@@ -8,11 +9,7 @@ import org.coteis.domain.category.Previoustest;
 import org.coteis.domain.user.User;
 import org.coteis.dto.article.AddArticleRequest;
 import org.coteis.dto.article.UpdateArticleRequest;
-import org.coteis.dto.user.AddUserRequest;
-import org.coteis.dto.user.UpdateUserRequest;
-import org.coteis.repository.article.ArticleRepository;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -20,9 +17,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.*;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.*;
@@ -33,21 +27,41 @@ import static org.springframework.restdocs.request.RequestDocumentation.pathPara
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+
 @SpringBootTest
 @AutoConfigureRestDocs
 @AutoConfigureMockMvc
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class ArticleControllerTest {
 
     @Autowired
     MockMvc mockMvc;
 
     @Autowired
-    private ObjectMapper objectMapper;
+    ObjectMapper objectMapper;
+
+    @Autowired
+    UserController userController;
 
     @Test
-    @DisplayName("addArticle() : 글 등록")
+    @Order(1)
+    @DisplayName("1. addArticle() : article post")
     void addArticle() throws Exception {
-        AddArticleRequest request = getAddArticleRequest();
+        AddArticleRequest request = new AddArticleRequest(
+                "title",
+                "testExplain",
+                "answer",
+                "inputExample",
+                "outputExample",
+                "speed",
+                "codeExplain",
+                "concept",
+                User.builder().userName("userName").userId("userId").userPw("userPw").userEmail("userEmail").build(),
+                Algorithm.builder().algorithmName("al").build(),
+                Difficulty.builder().difficultyName("di").build(),
+                Language.builder().languageName("la").build(),
+                Previoustest.builder().previoustestName("pre").build()
+        );
 
         mockMvc.perform(
                         post("/api/articles")
@@ -124,27 +138,9 @@ class ArticleControllerTest {
         ;
     }
 
-    private static AddArticleRequest getAddArticleRequest() {
-        AddArticleRequest request = new AddArticleRequest(
-                "title",
-                "testExplain",
-                "answser",
-                "inputExample",
-                "outputExample",
-                "speed",
-                "codeExplain",
-                "concept",
-                new User("userName", "userId", "userPw", "userEmail"),
-                new Algorithm("algorithmName"),
-                new Difficulty("difficultyName"),
-                new Language("langaugeName"),
-                new Previoustest("previoustestName")
-        );
-        return request;
-    }
-
     @Test
-    @DisplayName("findAllArticles() : 글 목록 조회")
+    @Order(2)
+    @DisplayName("2. findAllArticles() : articles get")
     void findAllArticles() throws Exception {
         mockMvc.perform(
                         get("/api/articles")
@@ -159,6 +155,7 @@ class ArticleControllerTest {
                                         fieldWithPath("[].articleNo").description("글 번호 pk"),
                                         fieldWithPath("[].title").description("글 제목"),
                                         fieldWithPath("[].createdDate").description("생성 일자"),
+                                        fieldWithPath("[].modifiedDate").description("수정 일자"),
                                         fieldWithPath("[].testExplain").description("문제 설명"),
                                         fieldWithPath("[].answer").description("코드 정답"),
                                         fieldWithPath("[].inputExample").description("입력 예시"),
@@ -192,7 +189,8 @@ class ArticleControllerTest {
     }
 
     @Test
-    @DisplayName("findArticle() : 특정 글 조회")
+    @Order(3)
+    @DisplayName("3. findArticle() : article get")
     void findArticle() throws Exception {
         mockMvc.perform(
                         get("/api/articles/{id}", 1L)
@@ -210,6 +208,7 @@ class ArticleControllerTest {
                                         fieldWithPath("articleNo").description("글 번호 pk"),
                                         fieldWithPath("title").description("글 제목"),
                                         fieldWithPath("createdDate").description("생성 일자"),
+                                        fieldWithPath("modifiedDate").description("수정 일자"),
                                         fieldWithPath("testExplain").description("문제 설명"),
                                         fieldWithPath("answer").description("코드 정답"),
                                         fieldWithPath("inputExample").description("입력 예시"),
@@ -241,23 +240,26 @@ class ArticleControllerTest {
     }
 
     @Test
-    @DisplayName("updateArticle() : 특정 글의 정보를 업데이트")
+    @Order(4)
+    @DisplayName("4. updateArticle() : article put")
     void updateArticle() throws Exception {
-        UpdateArticleRequest request = new UpdateArticleRequest("title",
+        UpdateArticleRequest request = new UpdateArticleRequest(
+                "title",
                 "testExplain",
-                "answser",
+                "answer",
                 "inputExample",
                 "outputExample",
                 "speed",
                 "codeExplain",
                 "concept",
-                new Algorithm("algorithmName"),
-                new Difficulty("difficultyName"),
-                new Language("langaugeName"),
-                new Previoustest("previoustestName"));
+                Algorithm.builder().algorithmName("al").build(),
+                Difficulty.builder().difficultyName("di").build(),
+                Language.builder().languageName("la").build(),
+                Previoustest.builder().previoustestName("pre").build()
+        );
 
         mockMvc.perform(
-                        put("/api/articles/{id}", 1L)
+                        put("/api/articles/{id}", 6L)
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .content(objectMapper.writeValueAsString(request))
                 )
@@ -326,15 +328,15 @@ class ArticleControllerTest {
                                         fieldWithPath("previoustestNo.previoustestName").description("카테고리 기출 문제 이름").ignored()
                                 )
                         )
-                )
-        ;
+                );
     }
 
     @Test
-    @DisplayName("deleteArticle() : 특정 글 삭제하기")
+    @Order(5)
+    @DisplayName("5. deleteArticle() : article delete")
     void deleteArticle() throws Exception {
         mockMvc.perform(
-                        delete("/api/articles/{id}", 1L)
+                        delete("/api/articles/{id}", 6L)
                                 .contentType(MediaType.APPLICATION_JSON)
                 )
                 .andExpect(status().isOk())

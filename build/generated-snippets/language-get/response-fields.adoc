@@ -1,12 +1,12 @@
 |===
 |Path|Type|Description
 
-|languageNo
-|Number
+|`+languageNo+`
+|`+Number+`
 |카테고리 언어 번호 pk
 
-|languageName
-|String
+|`+languageName+`
+|`+String+`
 |카테고리 언어 이름
 
 |===

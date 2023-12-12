@@ -12,5 +12,11 @@
 }, {
   "difficultyNo" : 4,
   "difficultyName" : "Extreme"
+}, {
+  "difficultyNo" : 5,
+  "difficultyName" : "di"
+}, {
+  "difficultyNo" : 6,
+  "difficultyName" : "di"
 } ]
 ----

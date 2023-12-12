@@ -9,10 +9,7 @@ import org.coteis.domain.category.Previoustest;
 import org.coteis.domain.user.User;
 import org.coteis.dto.comment.AddCommentRequest;
 import org.coteis.dto.comment.UpdateCommentRequest;
-import org.coteis.dto.user.AddUserRequest;
-import org.coteis.dto.user.UpdateUserRequest;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -20,7 +17,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.*;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.*;
@@ -35,21 +31,23 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureRestDocs
 @AutoConfigureMockMvc
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class CommentControllerTest {
 
     @Autowired
     MockMvc mockMvc;
 
     @Autowired
-    private ObjectMapper objectMapper;
+    ObjectMapper objectMapper;
 
     @Test
-    @DisplayName("addComment() : 댓글 생성")
+    @Order(1)
+    @DisplayName("1. addComment() : 댓글 생성")
     void addComment() throws Exception {
         AddCommentRequest request = new AddCommentRequest(
                 "comment",
-                new User("userName", "userId1", "userPw", "uE"),
-                new Article("title", "testExplain", "answer", "inputExample", "outputExample", "speed", "codeExplain", "concept", new User("userName", "userId", "userPw", "userEmail"), new Algorithm("algorithmName"), new Difficulty("difficultyName"), new Language("langaugeName"), new Previoustest("previoustestName"))
+                new User("userName1", "userId1", "userPw1", "userEmail1"),
+                new Article("title2", "testExplain2", "answer2", "inputExample2", "outputExample2", "speed2", "codeExplain2", "concept2", new User("userName2", "userId2", "userPw2", "userEmail2"), new Algorithm("algorithmName2"), new Difficulty("difficultyName2"), new Language("languageName2"), new Previoustest("previoustestName2"))
         );
 
         mockMvc.perform(
@@ -151,7 +149,8 @@ class CommentControllerTest {
     }
 
     @Test
-    @DisplayName("findAllComments() : 댓글 목록 조회")
+    @Order(2)
+    @DisplayName("2. findAllComments() : 댓글 목록 조회")
     void findAllComments() throws Exception {
         mockMvc.perform(
                         get("/api/comments")
@@ -215,19 +214,20 @@ class CommentControllerTest {
     }
 
     @Test
-    @DisplayName("updateComment() : 특정 댓글 정보 업데이트")
+    @Order(3)
+    @DisplayName("3. updateComment() : 특정 댓글 정보 업데이트")
     void updateComment() throws Exception {
         UpdateCommentRequest request = new UpdateCommentRequest("comment123");
 
         mockMvc.perform(
-                        put("/api/comments/{id}", 1L)
+                        put("/api/comments/{id}", 7L)
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .content(objectMapper.writeValueAsString(request))
                 )
                 .andExpect(status().isOk())
                 .andDo(print())
                 .andDo( // rest docs 문서 작성 시작
-                        document("commnet-put", // 문서 조각 디렉토리 명
+                        document("comment-put", // 문서 조각 디렉토리 명
                                 preprocessRequest(prettyPrint()),
                                 preprocessResponse(prettyPrint()),
                                 pathParameters( // path 파라미터 정보 입력
@@ -286,10 +286,11 @@ class CommentControllerTest {
     }
 
     @Test
-    @DisplayName("deleteCommnet() : 특정 댓글 삭제")
+    @Order(4)
+    @DisplayName("4. deleteComment() : 특정 댓글 삭제")
     void deleteComment() throws Exception {
         mockMvc.perform(
-                    delete("/api/comments/{id}", 1L)
+                    delete("/api/comments/{id}", 7L)
                             .contentType(MediaType.APPLICATION_JSON)
             )
             .andExpect(status().isOk())

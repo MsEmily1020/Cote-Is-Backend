@@ -40,6 +40,7 @@ insert into users (user_name, user_id, user_pw, user_email) values ('김수연',
 --1
 insert into article (title,
  created_date,
+ modified_date,
  test_explain,
  answer,
  input_example,
@@ -54,6 +55,7 @@ insert into article (title,
  previoustest_no)
 values (
 '피자 나눠 먹기 (3)',
+'2023-09-07 03:49:43',
 '2023-09-07 03:49:43',
 '머쓱이네 피자가게는 피자를 두 조각에서 열 조각까지 원하는 조각 수로 잘라줍니다. 피자 조각 수 slice와 피자를 먹는 사람의 수 n이 매개변수로 주어질 때, n명의 사람이 최소 한 조각 이상 피자를 먹으려면 최소 몇 판의 피자를 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.
  (단, 2 ≤ slice ≤ 10, 1 ≤ n ≤ 100)',
@@ -90,6 +92,7 @@ values (
 --2
 insert into article (title,
  created_date,
+ modified_date,
  test_explain,
  answer,
  input_example,
@@ -104,6 +107,7 @@ insert into article (title,
  previoustest_no)
 values (
 '피자 나눠 먹기 (1)',
+'2023-01-13 14:58:23',
 '2023-01-13 14:58:23',
 '머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 주어질 때, 모든 사람이 피자를 한 조각 이상 먹기 위해 필요한 피자의 수를 return 하는 solution 함수를 완성해보세요.
 (단, 1 ≤ n ≤ 100)',
@@ -139,6 +143,7 @@ values (
 --3
 insert into article (title,
  created_date,
+ modified_date,
  test_explain,
  answer,
  input_example,
@@ -153,6 +158,7 @@ insert into article (title,
  previoustest_no)
 values (
 '머쓱이보다 키 큰 사람',
+'2023-01-11 13:53:03',
 '2023-01-11 13:53:03',
 '머쓱이는 학교에서 키 순으로 줄을 설 때 몇 번째로 서야 하는지 궁금해졌습니다. 머쓱이네 반 친구들의 키가 담긴 정수 배열 array와 머쓱이의 키 height가 매개변수로 주어질 때, 머쓱이보다 키 큰 사람 수를 return 하도록 solution 함수를 완성해보세요.
 (단, 1 ≤ array의 길이 ≤ 100, 1 ≤ height ≤ 200, 1 ≤ array의 원소 ≤ 200)',
@@ -185,6 +191,7 @@ values (
 --4
 insert into article (title,
  created_date,
+ modified_date,
  test_explain,
  answer,
  input_example,
@@ -199,6 +206,7 @@ insert into article (title,
  previoustest_no)
 values (
 '기능개발',
+'2023-01-20 18:19:32',
 '2023-01-20 18:19:32',
 '프로그래머스 팀에서는 기능 개선 작업을 수행 중입니다. 각 기능은 진도가 100%일 때 서비스에 반영할 수 있습니다.
  또, 각 기능의 개발속도는 모두 다르기 때문에 뒤에 있는 기능이 앞에 있는 기능보다 먼저 개발될 수 있고, 이때 뒤에 있는 기능은 앞에 있는 기능이 배포될 때 함께 배포됩니다.
@@ -281,6 +289,7 @@ public class Solution {
 --5
 insert into article (title,
  created_date,
+ modified_date,
  test_explain,
  answer,
  input_example,
@@ -295,6 +304,7 @@ insert into article (title,
  previoustest_no)
 values (
 '프로그래머스 [level 0] 과제 안 내신 분..? - 자바(java)',
+'2023-02-20 10:38:10',
 '2023-02-20 10:38:10',
 '사분면은 한 평면을 x축과 y축을 기준으로 나눈 네 부분입니다. 사분면은 아래와 같이 1부터 4까지 번호를매깁니다.
  - x 좌표와 y 좌표가 모두 양수이면 제1사분면에 속합니다.
@@ -342,8 +352,9 @@ values (
 -- language_no,
 -- previoustest_no
 
-insert into comment (content, created_date, user_no, article_no) values ('멋진 포스트 감사합니다.', '2023-11-28 05:01:30', 1, 1);
-insert into comment (content, created_date, user_no, article_no) values ('참고해서 써도 괜찮을까요?', '2023-11-30 19:30:10', 2, 1);
-insert into comment (content, created_date, user_no, article_no) values ('잘 정리하셨네요!', '2023-05-18 07:03:12', 3, 1);
-insert into comment (content, created_date, user_no, article_no) values ('더 많은 글을 원해요', '2023-12-01 09:05:15', 1, 2);
-insert into comment (content, created_date, user_no, article_no) values ('우아~!', '2023-03-11 12:10:32', 1, 3);
+insert into comment (content, created_date, modified_date, user_no, article_no) values ('멋진 포스트 감사합니다.', '2023-11-28 05:01:30', '2023-11-28 05:01:30', 1, 1);
+insert into comment (content, created_date, modified_date, user_no, article_no) values ('참고해서 써도 괜찮을까요?', '2023-11-30 19:30:10', '2023-11-30 19:30:10', 2, 1);
+insert into comment (content, created_date, modified_date, user_no, article_no) values ('잘 정리하셨네요!', '2023-05-18 07:03:12', '2023-05-18 07:03:12', 3, 1);
+insert into comment (content, created_date, modified_date, user_no, article_no) values ('더 많은 글을 원해요', '2023-12-01 09:05:15', '2023-12-01 09:05:15', 1, 2);
+insert into comment (content, created_date, modified_date, user_no, article_no) values ('우아~!', '2023-03-11 12:10:32', '2023-03-11 12:10:32', 1, 3);
+insert into comment (content, created_date, modified_date, user_no, article_no) value ('멋지네요! 다음에 또 오겠습니다.', '2023-01-20 20:11:19', '2023-01-20 20:11:19', 2, 2);

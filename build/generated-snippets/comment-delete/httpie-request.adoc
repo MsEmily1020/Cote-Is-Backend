@@ -1,5 +1,5 @@
 [source,bash]
 ----
-$ http DELETE 'http://localhost:8080/api/comments/1' \
+$ http DELETE 'http://localhost:8080/api/comments/7' \
     'Content-Type:application/json;charset=UTF-8'
 ----

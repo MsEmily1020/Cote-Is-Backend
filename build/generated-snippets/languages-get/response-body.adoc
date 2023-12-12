@@ -24,5 +24,11 @@
 }, {
   "languageNo" : 8,
   "languageName" : "Kotlin"
+}, {
+  "languageNo" : 9,
+  "languageName" : "la"
+}, {
+  "languageNo" : 10,
+  "languageName" : "la"
 } ]
 ----

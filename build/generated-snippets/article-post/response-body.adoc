@@ -1,12 +1,12 @@
 [source,json,options="nowrap"]
 ----
 {
-  "createdDate" : "2023-12-10T21:16:42.0903291",
-  "modifiedDate" : "2023-12-10T21:16:42.0903291",
+  "createdDate" : "2023-12-12T17:44:21.4525014",
+  "modifiedDate" : "2023-12-12T17:44:21.4525014",
   "articleNo" : 6,
   "title" : "title",
   "testExplain" : "testExplain",
-  "answer" : "answser",
+  "answer" : "answer",
   "inputExample" : "inputExample",
   "outputExample" : "outputExample",
   "speed" : "speed",
@@ -21,19 +21,19 @@
   },
   "algorithmNo" : {
     "algorithmNo" : 11,
-    "algorithmName" : "algorithmName"
+    "algorithmName" : "al"
   },
   "difficultyNo" : {
     "difficultyNo" : 5,
-    "difficultyName" : "difficultyName"
+    "difficultyName" : "di"
   },
   "languageNo" : {
     "languageNo" : 9,
-    "languageName" : "langaugeName"
+    "languageName" : "la"
   },
   "previoustestNo" : {
     "previoustestNo" : 9,
-    "previoustestName" : "previoustestName"
+    "previoustestName" : "pre"
   }
 }
 ----

@@ -1,5 +1,5 @@
 [source,bash]
 ----
-$ curl 'http://localhost:8080/api/users/2' -i -X DELETE \
+$ curl 'http://localhost:8080/api/users/5' -i -X DELETE \
     -H 'Content-Type: application/json;charset=UTF-8'
 ----

@@ -1,8 +1,8 @@
 |===
 |Path|Type|Description
 
-|content
-|String
+|`+content+`
+|`+String+`
 |댓글 내용
 
 |===

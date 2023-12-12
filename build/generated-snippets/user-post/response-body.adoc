@@ -1,7 +1,7 @@
 [source,json,options="nowrap"]
 ----
 {
-  "userNo" : 5,
+  "userNo" : 8,
   "userName" : "김혜승",
   "userId" : "hyeseung",
   "userPw" : "hyeseung!!",

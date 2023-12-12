@@ -1,14 +1,14 @@
 [source,http,options="nowrap"]
 ----
-PUT /api/articles/1 HTTP/1.1
+PUT /api/articles/6 HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-Content-Length: 624
+Content-Length: 577
 Host: localhost:8080
 
 {
   "title" : "title",
   "testExplain" : "testExplain",
-  "answer" : "answser",
+  "answer" : "answer",
   "inputExample" : "inputExample",
   "outputExample" : "outputExample",
   "speed" : "speed",
@@ -16,19 +16,19 @@ Host: localhost:8080
   "concept" : "concept",
   "algorithmNo" : {
     "algorithmNo" : null,
-    "algorithmName" : "algorithmName"
+    "algorithmName" : "al"
   },
   "difficultyNo" : {
     "difficultyNo" : null,
-    "difficultyName" : "difficultyName"
+    "difficultyName" : "di"
   },
   "languageNo" : {
     "languageNo" : null,
-    "languageName" : "langaugeName"
+    "languageName" : "la"
   },
   "previoustestNo" : {
     "previoustestNo" : null,
-    "previoustestName" : "previoustestName"
+    "previoustestName" : "pre"
   }
 }
 ----

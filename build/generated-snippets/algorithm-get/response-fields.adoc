@@ -1,12 +1,12 @@
 |===
 |Path|Type|Description
 
-|algorithmNo
-|Number
+|`+algorithmNo+`
+|`+Number+`
 |카테고리 알고리즘 번호 pk
 
-|algorithmName
-|String
+|`+algorithmName+`
+|`+String+`
 |카테고리 알고리즘 이름
 
 |===

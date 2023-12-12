@@ -5,17 +5,227 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c88667-32f1-4567-b54a-db4ca663e9bd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-delete/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-delete/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/category/AlgorithmController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/controller/category/AlgorithmController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/BaseTimeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/BaseTimeEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/article/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/article/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/comment/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/comment/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/user/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/user/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/domain/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/dto/article/ArticleResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/dto/article/ArticleResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/dto/article/UpdateArticleRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/dto/article/UpdateArticleRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/coteis/dto/comment/CommentResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/coteis/dto/comment/CommentResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/org/coteis/controller/user/UserControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/org/coteis/controller/user/UserControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithm-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/algorithms-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-delete/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-delete/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-delete/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-delete/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-delete/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-delete/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-delete/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-delete/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-delete/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-delete/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-delete/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-delete/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-delete/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-delete/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-get/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-get/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-post/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-post/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-post/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-post/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-post/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-post/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-post/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-post/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-post/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-post/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-post/request-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-post/request-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-post/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-post/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-post/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-post/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/request-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/request-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/article-put/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/article-put/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/articles-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/articles-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/articles-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/articles-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/articles-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/articles-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/articles-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/articles-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/articles-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/articles-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/articles-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/articles-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/articles-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/articles-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-delete/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-delete/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-delete/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-delete/http-request.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-delete/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-delete/httpie-request.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-delete/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-delete/path-parameters.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-delete/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-delete/request-body.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-delete/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-delete/response-body.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/article/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/article/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/comment/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/comment/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/domain/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/request-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/request-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comment-post/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comment-post/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comments-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comments-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comments-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comments-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comments-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comments-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comments-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comments-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comments-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comments-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comments-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comments-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/comments-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/comments-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/commnet-put/curl-request.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/commnet-put/http-request.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/commnet-put/http-response.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/commnet-put/httpie-request.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/commnet-put/path-parameters.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/commnet-put/request-body.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/commnet-put/request-fields.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/commnet-put/response-body.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/commnet-put/response-fields.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/path-parameters.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulties-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/difficulty-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/language-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/language-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/language-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/language-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/language-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/language-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/language-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/language-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/language-get/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/language-get/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/language-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/language-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/language-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/language-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/language-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/language-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/languages-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/languages-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/languages-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/languages-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/languages-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/languages-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/languages-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/languages-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/languages-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/languages-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/languages-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/languages-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/languages-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/languages-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustest-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/previoustests-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-delete/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-delete/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-delete/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-delete/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-delete/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-delete/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-delete/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-delete/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-delete/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-delete/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-delete/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-delete/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-delete/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-delete/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/request-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/request-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-post/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-post/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-put/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-put/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-put/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-put/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-put/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-put/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-put/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-put/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-put/path-parameters.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-put/path-parameters.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-put/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-put/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-put/request-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-put/request-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-put/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-put/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/user-put/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/user-put/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/users-get/curl-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/users-get/curl-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/users-get/http-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/users-get/http-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/users-get/http-response.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/users-get/http-response.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/users-get/httpie-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/users-get/httpie-request.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/users-get/request-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/users-get/request-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/users-get/response-body.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/users-get/response-body.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated-snippets/users-get/response-fields.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated-snippets/users-get/response-fields.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Cote_Is-1.0-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Cote_Is-1.0-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Cote_Is-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Cote_Is-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/org.coteis.controller.user.UserControllerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/org.coteis.controller.user.UserControllerTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/org.coteis.controller.user.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/org.coteis.controller.user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/docs/index.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-org.coteis.controller.user.UserControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-org.coteis.controller.user.UserControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/asciidoctor.javaexec-data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/ArticleResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/coteis/dto/article/ArticleResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/algorithm/algorithm.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/algorithm/algorithm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/article/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/article/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/docs/user/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/docs/user/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/article/ArticleControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/article/ArticleControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/comment/CommentControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/comment/CommentControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/user/UserControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/org/coteis/controller/user/UserControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/ArticleResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coteis/dto/article/ArticleResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/algorithm/algorithm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/algorithm/algorithm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/article/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/article/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/docs/user/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/docs/user/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/article/ArticleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/article/ArticleControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/comment/CommentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/comment/CommentControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/coteis/controller/user/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +255,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Empty" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,22 +278,22 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "Empty",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/private/Cote-Is-Backend",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;Empty&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/private/Cote-Is-Backend&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\private\Cote_Is_Backend\src\main\resources\static\docs" />
@@ -101,7 +311,7 @@
       <recent name="org.coteis.controller.user" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CoteisApplication">
+  <component name="RunManager" selected="Gradle.Cote-Is-Backend [build]">
     <configuration name="CoteisApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.coteis.CoteisApplication" />
       <module name="Cote_Is.main" />
@@ -115,64 +325,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommentControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Cote-Is-Backend [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Cote-Is-Backend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ArticleControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.coteis.controller.comment.*" />
+          <option name="PATTERN" value="org.coteis.controller.article.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.coteis.controller.comment" />
-      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.comment.CommentControllerTest" />
+      <option name="PACKAGE_NAME" value="org.coteis.controller.article" />
+      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.article.ArticleControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommentControllerTest.deleteComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArticleControllerTest.addArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cote_Is.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.coteis.controller.comment.*" />
+          <option name="PATTERN" value="org.coteis.controller.article.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.coteis.controller.comment" />
-      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.comment.CommentControllerTest" />
-      <option name="METHOD_NAME" value="deleteComment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommentControllerTest.findAllComments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cote_Is.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.coteis.controller.comment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.coteis.controller.comment" />
-      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.comment.CommentControllerTest" />
-      <option name="METHOD_NAME" value="findAllComments" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommentControllerTest.updateComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cote_Is.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.coteis.controller.comment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.coteis.controller.comment" />
-      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.comment.CommentControllerTest" />
-      <option name="METHOD_NAME" value="updateComment" />
+      <option name="PACKAGE_NAME" value="org.coteis.controller.article" />
+      <option name="MAIN_CLASS_NAME" value="org.coteis.controller.article.ArticleControllerTest" />
+      <option name="METHOD_NAME" value="addArticle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,11 +409,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Cote-Is-Backend [build]" />
+        <item itemvalue="Gradle.Cote-Is-Backend [clean]" />
         <item itemvalue="Application.CoteisApplication" />
-        <item itemvalue="JUnit.CommentControllerTest.deleteComment" />
-        <item itemvalue="JUnit.CommentControllerTest.updateComment" />
-        <item itemvalue="JUnit.CommentControllerTest.findAllComments" />
-        <item itemvalue="JUnit.CommentControllerTest" />
+        <item itemvalue="JUnit.ArticleControllerTest" />
+        <item itemvalue="JUnit.ArticleControllerTest.addArticle" />
       </list>
     </recent_temporary>
   </component>
@@ -216,5 +438,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/coteis/controller/comment/CommentControllerTest.java</url>
+          <line>282</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/coteis/service/user/UserService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

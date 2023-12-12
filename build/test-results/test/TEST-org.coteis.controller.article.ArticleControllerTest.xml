@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.coteis.controller.article.ArticleControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-12-12T08:44:20" hostname="DESKTOP-OSVRIU0" time="1.301">
+  <properties/>
+  <testcase name="1. addArticle() : article post" classname="org.coteis.controller.article.ArticleControllerTest" time="0.762"/>
+  <testcase name="2. findAllArticles() : articles get" classname="org.coteis.controller.article.ArticleControllerTest" time="0.298"/>
+  <testcase name="3. findArticle() : article get" classname="org.coteis.controller.article.ArticleControllerTest" time="0.087"/>
+  <testcase name="4. updateArticle() : article put" classname="org.coteis.controller.article.ArticleControllerTest" time="0.093"/>
+  <testcase name="5. deleteArticle() : article delete" classname="org.coteis.controller.article.ArticleControllerTest" time="0.054"/>
+  <system-out><![CDATA[17:44:12.555 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ArticleControllerTest]: using SpringBootContextLoader
+17:44:12.562 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.coteis.controller.article.ArticleControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:44:12.563 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.coteis.controller.article.ArticleControllerTest]: ArticleControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:44:12.621 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [ArticleControllerTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+17:44:12.746 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\private\Cote-Is-Backend\build\classes\java\main\org\coteis\CoteisApplication.class]
+17:44:12.749 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.coteis.CoteisApplication for test class org.coteis.controller.article.ArticleControllerTest
+17:44:12.914 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [ArticleControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+17:44:12.915 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [ArticleControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.2)
+
+2023-12-12T17:44:13.427+09:00  INFO 29620 --- [    Test worker] o.c.c.article.ArticleControllerTest      : Starting ArticleControllerTest using Java 17.0.7 with PID 29620 (started by khs10 in C:\private\Cote-Is-Backend)
+2023-12-12T17:44:13.429+09:00  INFO 29620 --- [    Test worker] o.c.c.article.ArticleControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T17:44:14.471+09:00  INFO 29620 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T17:44:14.587+09:00  INFO 29620 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 7 JPA repository interfaces.
+2023-12-12T17:44:15.361+09:00  INFO 29620 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T17:44:15.487+09:00  INFO 29620 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-12-12T17:44:15.912+09:00  WARN 29620 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-12-12T17:44:16.146+09:00  INFO 29620 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-12T17:44:16.599+09:00  INFO 29620 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@308a9264
+2023-12-12T17:44:16.604+09:00  INFO 29620 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-12T17:44:16.701+09:00  INFO 29620 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+Hibernate: 
+    
+    alter table article 
+       drop 
+       foreign key FK3nyngp2y8mehcmqqipxt3fokc
+Hibernate: 
+    
+    alter table article 
+       drop 
+       foreign key FK28cpkyl3qpkvnlquu11g7xo9w
+Hibernate: 
+    
+    alter table article 
+       drop 
+       foreign key FKso1hghb9dkfj29gbsj662pms5
+Hibernate: 
+    
+    alter table article 
+       drop 
+       foreign key FK9gevyajcxym1e60fltc0ik16l
+Hibernate: 
+    
+    alter table article 
+       drop 
+       foreign key FK3ue2guwr48ugl87q469jlfso9
+Hibernate: 
+    
+    alter table comment 
+       drop 
+       foreign key FKncm2hv7dwbg4h8u28km0m06q2
+Hibernate: 
+    
+    alter table comment 
+       drop 
+       foreign key FKgr1babb5v1qsl3opwv4t5935p
+Hibernate: 
+    
+    drop table if exists algorithm
+Hibernate: 
+    
+    drop table if exists article
+Hibernate: 
+    
+    drop table if exists comment
+Hibernate: 
+    
+    drop table if exists difficulty
+Hibernate: 
+    
+    drop table if exists languages
+Hibernate: 
+    
+    drop table if exists previoustest
+Hibernate: 
+    
+    drop table if exists users
+Hibernate: 
+    
+    create table algorithm (
+       algorithm_no integer not null auto_increment,
+        algorithm_name varchar(255) not null,
+        primary key (algorithm_no)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table article (
+       article_no bigint not null auto_increment,
+        created_date datetime(6),
+        modified_date datetime(6),
+        answer LONGTEXT not null,
+        code_explain LONGTEXT,
+        concept LONGTEXT,
+        input_example LONGTEXT,
+        output_example LONGTEXT,
+        speed varchar(255),
+        test_explain LONGTEXT not null,
+        title varchar(255) not null,
+        algorithm_no integer,
+        difficulty_no integer,
+        language_no integer,
+        previoustest_no integer,
+        user_no bigint,
+        primary key (article_no)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table comment (
+       comment_id bigint not null auto_increment,
+        created_date datetime(6),
+        modified_date datetime(6),
+        content varchar(255) not null,
+        article_no bigint,
+        user_no bigint,
+        primary key (comment_id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table difficulty (
+       difficulty_no integer not null auto_increment,
+        difficulty_name varchar(255) not null,
+        primary key (difficulty_no)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table languages (
+       language_no integer not null auto_increment,
+        language_name varchar(255) not null,
+        primary key (language_no)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table previoustest (
+       previoustest_no integer not null auto_increment,
+        previoustest_name varchar(255) not null,
+        primary key (previoustest_no)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table users (
+       user_no bigint not null auto_increment,
+        user_email varchar(255) not null,
+        user_id varchar(255) not null,
+        user_name varchar(255) not null,
+        user_pw varchar(255) not null,
+        primary key (user_no)
+    ) engine=InnoDB
+Hibernate: 
+    
+    alter table users 
+       add constraint UK_33uo7vet9c79ydfuwg1w848f unique (user_email)
+Hibernate: 
+    
+    alter table users 
+       add constraint UK_6efs5vmce86ymf5q7lmvn2uuf unique (user_id)
+Hibernate: 
+    
+    alter table article 
+       add constraint FK3nyngp2y8mehcmqqipxt3fokc 
+       foreign key (algorithm_no) 
+       references algorithm (algorithm_no)
+Hibernate: 
+    
+    alter table article 
+       add constraint FK28cpkyl3qpkvnlquu11g7xo9w 
+       foreign key (difficulty_no) 
+       references difficulty (difficulty_no)
+Hibernate: 
+    
+    alter table article 
+       add constraint FKso1hghb9dkfj29gbsj662pms5 
+       foreign key (language_no) 
+       references languages (language_no)
+Hibernate: 
+    
+    alter table article 
+       add constraint FK9gevyajcxym1e60fltc0ik16l 
+       foreign key (previoustest_no) 
+       references previoustest (previoustest_no)
+Hibernate: 
+    
+    alter table article 
+       add constraint FK3ue2guwr48ugl87q469jlfso9 
+       foreign key (user_no) 
+       references users (user_no)
+Hibernate: 
+    
+    alter table comment 
+       add constraint FKncm2hv7dwbg4h8u28km0m06q2 
+       foreign key (article_no) 
+       references article (article_no)
+Hibernate: 
+    
+    alter table comment 
+       add constraint FKgr1babb5v1qsl3opwv4t5935p 
+       foreign key (user_no) 
+       references users (user_no)
+2023-12-12T17:44:18.973+09:00  INFO 29620 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-12T17:44:18.985+09:00  INFO 29620 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T17:44:19.983+09:00  WARN 29620 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T17:44:20.467+09:00  WARN 29620 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-12-12T17:44:20.519+09:00  INFO 29620 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/coteis?serverTimezone=UTC'
+2023-12-12T17:44:20.891+09:00  INFO 29620 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-12T17:44:20.892+09:00  INFO 29620 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-12T17:44:20.897+09:00  INFO 29620 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-12-12T17:44:20.930+09:00  INFO 29620 --- [    Test worker] o.c.c.article.ArticleControllerTest      : Started ArticleControllerTest in 7.945 seconds (process running for 10.004)
+Hibernate: 
+    insert 
+    into
+        algorithm
+        (algorithm_name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        difficulty
+        (difficulty_name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        languages
+        (language_name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        previoustest
+        (previoustest_name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        users
+        (user_email, user_id, user_name, user_pw) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (algorithm_no, answer, code_explain, concept, created_date, difficulty_no, input_example, language_no, modified_date, output_example, previoustest_no, speed, test_explain, title, user_no) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/articles
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"530"]
+             Body = {"title":"title","testExplain":"testExplain","answer":"answer","inputExample":"inputExample","outputExample":"outputExample","speed":"speed","codeExplain":"codeExplain","concept":"concept","userNo":{"userNo":null,"userName":"userName","userId":"userId","userPw":"userPw","userEmail":"userEmail"},"algorithmNo":{"algorithmNo":null,"algorithmName":"al"},"difficultyNo":{"difficultyNo":null,"difficultyName":"di"},"languageNo":{"languageNo":null,"languageName":"la"},"previoustestNo":{"previoustestNo":null,"previoustestName":"pre"}}
+    Session Attrs = {}
+
+Handler:
+             Type = org.coteis.controller.article.ArticleController
+           Method = org.coteis.controller.article.ArticleController#addArticle(AddArticleRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"createdDate":"2023-12-12T17:44:21.4525014","modifiedDate":"2023-12-12T17:44:21.4525014","articleNo":6,"title":"title","testExplain":"testExplain","answer":"answer","inputExample":"inputExample","outputExample":"outputExample","speed":"speed","codeExplain":"codeExplain","concept":"concept","userNo":{"userNo":5,"userName":"userName","userId":"userId","userPw":"userPw","userEmail":"userEmail"},"algorithmNo":{"algorithmNo":11,"algorithmName":"al"},"difficultyNo":{"difficultyNo":5,"difficultyName":"di"},"languageNo":{"languageNo":9,"languageName":"la"},"previoustestNo":{"previoustestNo":9,"previoustestName":"pre"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        a1_0.article_no,
+        a1_0.algorithm_no,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        a1_0.difficulty_no,
+        a1_0.input_example,
+        a1_0.language_no,
+        a1_0.modified_date,
+        a1_0.output_example,
+        a1_0.previoustest_no,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title,
+        a1_0.user_no 
+    from
+        article a1_0
+Hibernate: 
+    select
+        a1_0.algorithm_no,
+        a1_0.algorithm_name 
+    from
+        algorithm a1_0 
+    where
+        a1_0.algorithm_no=?
+Hibernate: 
+    select
+        d1_0.difficulty_no,
+        d1_0.difficulty_name 
+    from
+        difficulty d1_0 
+    where
+        d1_0.difficulty_no=?
+Hibernate: 
+    select
+        l1_0.language_no,
+        l1_0.language_name 
+    from
+        languages l1_0 
+    where
+        l1_0.language_no=?
+Hibernate: 
+    select
+        p1_0.previoustest_no,
+        p1_0.previoustest_name 
+    from
+        previoustest p1_0 
+    where
+        p1_0.previoustest_no=?
+Hibernate: 
+    select
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        users u1_0 
+    where
+        u1_0.user_no=?
+Hibernate: 
+    select
+        p1_0.previoustest_no,
+        p1_0.previoustest_name 
+    from
+        previoustest p1_0 
+    where
+        p1_0.previoustest_no=?
+Hibernate: 
+    select
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        users u1_0 
+    where
+        u1_0.user_no=?
+Hibernate: 
+    select
+        d1_0.difficulty_no,
+        d1_0.difficulty_name 
+    from
+        difficulty d1_0 
+    where
+        d1_0.difficulty_no=?
+Hibernate: 
+    select
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        users u1_0 
+    where
+        u1_0.user_no=?
+Hibernate: 
+    select
+        l1_0.language_no,
+        l1_0.language_name 
+    from
+        languages l1_0 
+    where
+        l1_0.language_no=?
+Hibernate: 
+    select
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        users u1_0 
+    where
+        u1_0.user_no=?
+Hibernate: 
+    select
+        p1_0.previoustest_no,
+        p1_0.previoustest_name 
+    from
+        previoustest p1_0 
+    where
+        p1_0.previoustest_no=?
+Hibernate: 
+    select
+        a1_0.algorithm_no,
+        a1_0.algorithm_name 
+    from
+        algorithm a1_0 
+    where
+        a1_0.algorithm_no=?
+Hibernate: 
+    select
+        d1_0.difficulty_no,
+        d1_0.difficulty_name 
+    from
+        difficulty d1_0 
+    where
+        d1_0.difficulty_no=?
+Hibernate: 
+    select
+        l1_0.language_no,
+        l1_0.language_name 
+    from
+        languages l1_0 
+    where
+        l1_0.language_no=?
+Hibernate: 
+    select
+        p1_0.previoustest_no,
+        p1_0.previoustest_name 
+    from
+        previoustest p1_0 
+    where
+        p1_0.previoustest_no=?
+Hibernate: 
+    select
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        users u1_0 
+    where
+        u1_0.user_no=?
+Hibernate: 
+    select
+        a1_0.article_no,
+        a2_0.algorithm_no,
+        a2_0.algorithm_name,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        d1_0.difficulty_no,
+        d1_0.difficulty_name,
+        a1_0.input_example,
+        l1_0.language_no,
+        l1_0.language_name,
+        a1_0.modified_date,
+        a1_0.output_example,
+        p1_0.previoustest_no,
+        p1_0.previoustest_name,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title,
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        article a1_0 
+    left join
+        algorithm a2_0 
+            on a2_0.algorithm_no=a1_0.algorithm_no 
+    left join
+        difficulty d1_0 
+            on d1_0.difficulty_no=a1_0.difficulty_no 
+    left join
+        languages l1_0 
+            on l1_0.language_no=a1_0.language_no 
+    left join
+        previoustest p1_0 
+            on p1_0.previoustest_no=a1_0.previoustest_no 
+    left join
+        users u1_0 
+            on u1_0.user_no=a1_0.user_no 
+    where
+        a1_0.article_no=?
+Hibernate: 
+    select
+        a1_0.article_no,
+        a2_0.algorithm_no,
+        a2_0.algorithm_name,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        d1_0.difficulty_no,
+        d1_0.difficulty_name,
+        a1_0.input_example,
+        l1_0.language_no,
+        l1_0.language_name,
+        a1_0.modified_date,
+        a1_0.output_example,
+        p1_0.previoustest_no,
+        p1_0.previoustest_name,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title,
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        article a1_0 
+    left join
+        algorithm a2_0 
+            on a2_0.algorithm_no=a1_0.algorithm_no 
+    left join
+        difficulty d1_0 
+            on d1_0.difficulty_no=a1_0.difficulty_no 
+    left join
+        languages l1_0 
+            on l1_0.language_no=a1_0.language_no 
+    left join
+        previoustest p1_0 
+            on p1_0.previoustest_no=a1_0.previoustest_no 
+    left join
+        users u1_0 
+            on u1_0.user_no=a1_0.user_no 
+    where
+        a1_0.article_no=?
+Hibernate: 
+    insert 
+    into
+        algorithm
+        (algorithm_name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        difficulty
+        (difficulty_name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        languages
+        (language_name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        previoustest
+        (previoustest_name) 
+    values
+        (?)
+Hibernate: 
+    update
+        article 
+    set
+        algorithm_no=?,
+        answer=?,
+        code_explain=?,
+        concept=?,
+        difficulty_no=?,
+        input_example=?,
+        language_no=?,
+        modified_date=?,
+        output_example=?,
+        previoustest_no=?,
+        speed=?,
+        test_explain=?,
+        title=?,
+        user_no=? 
+    where
+        article_no=?
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/articles/6
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"423"]
+             Body = {"title":"title","testExplain":"testExplain","answer":"answer","inputExample":"inputExample","outputExample":"outputExample","speed":"speed","codeExplain":"codeExplain","concept":"concept","algorithmNo":{"algorithmNo":null,"algorithmName":"al"},"difficultyNo":{"difficultyNo":null,"difficultyName":"di"},"languageNo":{"languageNo":null,"languageName":"la"},"previoustestNo":{"previoustestNo":null,"previoustestName":"pre"}}
+    Session Attrs = {}
+
+Handler:
+             Type = org.coteis.controller.article.ArticleController
+           Method = org.coteis.controller.article.ArticleController#updateArticle(long, UpdateArticleRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"createdDate":"2023-12-12T17:44:21.452501","modifiedDate":"2023-12-12T17:44:22.1398305","articleNo":6,"title":"title","testExplain":"testExplain","answer":"answer","inputExample":"inputExample","outputExample":"outputExample","speed":"speed","codeExplain":"codeExplain","concept":"concept","userNo":{"userNo":5,"userName":"userName","userId":"userId","userPw":"userPw","userEmail":"userEmail"},"algorithmNo":{"algorithmNo":12,"algorithmName":"al"},"difficultyNo":{"difficultyNo":6,"difficultyName":"di"},"languageNo":{"languageNo":10,"languageName":"la"},"previoustestNo":{"previoustestNo":10,"previoustestName":"pre"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        a1_0.article_no,
+        a2_0.algorithm_no,
+        a2_0.algorithm_name,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        d1_0.difficulty_no,
+        d1_0.difficulty_name,
+        a1_0.input_example,
+        l1_0.language_no,
+        l1_0.language_name,
+        a1_0.modified_date,
+        a1_0.output_example,
+        p1_0.previoustest_no,
+        p1_0.previoustest_name,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title,
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        article a1_0 
+    left join
+        algorithm a2_0 
+            on a2_0.algorithm_no=a1_0.algorithm_no 
+    left join
+        difficulty d1_0 
+            on d1_0.difficulty_no=a1_0.difficulty_no 
+    left join
+        languages l1_0 
+            on l1_0.language_no=a1_0.language_no 
+    left join
+        previoustest p1_0 
+            on p1_0.previoustest_no=a1_0.previoustest_no 
+    left join
+        users u1_0 
+            on u1_0.user_no=a1_0.user_no 
+    where
+        a1_0.article_no=?
+Hibernate: 
+    select
+        c1_0.article_no,
+        c1_0.comment_id,
+        c1_0.content,
+        c1_0.created_date,
+        c1_0.modified_date,
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        comment c1_0 
+    left join
+        users u1_0 
+            on u1_0.user_no=c1_0.user_no 
+    where
+        c1_0.article_no=?
+Hibernate: 
+    delete 
+    from
+        article 
+    where
+        article_no=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.coteis.controller.comment.CommentControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-12-12T08:44:22" hostname="DESKTOP-OSVRIU0" time="0.313">
+  <properties/>
+  <testcase name="1. addComment() : 댓글 생성" classname="org.coteis.controller.comment.CommentControllerTest" time="0.082"/>
+  <testcase name="2. findAllComments() : 댓글 목록 조회" classname="org.coteis.controller.comment.CommentControllerTest" time="0.096"/>
+  <testcase name="3. updateComment() : 특정 댓글 정보 업데이트" classname="org.coteis.controller.comment.CommentControllerTest" time="0.086"/>
+  <testcase name="4. deleteComment() : 특정 댓글 삭제" classname="org.coteis.controller.comment.CommentControllerTest" time="0.037"/>
+  <testcase name="findAllByArticleNo()" classname="org.coteis.controller.comment.CommentControllerTest" time="0.004"/>
+  <system-out><![CDATA[2023-12-12T17:44:22.667+09:00  INFO 29620 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.coteis.controller.comment.CommentControllerTest]: CommentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-12T17:44:22.686+09:00  INFO 29620 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.coteis.CoteisApplication for test class org.coteis.controller.comment.CommentControllerTest
+Hibernate: 
+    insert 
+    into
+        algorithm
+        (algorithm_name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        difficulty
+        (difficulty_name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        languages
+        (language_name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        previoustest
+        (previoustest_name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        users
+        (user_email, user_id, user_name, user_pw) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        article
+        (algorithm_no, answer, code_explain, concept, created_date, difficulty_no, input_example, language_no, modified_date, output_example, previoustest_no, speed, test_explain, title, user_no) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (user_email, user_id, user_name, user_pw) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        comment
+        (article_no, content, created_date, modified_date, user_no) 
+    values
+        (?, ?, ?, ?, ?)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/comments
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"793"]
+             Body = {"content":"comment","userNo":{"userNo":null,"userName":"userName1","userId":"userId1","userPw":"userPw1","userEmail":"userEmail1"},"articleNo":{"createdDate":null,"modifiedDate":null,"articleNo":null,"title":"title2","testExplain":"testExplain2","answer":"answer2","inputExample":"inputExample2","outputExample":"outputExample2","speed":"speed2","codeExplain":"codeExplain2","concept":"concept2","userNo":{"userNo":null,"userName":"userName2","userId":"userId2","userPw":"userPw2","userEmail":"userEmail2"},"algorithmNo":{"algorithmNo":null,"algorithmName":"algorithmName2"},"difficultyNo":{"difficultyNo":null,"difficultyName":"difficultyName2"},"languageNo":{"languageNo":null,"languageName":"languageName2"},"previoustestNo":{"previoustestNo":null,"previoustestName":"previoustestName2"}}}
+    Session Attrs = {}
+
+Handler:
+             Type = org.coteis.controller.comment.CommentController
+           Method = org.coteis.controller.comment.CommentController#addComment(AddCommentRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"createdDate":"2023-12-12T17:44:22.7015849","modifiedDate":"2023-12-12T17:44:22.7015849","commentId":7,"content":"comment","userNo":{"userNo":7,"userName":"userName1","userId":"userId1","userPw":"userPw1","userEmail":"userEmail1"},"articleNo":{"createdDate":"2023-12-12T17:44:22.706112","modifiedDate":"2023-12-12T17:44:22.706112","articleNo":7,"title":"title2","testExplain":"testExplain2","answer":"answer2","inputExample":"inputExample2","outputExample":"outputExample2","speed":"speed2","codeExplain":"codeExplain2","concept":"concept2","userNo":{"userNo":6,"userName":"userName2","userId":"userId2","userPw":"userPw2","userEmail":"userEmail2"},"algorithmNo":{"algorithmNo":13,"algorithmName":"algorithmName2"},"difficultyNo":{"difficultyNo":7,"difficultyName":"difficultyName2"},"languageNo":{"languageNo":11,"languageName":"languageName2"},"previoustestNo":{"previoustestNo":11,"previoustestName":"previoustestName2"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        c1_0.comment_id,
+        c1_0.article_no,
+        c1_0.content,
+        c1_0.created_date,
+        c1_0.modified_date,
+        c1_0.user_no 
+    from
+        comment c1_0
+Hibernate: 
+    select
+        a1_0.article_no,
+        a2_0.algorithm_no,
+        a2_0.algorithm_name,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        d1_0.difficulty_no,
+        d1_0.difficulty_name,
+        a1_0.input_example,
+        l1_0.language_no,
+        l1_0.language_name,
+        a1_0.modified_date,
+        a1_0.output_example,
+        p1_0.previoustest_no,
+        p1_0.previoustest_name,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title,
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        article a1_0 
+    left join
+        algorithm a2_0 
+            on a2_0.algorithm_no=a1_0.algorithm_no 
+    left join
+        difficulty d1_0 
+            on d1_0.difficulty_no=a1_0.difficulty_no 
+    left join
+        languages l1_0 
+            on l1_0.language_no=a1_0.language_no 
+    left join
+        previoustest p1_0 
+            on p1_0.previoustest_no=a1_0.previoustest_no 
+    left join
+        users u1_0 
+            on u1_0.user_no=a1_0.user_no 
+    where
+        a1_0.article_no=?
+Hibernate: 
+    select
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        users u1_0 
+    where
+        u1_0.user_no=?
+Hibernate: 
+    select
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        users u1_0 
+    where
+        u1_0.user_no=?
+Hibernate: 
+    select
+        a1_0.article_no,
+        a2_0.algorithm_no,
+        a2_0.algorithm_name,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        d1_0.difficulty_no,
+        d1_0.difficulty_name,
+        a1_0.input_example,
+        l1_0.language_no,
+        l1_0.language_name,
+        a1_0.modified_date,
+        a1_0.output_example,
+        p1_0.previoustest_no,
+        p1_0.previoustest_name,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title,
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        article a1_0 
+    left join
+        algorithm a2_0 
+            on a2_0.algorithm_no=a1_0.algorithm_no 
+    left join
+        difficulty d1_0 
+            on d1_0.difficulty_no=a1_0.difficulty_no 
+    left join
+        languages l1_0 
+            on l1_0.language_no=a1_0.language_no 
+    left join
+        previoustest p1_0 
+            on p1_0.previoustest_no=a1_0.previoustest_no 
+    left join
+        users u1_0 
+            on u1_0.user_no=a1_0.user_no 
+    where
+        a1_0.article_no=?
+Hibernate: 
+    select
+        a1_0.article_no,
+        a2_0.algorithm_no,
+        a2_0.algorithm_name,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        d1_0.difficulty_no,
+        d1_0.difficulty_name,
+        a1_0.input_example,
+        l1_0.language_no,
+        l1_0.language_name,
+        a1_0.modified_date,
+        a1_0.output_example,
+        p1_0.previoustest_no,
+        p1_0.previoustest_name,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title,
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        article a1_0 
+    left join
+        algorithm a2_0 
+            on a2_0.algorithm_no=a1_0.algorithm_no 
+    left join
+        difficulty d1_0 
+            on d1_0.difficulty_no=a1_0.difficulty_no 
+    left join
+        languages l1_0 
+            on l1_0.language_no=a1_0.language_no 
+    left join
+        previoustest p1_0 
+            on p1_0.previoustest_no=a1_0.previoustest_no 
+    left join
+        users u1_0 
+            on u1_0.user_no=a1_0.user_no 
+    where
+        a1_0.article_no=?
+Hibernate: 
+    select
+        a1_0.article_no,
+        a2_0.algorithm_no,
+        a2_0.algorithm_name,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        d1_0.difficulty_no,
+        d1_0.difficulty_name,
+        a1_0.input_example,
+        l1_0.language_no,
+        l1_0.language_name,
+        a1_0.modified_date,
+        a1_0.output_example,
+        p1_0.previoustest_no,
+        p1_0.previoustest_name,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title,
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        article a1_0 
+    left join
+        algorithm a2_0 
+            on a2_0.algorithm_no=a1_0.algorithm_no 
+    left join
+        difficulty d1_0 
+            on d1_0.difficulty_no=a1_0.difficulty_no 
+    left join
+        languages l1_0 
+            on l1_0.language_no=a1_0.language_no 
+    left join
+        previoustest p1_0 
+            on p1_0.previoustest_no=a1_0.previoustest_no 
+    left join
+        users u1_0 
+            on u1_0.user_no=a1_0.user_no 
+    where
+        a1_0.article_no=?
+Hibernate: 
+    select
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw 
+    from
+        users u1_0 
+    where
+        u1_0.user_no=?
+Hibernate: 
+    select
+        c1_0.comment_id,
+        a1_0.article_no,
+        a2_0.algorithm_no,
+        a2_0.algorithm_name,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        d1_0.difficulty_no,
+        d1_0.difficulty_name,
+        a1_0.input_example,
+        l1_0.language_no,
+        l1_0.language_name,
+        a1_0.modified_date,
+        a1_0.output_example,
+        p1_0.previoustest_no,
+        p1_0.previoustest_name,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title,
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw,
+        c1_0.content,
+        c1_0.created_date,
+        c1_0.modified_date,
+        u2_0.user_no,
+        u2_0.user_email,
+        u2_0.user_id,
+        u2_0.user_name,
+        u2_0.user_pw 
+    from
+        comment c1_0 
+    left join
+        article a1_0 
+            on a1_0.article_no=c1_0.article_no 
+    left join
+        algorithm a2_0 
+            on a2_0.algorithm_no=a1_0.algorithm_no 
+    left join
+        difficulty d1_0 
+            on d1_0.difficulty_no=a1_0.difficulty_no 
+    left join
+        languages l1_0 
+            on l1_0.language_no=a1_0.language_no 
+    left join
+        previoustest p1_0 
+            on p1_0.previoustest_no=a1_0.previoustest_no 
+    left join
+        users u1_0 
+            on u1_0.user_no=a1_0.user_no 
+    left join
+        users u2_0 
+            on u2_0.user_no=c1_0.user_no 
+    where
+        c1_0.comment_id=?
+Hibernate: 
+    update
+        comment 
+    set
+        article_no=?,
+        content=?,
+        modified_date=?,
+        user_no=? 
+    where
+        comment_id=?
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/comments/7
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"24"]
+             Body = {"content":"comment123"}
+    Session Attrs = {}
+
+Handler:
+             Type = org.coteis.controller.comment.CommentController
+           Method = org.coteis.controller.comment.CommentController#updateComment(Long, UpdateCommentRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"createdDate":"2023-12-12T17:44:22.701585","modifiedDate":"2023-12-12T17:44:22.890715","commentId":7,"content":"comment123","userNo":{"userNo":7,"userName":"userName1","userId":"userId1","userPw":"userPw1","userEmail":"userEmail1"},"articleNo":{"createdDate":"2023-12-12T17:44:22.706112","modifiedDate":"2023-12-12T17:44:22.706112","articleNo":7,"title":"title2","testExplain":"testExplain2","answer":"answer2","inputExample":"inputExample2","outputExample":"outputExample2","speed":"speed2","codeExplain":"codeExplain2","concept":"concept2","userNo":{"userNo":6,"userName":"userName2","userId":"userId2","userPw":"userPw2","userEmail":"userEmail2"},"algorithmNo":{"algorithmNo":13,"algorithmName":"algorithmName2"},"difficultyNo":{"difficultyNo":7,"difficultyName":"difficultyName2"},"languageNo":{"languageNo":11,"languageName":"languageName2"},"previoustestNo":{"previoustestNo":11,"previoustestName":"previoustestName2"}}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        c1_0.comment_id,
+        a1_0.article_no,
+        a2_0.algorithm_no,
+        a2_0.algorithm_name,
+        a1_0.answer,
+        a1_0.code_explain,
+        a1_0.concept,
+        a1_0.created_date,
+        d1_0.difficulty_no,
+        d1_0.difficulty_name,
+        a1_0.input_example,
+        l1_0.language_no,
+        l1_0.language_name,
+        a1_0.modified_date,
+        a1_0.output_example,
+        p1_0.previoustest_no,
+        p1_0.previoustest_name,
+        a1_0.speed,
+        a1_0.test_explain,
+        a1_0.title,
+        u1_0.user_no,
+        u1_0.user_email,
+        u1_0.user_id,
+        u1_0.user_name,
+        u1_0.user_pw,
+        c1_0.content,
+        c1_0.created_date,
+        c1_0.modified_date,
+        u2_0.user_no,
+        u2_0.user_email,
+        u2_0.user_id,
+        u2_0.user_name,
+        u2_0.user_pw 
+    from
+        comment c1_0 
+    left join
+        article a1_0 
+            on a1_0.article_no=c1_0.article_no 
+    left join
+        algorithm a2_0 
+            on a2_0.algorithm_no=a1_0.algorithm_no 
+    left join
+        difficulty d1_0 
+            on d1_0.difficulty_no=a1_0.difficulty_no 
+    left join
+        languages l1_0 
+            on l1_0.language_no=a1_0.language_no 
+    left join
+        previoustest p1_0 
+            on p1_0.previoustest_no=a1_0.previoustest_no 
+    left join
+        users u1_0 
+            on u1_0.user_no=a1_0.user_no 
+    left join
+        users u2_0 
+            on u2_0.user_no=c1_0.user_no 
+    where
+        c1_0.comment_id=?
+Hibernate: 
+    delete 
+    from
+        comment 
+    where
+        comment_id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

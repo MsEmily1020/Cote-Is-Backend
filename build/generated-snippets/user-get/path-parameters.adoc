@@ -1,4 +1,4 @@
-.+/api/articles/{id}+
+.+/api/users/{id}+
 |===
 |Parameter|Description
 

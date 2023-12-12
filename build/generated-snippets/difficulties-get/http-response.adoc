@@ -2,7 +2,7 @@
 ----
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 239
+Content-Length: 351
 
 [ {
   "difficultyNo" : 1,
@@ -16,5 +16,11 @@ Content-Length: 239
 }, {
   "difficultyNo" : 4,
   "difficultyName" : "Extreme"
+}, {
+  "difficultyNo" : 5,
+  "difficultyName" : "di"
+}, {
+  "difficultyNo" : 6,
+  "difficultyName" : "di"
 } ]
 ----
