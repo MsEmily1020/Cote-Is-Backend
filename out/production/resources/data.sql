@@ -347,3 +347,4 @@ insert into comment (content, created_date, user_no, article_no) values ('참고
 insert into comment (content, created_date, user_no, article_no) values ('잘 정리하셨네요!', '2023-05-18 07:03:12', 3, 1);
 insert into comment (content, created_date, user_no, article_no) values ('더 많은 글을 원해요', '2023-12-01 09:05:15', 1, 2);
 insert into comment (content, created_date, user_no, article_no) values ('우아~!', '2023-03-11 12:10:32', 1, 3);
+insert into comment (content, created_date, user_no, article_no) value ('멋지네요! 다음에 또 오겠습니다.', '2023-01-20 20:11:19', 2, 2);

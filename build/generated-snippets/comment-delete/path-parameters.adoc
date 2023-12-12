@@ -1,8 +1,8 @@
-`Delete` /api/comments/{id}+
+.+/api/comments/{id}+
 |===
 |Parameter|Description
 
-|id
+|`+id+`
 |댓글 번호 pk
 
 |===

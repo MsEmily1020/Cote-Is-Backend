@@ -1,5 +1,6 @@
 package org.coteis.domain.comment;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -10,6 +11,7 @@ import org.coteis.domain.article.Article;
 import org.coteis.domain.user.User;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
+import org.springframework.web.bind.annotation.DeleteMapping;
 
 @Entity
 @Getter
@@ -23,13 +25,11 @@ public class Comment extends BaseTimeEntity {
     @Column(name = "content", nullable = false)
     private String content;
 
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(name = "user_no")
     private User userNo;
 
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(name = "article_no")
     private Article articleNo;
 

@@ -1,10 +1,15 @@
 package org.coteis.domain.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.coteis.domain.article.Article;
+import org.coteis.domain.comment.Comment;
+
+import java.util.List;
 
 @Entity
 @Getter
@@ -27,6 +32,14 @@ public class User {
 
     @Column(name = "user_email", nullable = false, unique = true)
     private String userEmail;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "userNo", cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST}, orphanRemoval = true)
+    private List<Article> articleList;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "userNo", cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST}, orphanRemoval = true)
+    private List<Comment> commentList;
 
     @Builder
     public User(String userName, String userId, String userPw, String userEmail) {
